@@ -163,7 +163,7 @@ Web                |
 			<match bytes='2D 4C 48 31 2D' info='LHA Archive (c64)' cat='Archive' os='Misc' ext='lha'/>
 		</first>
 		<first byte='43'>
-			<match bytes='43 43 53 44 33 5A' info='PDS (CCSD) Image' cat='Misc' os='Misc' ext=''/>
+			<match bytes='43 43 53 44 33 5A' info='PDS (CCSD) Image' cat='Image' os='Misc' ext='pds'/>
 		</first>
 		<first byte='45'>
 			<match bytes='45 59 57 52' info='AmigaWriter File' cat='Misc' os='Misc' ext=''/>
@@ -184,7 +184,7 @@ Web                |
 			<match bytes='4D 4D 58 50 52 33' info='Motorola Quark Express Document (English)' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='4E'>
-			<match bytes='4E 4A 50 4C 31 49' info='PDS (JPL) Image' cat='Misc' os='Misc' ext=''/>
+			<match bytes='4E 4A 50 4C 31 49' info='PDS (JPL) Image' cat='Image' os='Misc' ext='pds'/>
 		</first>
 		<first byte='73'>
 			<match bytes='73 74 72 65 61 6D 74 79 70 65 64' info='NeXT/Apple typedstream (little endian)' cat='Misc' os='Misc' ext=''/>
@@ -1851,7 +1851,7 @@ Web                |
 			<match bytes='43 49 53 4F' info='Compressed ISO (CISO) CD Image' cat='Diskimage' os='Misc' ext='cso'/>
 			<match bytes='43 49 4D 47' info='Alias Maya Image File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 44 46 01' info='NetCDF Data Format' cat='Data' os='Misc' ext='nc'/>
-			<match bytes='43 43 53 44 33 5A 46' info='PDS (CCSD) image data' cat='Misc' os='Misc' ext=''/>
+			<match bytes='43 43 53 44 33 5A 46' info='PDS (CCSD) Image' cat='Image' os='Misc' ext='pds'/>
 			<match bytes='43 42 4D 64 00 00' info='Power 64 C64 Emulator Snapshot' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 41 54 20' info='Electronic Arts Interchange Format File' cat='Binary' os='Amiga' ext='iff'/>
 			<match bytes='43 41 52 20 61 72 63 68 69 76 65 20 68 65 61 64 65 72 20 53 41 50 43 41 52 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
@@ -2159,7 +2159,7 @@ Web                |
 			<match bytes='4E 55 52 55 49 4D 47' info='Nuru Image' cat='Image' os='Misc' ext='nui'/>
 			<match bytes='4E 53 4B' info='NaShrink archive data' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4E 50 46 46' info='NItpicker Flow File ' cat='Misc' os='Misc' ext=''/>
-			<match bytes='4E 4A 50 4C 31 49 30 30' info='PDS (JPL) image data' cat='Misc' os='Misc' ext=''/>
+			<match bytes='4E 4A 50 4C 31 49 30 30' info='PDS (JPL) Image' cat='Image' os='Misc' ext='pds'/>
 			<match bytes='4E 49 54 46' info='National Imagery Transmission Format' cat='Image' os='Misc' ext='ntf'/>
 			<match bytes='4E 45 53 4D 1A' info='NES Sound File' cat='Game' os='NES' ext='nsf'/>
 			<match bytes='4E 45 53' info='NES ROM File' cat='Game' os='NES' ext='nes'/>
