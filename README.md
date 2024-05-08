@@ -2,7 +2,7 @@
 
 Siglookup is a command-line tool for detecting file types based on their signatures (magic bytes).
 
-![siglookup](./siglookup.png)
+![siglookup](https://github.com/huebicode/siglookup/assets/3885373/ed0ccf37-5c06-4dbc-bcf5-769b98c6f420)
 
 ## Usage
 The XML signature file (sigs.xml) must be located in the same directory as the application.
