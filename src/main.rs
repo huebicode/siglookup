@@ -1,5 +1,4 @@
 use std::env;
-use std::path::Path;
 use std::process;
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::Arc;
@@ -21,8 +20,13 @@ const COLUMN_SIZE: usize = 20;
 const COLUMN_DESC: usize = 50;
 
 fn main() {
-    let sigs_file = "sigs.xml";
-    if !Path::new(&sigs_file).exists() {
+    let sigs_file = env::current_exe()
+        .expect("Failed to get current executable path")
+        .parent()
+        .expect("Failed to get directory of current executable")
+        .join("sigs.xml");
+
+    if !sigs_file.exists() {
         println!("Signature file (sigs.xml) not found!");
         process::exit(0);
     }
@@ -45,7 +49,7 @@ fn main() {
     println!("{}", header.bright_black());
     println!("{}", dotted_line.bright_black());
 
-    let sigs = xmlsigparser::parse(sigs_file);
+    let sigs = xmlsigparser::parse(sigs_file.to_str().unwrap());
 
     let file_counter = Arc::new(AtomicUsize::new(0));
     let counter = Arc::clone(&file_counter);

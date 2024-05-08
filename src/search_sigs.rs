@@ -84,5 +84,8 @@ pub fn check(sigs: &xmlsigparser::Magic, file_path: &str) -> String {
     }
 
     // if no match found, return unknown data
-    format!("{}\t{}\tunknown\t-\t-\tUnknown Data", file_name, formatted_size)
+    format!(
+        "{}\t{}\tunknown\t-\t-\tUnknown Data",
+        file_name, formatted_size
+    )
 }

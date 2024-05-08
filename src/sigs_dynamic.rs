@@ -1,7 +1,7 @@
+use std::error::Error;
 use std::fs::File;
 use std::io::{BufReader, Read, Seek, SeekFrom};
 use std::path::Path;
-use std::error::Error;
 
 use crate::utils;
 
@@ -111,7 +111,8 @@ const XLS: &str = "xls\tDocument\tMisc\tMS Excel";
 const XLSX: &str = "xlsx\tDocument\tMisc\tMS Excel Document";
 const XLSM: &str = "xlsm\tDocument\tMisc\tMS Excel with Macros";
 const XLSB: &str = "xlsb\tDocument\tMisc\tMS Excel Binary Workbook";
-const XPI: &str = "xpi\tArchive\tMisc\tCross-Platform Installer Module (Firefox, Thunderbird Extension)";
+const XPI: &str =
+    "xpi\tArchive\tMisc\tCross-Platform Installer Module (Firefox, Thunderbird Extension)";
 const XPS_OXPS: &str = "xps/oxps\tDocument\tMisc\tOpen XML Paper Specification";
 
 pub fn check(reader: &mut BufReader<File>, file_size: u64, file_path: &Path) -> &'static str {
