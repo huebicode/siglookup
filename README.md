@@ -7,16 +7,16 @@ Siglookup is a command-line tool for detecting file types based on their signatu
 ## Usage
 The XML signature file (sigs.xml) must be located in the same directory as the application.
 
-### Analyzing a file:
+#### Analyzing a file:
 `siglookup <file>`
 
-### Analyzing all files in a directory and its subdirectories:
+#### Analyzing all files in a directory and its subdirectories:
 `siglookup <dir>` or `siglookup .`
 
-### Editing XML signatures:
+#### Editing XML signatures:
 Signatures can be created, expanded or changed in the XML file (sigs.xml) with the respective offset. Wildcards `_`, Ranges `-` and OR combinations `|` can be used for the magic bytes.
 
-### Miscellaneous
+#### Miscellaneous
 If the file extension does not match the detected file extension, the output will appear in red. The application checks unrecognized files for compression/encryption (hight entropy) and zero bytes.
 
 If you have file signatures, which the application is missing, find errors or have other requests, don’t hesitate to give me a note.
