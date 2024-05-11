@@ -1970,6 +1970,7 @@ Web                |
 			<match bytes='47 6C 75 6C' info='Glulx Game Data' cat='Game' os='Misc' ext=''/>
 			<match bytes='47 65 6E 65 74 65 63 20 4F 6D 6E 69 63 61 73 74' info='Genetec Video Archive' cat='Archive' os='Misc' ext='G64'/>
 			<match bytes='47 58 32' info='Show Partner Graphics File' cat='Image' os='MS-DOS' ext='gx2'/>
+			<match bytes='47 56 61 72 69 61 6E 74' info='GVariant Database' cat='Database' os='Linux' ext=''/>
 			<match bytes='47 53 54 49 6D 00 00' info='GNU SmallTalk' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 53 52 2D 31 35 34 31' info='C64 1541 Diskimage' cat='Diskimage' os='C64' ext='g64'/>
 			<match bytes='47 52 49 42' info='Gridded Binary' cat='Binary' os='Misc' ext='grb'/>
