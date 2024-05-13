@@ -67,6 +67,11 @@ pub fn check(sigs: &xmlsigparser::Magic, file_path: &str) -> String {
             }
 
             for _match in &first.matches {
+                let pattern_bytes: Vec<&str> = _match.bytes.split_whitespace().collect();
+                if file_size < pattern_bytes.len() as u64 {
+                    continue;
+                }
+
                 if check_pattern::is_pattern_in_hex(&hex_file_bytes, &_match.bytes) {
                     return format!(
                         "{}\t{}\t{}\t{}\t{}\t{}",

@@ -1,4 +1,3 @@
-use std::collections::HashMap;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::File;
@@ -27,18 +26,22 @@ pub fn is_utf8_continuation_byte(byte: u8) -> bool {
     (byte & 0b1100_0000) == 0b1000_0000
 }
 
-pub fn calculate_byte_entropy(data: &Vec<u8>) -> f64 {
-    let mut frequencies = HashMap::new();
+pub fn calculate_byte_entropy(data: &[u8]) -> f64 {
+    let mut frequencies = [0u32; 256];
 
     for &byte in data {
-        *frequencies.entry(byte).or_insert(0) += 1;
+        frequencies[byte as usize] += 1;
     }
 
     let total_bytes = data.len() as f64;
 
-    frequencies.values().fold(0.0, |acc, &count| {
-        let probability = count as f64 / total_bytes;
-        acc - (probability * probability.log2())
+    frequencies.iter().fold(0.0, |acc, &count| {
+        if count > 0 {
+            let probability = count as f64 / total_bytes;
+            acc - (probability * probability.log2())
+        } else {
+            acc
+        }
     })
 }
 

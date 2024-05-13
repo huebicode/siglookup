@@ -71,6 +71,11 @@ Web                |
 			<match bytes='54 52 55 45 56 49 53 49 4F 4E 2D 58 46 49 4C 45' info='Truevision Advanced Raster Graphics Adapter' cat='Image' os='Misc' ext='tga'/>
 		</first>
 	</offset>
+	<offset at='-8'>
+		<first byte='57'>
+			<match bytes='57 FB 80 8B 24 75 47 DB' info='LevelDB Ldb File' cat='Database' os='Misc' ext='ldb'/>
+		</first>
+	</offset>
 	<offset at='1'>
 		<first byte='00'>
 			<match bytes='00 AE 07' info='BSN Archive' cat='Archive' os='Misc' ext=''/>
@@ -596,6 +601,11 @@ Web                |
 		</first>
 		<first byte='32'>
 			<match bytes='32 30 33 20 20 20 20 20 20 20 20 4C 69 6E 75 78 64 6F 6F 6D 20 73 61 76 65' info='' cat='Misc' os='Misc' ext=''/>
+		</first>
+	</offset>
+	<offset at='21'>
+		<first byte='4D'>
+			<match bytes='4D 45 54 41 3A' info='LevelDB Log File' cat='Database' os='Misc' ext='log'/>
 		</first>
 	</offset>
 	<offset at='22'>
