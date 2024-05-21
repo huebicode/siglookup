@@ -1123,7 +1123,7 @@ Web                |
 			<match bytes='01 70' info='WE32000 COFF' cat='Misc' os='Misc' ext=''/>
 			<match bytes='01 6D' info='88K BCS executable' cat='Misc' os='Misc' ext=''/>
 			<match bytes='01 6C' info='68K BCS executable' cat='Misc' os='Misc' ext=''/>
-			<match bytes='01 67 70 67' info='GPG key trust database' cat='Misc' os='Misc' ext=''/>
+			<match bytes='01 67 70 67' info='GPG Key Trust Database' cat='Encryption' os='Misc' ext=''/>
 			<match bytes='01 66 63 70' info='X11 Portable Compiled Font data' cat='Misc' os='Misc' ext=''/>
 			<match bytes='01 66' info='MIPSEL-BE MIPS-II ECOFF executable' cat='Misc' os='Misc' ext=''/>
 			<match bytes='01 63' info='MIPSEB MIPS-II ECOFF executable' cat='Misc' os='Misc' ext=''/>
@@ -1499,7 +1499,7 @@ Web                |
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 53 53 48 32 20 4B 45 59 2D 2D 2D 2D 2D' info='OpenSSH Public Key' cat='Encryption' os='Misc' ext='pub'/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 52 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D' info='PEM Encoded X.509 Certificate' cat='Encryption' os='Misc' ext='key/pem'/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D' info='PEM Encoded X.509 PKCS#8 Private Key' cat='Encryption' os='Misc' ext='key/pem'/>
-			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 47 50' info='PGP armored data' cat='Misc' os='Misc' ext=''/>
+			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 47 50' info='PGP Armored Data' cat='Encryption' os='Misc' ext=''/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 4F 50 45 4E 53 53 48 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D' info='OpenSSH Private Key' cat='Encryption' os='Misc' ext=''/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 44 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D' info='PEM Encoded X.509 PKCS#1 DSA Private Key' cat='Encryption' os='Misc' ext='key/pem'/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 20 52 45 51 55 45 53 54 2D 2D' info='PEM Encoded X.509 Certificate Signing Request' cat='Encryption' os='Misc' ext='csr/pem'/>
@@ -2238,7 +2238,7 @@ Web                |
 			<match bytes='50 4B 03 04' info='PKZIP Archive' cat='Archive' os='Misc' ext='zip'/>
 			<match bytes='50 49 43 54 00 08' info='ADEX Graphics File' cat='Image' os='Misc' ext='img'/>
 			<match bytes='50 48 49 4C 49 50 50' info='Par Archive' cat='Archive' os='Misc' ext=''/>
-			<match bytes='50 47 50 64 4D 41 49 4E' info='PGP Diskimage' cat='Diskimage' os='Misc' ext='pgd'/>
+			<match bytes='50 47 50 64 4D 41 49 4E' info='PGP Diskimage' cat='Encryption' os='Misc' ext='pgd'/>
 			<match bytes='50 46 52 31' info='PFR1 Font' cat='Font' os='Misc' ext=''/>
 			<match bytes='50 46 0A' info='Portable Float Map Image' cat='Image' os='Misc' ext='pfm'/>
 			<match bytes='50 44 53 5F 56 45 52 53 49 4F 4E 5F 49 44' info='Planetary Data System' cat='Image' os='Misc' ext='pds'/>
@@ -2800,7 +2800,7 @@ Web                |
 		</first>
 		<first byte='85'>
 			<match bytes='85 19' info='Linux jffs2 Filesystem Data (little endian)' cat='Filesystem' os='Misc' ext=''/>
-			<match bytes='85 02' info='GPG encrypted data' cat='Misc' os='Misc' ext=''/>
+			<match bytes='85 02' info='GPG Encrypted Data' cat='Encryption' os='Misc' ext='gpg'/>
 			<match bytes='85 01 07 00' info='ECOFF NetBSD/alpha binary' cat='Misc' os='Misc' ext=''/>
 			<match bytes='85 _ _ 03' info='PGP File' cat='Encryption' os='Misc' ext='pgp'/>
 		</first>
@@ -2835,6 +2835,9 @@ Web                |
 			<match bytes='8B 4A 4E 47' info='JNG Video' cat='Video' os='Misc' ext=''/>
 			<match bytes='8B 45 52 02 00 00 00' info='Roxio Toast Disk Image' cat='Diskimage' os='Misc' ext='toast'/>
 			<match bytes='8B _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00' info='dBase IV Database' cat='Database' os='Misc' ext='dbf/dbase4'/>
+		</first>
+		<first byte='8C'>
+			<match bytes='8C 0D 04 09' info='GPG Encrypted File' cat='Encryption' os='Misc' ext='gpg'/>
 		</first>
 		<first byte='8F'>
 			<match bytes='8F AF AC 8C' info='EPC Archive' cat='Archive' os='Misc' ext=''/>
