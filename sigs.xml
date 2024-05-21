@@ -93,7 +93,7 @@ Web                |
 			<match bytes='47 54 48' info='Gather Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 		<first byte='49'>
-			<match bytes='49 6E 74 65 72 6E 65 74 53 68 6F 72 74 63 75 74' info='MS Windows 95 Internet Shortcut' cat='Misc' os='Misc' ext=''/>
+			<match bytes='49 6E 74 65 72 6E 65 74 53 68 6F 72 74 63 75 74' info='MS Windows 95 Internet Shortcut' cat='Misc' os='Windows' ext=''/>
 		</first>
 		<first byte='4D'>
 			<match bytes='4D 55 47 49 43 49 41 4E 2F 53 4F 46 54 45 59 45 53' info='Mugician Module sound file' cat='Misc' os='Misc' ext=''/>
@@ -120,18 +120,18 @@ Web                |
 			<match bytes='6D 6B 78' info='Compiled XKB Keymap: lsb' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='A0'>
-			<match bytes='A0 05 F9 05 00 09 00 02 00' info='Atari-ST floppy 720k' cat='Misc' os='Misc' ext=''/>
-			<match bytes='A0 05 F9 03 00 09 00 02 00' info='DOS floppy 720k' cat='Misc' os='Misc' ext=''/>
+			<match bytes='A0 05 F9 05 00 09 00 02 00' info='Atari-ST Floppy (720k)' cat='Diskimage' os='Atari' ext=''/>
+			<match bytes='A0 05 F9 03 00 09 00 02 00' info='DOS Floppy (720k)' cat='Diskimage' os='MS-DOS' ext=''/>
 		</first>
 		<first byte='CD'>
-			<match bytes='CD 21' info='COM executable for MS-DOS' cat='Misc' os='Misc' ext=''/>
+			<match bytes='CD 21' info='COM executable for MS-DOS' cat='Executable' os='MS-DOS' ext=''/>
 		</first>
 		<first byte='D0'>
-			<match bytes='D0 02 F8 05 00 09 00 01 00' info='Atari-ST floppy 360k' cat='Misc' os='Misc' ext=''/>
-			<match bytes='D0 02 F0 03 00 09 00 01 00' info='DOS floppy 360k' cat='Misc' os='Misc' ext=''/>
+			<match bytes='D0 02 F8 05 00 09 00 01 00' info='Atari-ST Floppy (360k)' cat='Diskimage' os='Atari' ext=''/>
+			<match bytes='D0 02 F0 03 00 09 00 01 00' info='DOS Floppy (360k)' cat='Diskimage' os='MS-DOS' ext=''/>
 		</first>
 		<first byte='FF'>
-			<match bytes='FF 42 53 47' info='BSN Archive' cat='Misc' os='Misc' ext=''/>
+			<match bytes='FF 42 53 47' info='BSN Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 	</offset>
 	<offset at='2'>
@@ -165,7 +165,7 @@ Web                |
 			<match bytes='2D 6C 5A' info='PUT Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='2D 61 68' info='MAR Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='2D 61 66 78 2D' info='AFX Compressed' cat='Archive' os='Misc' ext=''/>
-			<match bytes='2D 4C 48 31 2D' info='LHA Archive (c64)' cat='Archive' os='Misc' ext='lha'/>
+			<match bytes='2D 4C 48 31 2D' info='LHA Archive (C64)' cat='Archive' os='C64' ext='lha'/>
 		</first>
 		<first byte='43'>
 			<match bytes='43 43 53 44 33 5A' info='PDS (CCSD) Image' cat='Image' os='Misc' ext='pds'/>
@@ -376,7 +376,7 @@ Web                |
 			<match bytes='70 72 6F 66' info='CLIPPER Instruction Profile' cat='Misc' os='Misc' ext=''/>
 			<match bytes='70 6E 6F 74' info='Apple QuickTime' cat='Misc' os='Misc' ext='mov'/>
 			<match bytes='70 69 70 65' info='CLIPPER Instruction Trace' cat='Misc' os='Misc' ext=''/>
-			<match bytes='70 67 73 63 72 69 70 74 76 65 72' info='IslandWrite document' cat='Misc' os='Misc' ext=''/>
+			<match bytes='70 67 73 63 72 69 70 74 76 65 72' info='IslandWrite' cat='Document' os='Misc' ext=''/>
 			<match bytes='70 63 6B 67' info='Apple QuickTime Archive' cat='Archive' os='Misc' ext='mov'/>
 		</first>
 		<first byte='73'>
@@ -513,7 +513,7 @@ Web                |
 	</offset>
 	<offset at='11'>
 		<first byte='44'>
-			<match bytes='44 72 61 77 46 69 6C 65' info='IslandDraw document' cat='Misc' os='Misc' ext=''/>
+			<match bytes='44 72 61 77 46 69 6C 65' info='IslandDraw' cat='Document' os='Misc' ext=''/>
 		</first>
 		<first byte='4D'>
 			<match bytes='4D 49 54 2D 4D 41 47 49 43 2D 43 4F 4F 4B 49 45 2D 31' info='X11 Xauthority data' cat='Misc' os='Misc' ext=''/>
@@ -556,7 +556,7 @@ Web                |
 			<match bytes='45 78 63 65 6C 20 35 2E 30 20 57 6F 72 6B 73 68 65 65 74 09 25 73' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='47'>
-			<match bytes='47 50 41 54' info='GIMP Pattern' cat='Software' os='Misc' ext=''/>
+			<match bytes='47 50 41 54' info='GIMP Pattern' cat='Image' os='Misc' ext=''/>
 			<match bytes='47 49 4D 50' info='GIMP Image/Brush' cat='Image' os='Misc' ext=''/>
 		</first>
 		<first byte='4D'>
@@ -682,44 +682,44 @@ Web                |
 	</offset>
 	<offset at='48'>
 		<first byte='42'>
-			<match bytes='42 56 6F 6B 42 44 49 43' info='BDicty PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='42 56 6F 6B 42 44 49 43' info='BDicty (PalmOS)' cat='Document' os='Other' ext=''/>
 			<match bytes='42 4F 4F 4B 4D 4F 42 49' info='Mobipocket E-book' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='44'>
-			<match bytes='44 61 74 61 54 6C 50 74' info='TealPaint PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='44 61 74 61 54 6C 4D 6C' info='TealMeal PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='44 61 74 61 53 70 72 64' info='QuickSheet PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='44 61 74 61 50 6C 6B 72' info='Plucker PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='44 42 39 39 44 42 4F 53' info='DB PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='44 41 54 41 4C 53 64 62' info='List PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='44 61 74 61 54 6C 50 74' info='TealPaint (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='44 61 74 61 54 6C 4D 6C' info='TealMeal (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='44 61 74 61 53 70 72 64' info='QuickSheet (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='44 61 74 61 50 6C 6B 72' info='Plucker (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='44 42 39 39 44 42 4F 53' info='DB (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='44 41 54 41 4C 53 64 62' info='List (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='49'>
-			<match bytes='49 6E 66 6F 54 6C 49 66' info='TealInfo PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='49 6E 66 6F 49 4E 44 42' info='InfoView PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='49 6E 66 6F 54 6C 49 66' info='TealInfo (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='49 6E 66 6F 49 4E 44 42' info='InfoView (PalmOS)' cat='Document' os='Other' ext=''/>
 			<match bytes='49 4D 31 30' info='Imago Orpheus module sound data -' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='4A'>
-			<match bytes='4A 66 44 62 4A 46 69 6C' info='JFile Pro PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='4A 66 44 62 4A 42 61 73' info='JFile PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='4A 66 44 62 4A 46 69 6C' info='JFile Pro (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='4A 66 44 62 4A 42 61 73' info='JFile (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='4D'>
-			<match bytes='4D 64 62 31 4D 64 62 31' info='MobileDB PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='4D 64 62 31 4D 64 62 31' info='MobileDB (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='50'>
-			<match bytes='50 6D 44 42 50 6D 44 42' info='HanDBase PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='50 4E 52 64 50 50 72 73' info='PeanutPress PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='50 6D 44 42 50 6D 44 42' info='HanDBase (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='50 4E 52 64 50 50 72 73' info='PeanutPress (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='53'>
-			<match bytes='53 4D 30 31 53 4D 65 6D' info='SuperMemo PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='53 4D 30 31 53 4D 65 6D' info='SuperMemo (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='54'>
-			<match bytes='54 6F 52 61 54 52 50 57' info='TomeRaider PalmOS document' cat='Misc' os='Otherr' ext=''/>
-			<match bytes='54 6F 47 6F 54 6F 47 6F' info='iSilo PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='54 64 61 74 54 69 64 65' info='Tides PalmOS document' cat='Misc' os='Other' ext=''/>
-			<match bytes='54 45 58 74' info='AportisDoc file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='54 6F 52 61 54 52 50 57' info='TomeRaider (PalmOS)' cat='Document' os='Otherr' ext=''/>
+			<match bytes='54 6F 47 6F 54 6F 47 6F' info='iSilo (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='54 64 61 74 54 69 64 65' info='Tides (PalmOS)' cat='Document' os='Other' ext=''/>
+			<match bytes='54 45 58 74' info='AportisDoc' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='64'>
-			<match bytes='64 61 74 61 54 44 42 50' info='ThinkDB PalmOS Document' cat='Document' os='Other' ext=''/>
+			<match bytes='64 61 74 61 54 44 42 50' info='ThinkDB (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='6C'>
 			<match bytes='6C 69 62 72' info='Palm OS Dynamic Library Data' cat='Misc' os='Other' ext=''/>
@@ -728,7 +728,7 @@ Web                |
 			<match bytes='70 74 63 68' info='Palm OS Operating System Patch' cat='System' os='Other' ext=''/>
 		</first>
 		<first byte='76'>
-			<match bytes='76 49 4D 47 56 69 65 77' info='FireViewer/ImageViewer PalmOS document' cat='Misc' os='Other' ext=''/>
+			<match bytes='76 49 4D 47 56 69 65 77' info='FireViewer/ImageViewer (PalmOS)' cat='Document' os='Other' ext=''/>
 		</first>
 		<first byte='7A'>
 			<match bytes='7A 54 58 54' info='A GutenPalm zTXT e-book' cat='Misc' os='Misc' ext=''/>
@@ -1010,7 +1010,7 @@ Web                |
 			<match bytes='00 80' info='hp200 (68010) BSD' cat='Executable' os='BSD' ext=''/>
 			<match bytes='00 6D 03' info='mcrypt 2.5 encrypted data' cat='Encryption' os='Misc' ext='mcrypt/enc'/>
 			<match bytes='00 6D 02' info='mcrypt 2.2 encrypted data' cat='Encryption' os='Misc' ext='mcrypt/enc'/>
-			<match bytes='00 64' info='Atari 68xxx CPX file' cat='Executable' os='Atari' ext='cpx'/>
+			<match bytes='00 64' info='Atari 68xxx CPX' cat='Executable' os='Atari' ext='cpx'/>
 			<match bytes='00 61 73 6D' info='WebAssembly Binary' cat='Binary' os='Misc' ext='wasm'/>
 			<match bytes='00 5C 41 B1 FF' info='Mujahideen Secrets 2 Encrypted' cat='Encryption' os='Misc' ext='enc'/>
 			<match bytes='00 50 00 14' info='PFT Archive Data' cat='Archive' os='Misc' ext='pft'/>
@@ -1027,14 +1027,14 @@ Web                |
 			<match bytes='00 0F 42 49' info='Netscape Communicator address book' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 0F 42 44 00 00 00 00 00 00 01 00 00 00 00 02 00 00 00 02 00 00 04 00' info='Netscape Address book' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 0A 53 4D 4A 50 45 47' info='SMJPEG' cat='Misc' os='Misc' ext=''/>
-			<match bytes='00 08 04 56' info='SunOS core file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='00 08 04 56' info='SunOS Core File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 06 15 61 00 00 00 02 00 00 04 D2 00 00 10 00' info='Netscape Navigator Database (v4)' cat='Database' os='Misc' ext='db'/>
 			<match bytes='00 06 15 61' info='Berkeley DB' cat='Database' os='Misc' ext='dbm'/>
 			<match bytes='00 06' info='TTComp Archive' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 05 31 62' info='Berkeley DB 1.85/1.86' cat='Database' os='Misc' ext=''/>
-			<match bytes='00 05 16 07' info='AppleDouble encoded Macintosh file' cat='Misc' os='MacOS' ext=''/>
-			<match bytes='00 05 16 00' info='AppleSingle encoded Macintosh file' cat='Misc' os='MacOS' ext=''/>
-			<match bytes='00 04 1E 8A 80' info='3b2 core file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='00 05 16 07' info='AppleDouble encoded Macintosh File' cat='Misc' os='MacOS' ext=''/>
+			<match bytes='00 05 16 00' info='AppleSingle encoded Macintosh File' cat='Misc' os='MacOS' ext=''/>
+			<match bytes='00 04 1E 8A 80' info='3b2 core File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 04 00 00' info='Maple help database' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 02 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C' info='Common Object File Format' cat='Binary' os='Misc' ext='o/obj'/>
 			<match bytes='00 02 00 07 00' info='MSVC .sbr' cat='Misc' os='Misc' ext=''/>
@@ -1042,7 +1042,7 @@ Web                |
 			<match bytes='00 01 42 44' info='Palm DateBook Archive' cat='Archive' os='Misc' ext='dba'/>
 			<match bytes='00 01 42 41' info='Palm AdressBook Archive' cat='Archive' os='Misc' ext='aba'/>
 			<match bytes='00 01 19 54' info='Unix Fast Filesystem [v1] (big-endian)' cat='Misc' os='Misc' ext=''/>
-			<match bytes='00 01 12 57' info='Core file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='00 01 12 57' info='Core File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 01 01' info='OpenFlight 3D File' cat='Image' os='Misc' ext='flt'/>
 			<match bytes='00 01 00 08' info='GEM Image data' cat='Image' os='Misc' ext='img'/>
 			<match bytes='00 01 00 00 53 74 61 6E 64 61 72 64 20 4A 65 74 20 44 42' info='MS Acess File' cat='Database' os='Windows' ext='mdb'/>
@@ -1175,7 +1175,7 @@ Web                |
 			<match bytes='01 00' info='raw G3 data, byte-padded' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='02'>
-			<match bytes='02 B9 B2 00 20 02 00 74' info='Claris works dictionary' cat='Misc' os='Misc' ext=''/>
+			<match bytes='02 B9 B2 00 20 02 00 74' info='Claris Works Dictionary' cat='Misc' os='Misc' ext=''/>
 			<match bytes='02 64 73 73' info='Digital Speech Standard (v2)' cat='Audio' os='Misc' ext='dss'/>
 			<match bytes='02 59' info='mumps avl global' cat='Misc' os='Misc' ext=''/>
 			<match bytes='02 41 42' info='ABComp Archive' cat='Archive' os='Misc' ext=''/>
@@ -1190,8 +1190,8 @@ Web                |
 			<match bytes='02 08 01 07' info='HP s500 executable' cat='Misc' os='Misc' ext=''/>
 			<match bytes='02 08 01 06' info='HP s500 relocatable executable' cat='Misc' os='Misc' ext=''/>
 			<match bytes='02 06' info='ALAN game data' cat='Misc' os='Misc' ext=''/>
-			<match bytes='02 00 88 03 42 4F 42 4F 00 01 86' info='Claris works document' cat='Misc' os='Misc' ext=''/>
-			<match bytes='02 00 09 00' info='ms-windows metafont .wmf' cat='Misc' os='Misc' ext=''/>
+			<match bytes='02 00 88 03 42 4F 42 4F 00 01 86' info='Claris Works Document' cat='Document' os='Misc' ext=''/>
+			<match bytes='02 00 09 00' info='MS Metafont' cat='Misc' os='Windows' ext='wmf'/>
 			<match bytes='02 00 02 01' info='MSVC .bsc' cat='Misc' os='Misc' ext=''/>
 			<match bytes='02 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00' info='FoxBase Database' cat='Database' os='Misc' ext='dbf'/>
 		</first>
@@ -1284,7 +1284,7 @@ Web                |
 			<match bytes='0F 0A 0E 08' info='TML 1032 byte-order format' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='10'>
-			<match bytes='10 E1 00 00 08 08' info='Claris Works pallete files .plt' cat='Misc' os='Misc' ext=''/>
+			<match bytes='10 E1 00 00 08 08' info='Claris Works Pallete Files' cat='Misc' os='Misc' ext='plt'/>
 			<match bytes='10 10' info='PEX Binary Archive' cat='Misc' os='Misc' ext=''/>
 			<match bytes='10 01 00 00' info='VAX demand paged (first page unmapped) pure executable' cat='Misc' os='Misc' ext=''/>
 			<match bytes='10 00 00' info='Easy CD Creator 5 Layout' cat='Software' os='Misc' ext='cl5'/>
@@ -1822,7 +1822,7 @@ Web                |
 			<match bytes='42 44 69 63' info='Google Chrome Dictionary' cat='Web' os='Misc' ext='bdic'/>
 			<match bytes='42 41 43 4B 4D 49 4B 45 44 49 53 4B' info='AmiBack Amiga Backup Data' cat='Data' os='Amiga' ext='bac'/>
 			<match bytes='42 41 42 59 4C' info='Emacs RMAIL' cat='Misc' os='Misc' ext=''/>
-			<match bytes='42 41 28 00 00 00 2E 00 00 00 00 00 00 00' info='Icon for MS Windows' cat='Misc' os='Misc' ext=''/>
+			<match bytes='42 41 28 00 00 00 2E 00 00 00 00 00 00 00' info='Icon for MS Windows' cat='Image' os='Windows' ext=''/>
 			<match bytes='42 01' info='MIPSEL MIPS-III ECOFF executable' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='43'>
@@ -1862,14 +1862,14 @@ Web                |
 			<match bytes='43 49 4D 47' info='Alias Maya Image File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 44 46 01' info='NetCDF Data Format' cat='Data' os='Misc' ext='nc'/>
 			<match bytes='43 43 53 44 33 5A 46' info='PDS (CCSD) Image' cat='Image' os='Misc' ext='pds'/>
-			<match bytes='43 42 4D 64 00 00' info='Power 64 C64 Emulator Snapshot' cat='Misc' os='Misc' ext=''/>
+			<match bytes='43 42 4D 64 00 00' info='Power 64 C64 Emulator Snapshot' cat='Misc' os='C64' ext=''/>
 			<match bytes='43 41 54 20' info='Electronic Arts Interchange Format File' cat='Binary' os='Amiga' ext='iff'/>
 			<match bytes='43 41 52 20 61 72 63 68 69 76 65 20 68 65 61 64 65 72 20 53 41 50 43 41 52 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 36 34 53 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65 00 00 00 00 00 00 00 00 00 00 00' info='T64 Tape Image' cat='Diskimage' os='C64' ext='t64'/>
 			<match bytes='43 36 34 53 20 74 61 70 65 20 66 69 6C 65' info='T64 Tape Image' cat='Diskimage' os='Misc' ext='t64'/>
 			<match bytes='43 36 34 49 6D 61 67 65' info='PC64 Freezer Image' cat='Diskimage' os='C64' ext=''/>
 			<match bytes='43 36 34 46 69 6C 65' info='PC64 Emulator File' cat='Diskimage' os='C64' ext=''/>
-			<match bytes='43 36 34 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65' info='T64 Tape Image' cat='Misc' os='C64' ext='t64'/>
+			<match bytes='43 36 34 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65' info='T64 Tape Image' cat='Diskimage' os='C64' ext='t64'/>
 			<match bytes='43 36 34 20 43 41 52 54 52 49 44 47 45' info='CCS C64 Emultar Cartridge Image' cat='Misc' os='C64' ext='crt'/>
 			<match bytes='43 2F 43 2B 2B 20 09 4D 53 56 43 20 70 72 6F 67 72 61 6D 20 64 61 74 61 62 61 73 65' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 23 2B 44 A4 43 4D A5 48 64 72' info='RagTime Document' cat='Document' os='Misc' ext='rtd'/>
@@ -1970,9 +1970,9 @@ Web                |
 			<match bytes='46 43 53 33 2E 30' info='Flow Cytometry Standard (FCS) data, version 3.0' cat='Misc' os='Misc' ext=''/>
 			<match bytes='46 43 53 32 2E 30' info='Flow Cytometry Standard (FCS) data, version 2.0' cat='Misc' os='Misc' ext=''/>
 			<match bytes='46 43 53 31 2E 30' info='Flow Cytometry Standard (FCS) data, version 1.0' cat='Misc' os='Misc' ext=''/>
-			<match bytes='46 43 31 34' info='Future Composer 1.4 Module sound file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='46 43 31 34' info='Future Composer 1.4 Module Sound File' cat='Audio' os='Misc' ext=''/>
 			<match bytes='46 41 58 43 4F 56 45 52 2D 56 45 52' info='MS Fax Cover Sheet' cat='Data' os='Misc' ext='cpe'/>
-			<match bytes='46 41 54 58' info='FATX filesystem data' cat='Misc' os='Misc' ext=''/>
+			<match bytes='46 41 54 58' info='FATX Filesystem Data' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='47'>
 			<match bytes='47 72 61 64 69 65 6E 74 20 20 47 49 4D 50 20 67 72 61 64 69 65 6E 74 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
@@ -1984,26 +1984,26 @@ Web                |
 			<match bytes='47 53 54 49 6D 00 00' info='GNU SmallTalk' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 53 52 2D 31 35 34 31' info='C64 1541 Diskimage' cat='Diskimage' os='C64' ext='g64'/>
 			<match bytes='47 52 49 42' info='Gridded Binary' cat='Binary' os='Misc' ext='grb'/>
-			<match bytes='47 52 47' info='Gringotts data file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='47 52 47' info='Gringotts Data' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 50 41 54' info='GIMP Pattern File' cat='Image' os='Misc' ext='pat'/>
 			<match bytes='47 49 46 38 37|39 61' info='Graphics Interchange Format' cat='Image' os='Misc' ext='gif'/>
-			<match bytes='47 4D 42 55' info='NetMon capture file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='47 4D 42 55' info='NetMon Capture' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 4B 53 4D' info='GKS Metafile' cat='Misc' os='Misc' ext=''/>
-			<match bytes='47 49 4D 50 20 50 61 6C 65 74 74 65' info='GIMP Color Palette' cat='Software' os='Misc' ext='gpl'/>
+			<match bytes='47 49 4D 50 20 50 61 6C 65 74 74 65' info='GIMP Color Palette' cat='Image' os='Misc' ext='gpl'/>
 			<match bytes='47 49 46 38' info='GIF image data' cat='Misc' os='Misc' ext='gif'/>
 			<match bytes='47 46 31 50 41 54 43 48 31 31 30 00 49 44 23 30 30 30 30 30 32 00' info='GUS Patch' cat='Audio' os='Misc' ext='pat'/>
 			<match bytes='47 46 31 50 41 54 43 48 31 30 30 00 49 44 23 30 30 30 30 30 32 00' info='Old GUS Patch' cat='Audio' os='Misc' ext='pat'/>
 			<match bytes='47 45 52 42 49 4C 44 4F 43' info='First Choice document' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 45 52 42 49 4C 44 42' info='First Choice database' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 45 52 42 49 4C 43 4C 49 50' info='First Choice database' cat='Misc' os='Misc' ext=''/>
-			<match bytes='47 45 52 42 49 4C' info='First Choice device file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='47 45 52 42 49 4C' info='First Choice Device File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 44 42 4D' info='GNU dbm 2.x database' cat='Misc' os='Misc' ext='dbm'/>
 			<match bytes='47 43 52 2D 31 35 34 31' info='GCR Image' cat='Misc' os='Misc' ext=''/>
 			<match bytes='47 43 41 58' info='GCA Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 		<first byte='48'>
 			<match bytes='48 5a 4c 52 00 00 00 18' info='Noodlesoft Hazel Rules' cat='Software' os='MacOS' ext='hazel'/>
-			<match bytes='48 57 42 00 FF 01 00 00 00' info='Microsoft Visual C .APS file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='48 57 42 00 FF 01 00 00 00' info='Microsoft Visual C File' cat='Programming' os='Windows' ext='aps'/>
 			<match bytes='48 56 51 4D 34' info='%s' cat='Misc' os='Misc' ext=''/>
 			<match bytes='48 54 54 50 20 43 6F 6F 6B 69 65 20 46 69 6C 65 09 57 65 62 20 62 72 6F 77 73 65 72 20 63 6F 6F 6B 69 65 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='48 53 50 10 9B 00' info='OS/2 HLP' cat='Misc' os='Misc' ext=''/>
@@ -2052,7 +2052,7 @@ Web                |
 			<match bytes='49 44 50 32' info='Quake II 3D Model File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='49 44 3B 50' info='MS Symbolic Link (SYLK)' cat='Data' os='Windows' ext='slk'/>
 			<match bytes='49 44 33' info='Audio File with ID3 (v2)' cat='Audio' os='Misc' ext='mp3'/>
-			<match bytes='49 43 45 21' info='SNDH Atari ST music' cat='Misc' os='Misc' ext=''/>
+			<match bytes='49 43 45 21' info='SNDH Atari ST Music' cat='Audio' os='Atari' ext=''/>
 			<match bytes='49 42 53 50' info='Quake' cat='Misc' os='Misc' ext=''/>
 			<match bytes='49 20 49' info='Tagged Image File Format' cat='Image' os='Misc' ext='tif/tiff'/>
 			<match bytes='49 01' info='x86 Executable (TV)' cat='Executable' os='Misc' ext=''/>
@@ -2115,10 +2115,10 @@ Web                |
 			<match bytes='4D 56 32 31 34' info='Milestones Project' cat='Software' os='Misc' ext='mls'/>
 			<match bytes='4D 56' info='CD Stomper Label' cat='Software' os='Misc' ext='dsn'/>
 			<match bytes='4D 54 68 64' info='Standard MIDI Data' cat='Audio' os='Misc' ext='mid/midi/pcs'/>
-			<match bytes='4D 54 5A 20' info='MTZ reflection file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='4D 54 5A 20' info='MTZ Reflection File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4D 54 32 30' info='MadTracker 2.0 Module MT2' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4D 53 5F 56 4F 49 43 45' info='Sony Compressed Voice' cat='Audio' os='Misc' ext='cdr/dvf/msv'/>
-			<match bytes='4D 53 57 49 4D' info='MS Windows Imaging Format' cat='Archive' os='Misc' ext='wim'/>
+			<match bytes='4D 53 57 49 4D' info='MS Windows Imaging Format' cat='Archive' os='Windows' ext='wim'/>
 			<match bytes='4D 53 54 53 4D' info='NPack Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='4D 53 48 7C 5E 7E 5C 26 7C' info='Health Level Seven Data' cat='Data' os='Misc' ext='hl7'/>
 			<match bytes='4D 53 48 7C 42 53 48 7C' info='Health Level Seven Data' cat='Data' os='Misc' ext='hl7'/>
@@ -2145,7 +2145,7 @@ Web                |
 			<match bytes='4D 45 44' info='MED_Song' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4D 44 6D 64' info='MDCD Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='4D 44 4D 50 93 A7' info='Windows Dump' cat='System' os='Windows' ext='dmp/hdmp'/>
-			<match bytes='4D 44 49 46 1A 00 08 00 00 00 FA 26 40 7D 01 00 01 1E 01 00' info='MS Windows special zipped file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='4D 44 49 46 1A 00 08 00 00 00 FA 26 40 7D 01 00 01 1E 01 00' info='MS Windows special zipped File' cat='Archive' os='Windows' ext=''/>
 			<match bytes='4D 43 6F 6D 70 72 48 44' info='MAME CHD compressed hard Diskimage' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4D 43 57 20 54 65 63 68 6E 6F 67 6F 6C 69 65 73' info='TargetExpress File' cat='Misc' os='Misc' ext='mte'/>
 			<match bytes='4D 41 59 41 46 4F 52 34' info='Alias Maya Binary File' cat='Misc' os='Misc' ext=''/>
@@ -2311,7 +2311,7 @@ Web                |
 			<match bytes='52 49 46 46' info='RIFF (little-endian) Data' cat='Multimedia' os='Misc' ext='riff'/>
 			<match bytes='52 45 7E 5E' info='RAR Archive' cat='Archive' os='Misc' ext='rar'/>
 			<match bytes='52 45 56 4E 55 4D 3A 2C' info='Antenna Data' cat='Data' os='Misc' ext='adf'/>
-			<match bytes='52 45 47 45 44 49 54' info='Windows Registry' cat='System' os='Misc' ext='reg/sud'/>
+			<match bytes='52 45 47 45 44 49 54' info='Windows Registry' cat='System' os='Windows' ext='reg/sud'/>
 			<match bytes='52 44 58 32 0A' info='R Work Space' cat='Programming' os='Misc' ext='rdata'/>
 			<match bytes='52 44 53 4B' info='Rigid Disk Block' cat='Misc' os='Misc' ext=''/>
 			<match bytes='52 42 34 30' info='RBS Song file' cat='Misc' os='Misc' ext=''/>
@@ -2567,7 +2567,7 @@ Web                |
 			<match bytes='66 4C 61 43' info='FLAC Audio Bitstream' cat='Audio' os='Misc' ext='flac'/>
 			<match bytes='66 49 00 00' info='WindowsNT Printer Spool File' cat='System' os='Windows' ext='shd'/>
 			<match bytes='66 19 00 00' info='Squeak Image' cat='Misc' os='Misc' ext=''/>
-			<match bytes='66 01' info='MS Windows COFF MIPS R4000 Object File' cat='Misc' os='Misc' ext=''/>
+			<match bytes='66 01' info='MS Windows COFF MIPS R4000 Object File' cat='Misc' os='Windows' ext=''/>
 		</first>
 		<first byte='67'>
 			<match bytes='67 70 63 68' info='GCC precompiled Header' cat='Programming' os='Misc' ext=''/>
@@ -2585,7 +2585,7 @@ Web                |
 			<match bytes='68 73 69 31' info='JPEG Image, HSI proprietary' cat='Image' os='Misc' ext=''/>
 			<match bytes='68 70 09 09 53 6F 66 74 51 75 61 64 20 74 72 6F 66 66 20 43 6F 6E 74 65 78 74 20 69 6E 74 65 72 6D 65 64 69 61 74 65 20 66 6F 72 20 48 50 20 4C 61 73 65 72 4A 65 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='68 49 00 00' info='Windows Server 2003 Printer Spool File' cat='System' os='Windows' ext='shd'/>
-			<match bytes='68 02' info='MS Windows COFF Motorola 68000 object file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='68 02' info='MS Windows COFF Motorola 68000 Object File' cat='Misc' os='Windows' ext=''/>
 		</first>
 		<first byte='69'>
 			<match bytes='69 73 20 6D 61 6B 65 69 6E 64 65 78 09 4D 61 6B 65 69 6E 64 65 78 20 6C 6F 67 20 66 69 6C 65' info='' cat='Misc' os='Misc' ext=''/>
@@ -2621,8 +2621,8 @@ Web                |
 			<match bytes='6D 83 00 00' info='PDP-11 single precision APL workspace' cat='Misc' os='Misc' ext=''/>
 			<match bytes='6D 75 6C 74 69 42 69 74 2E 69 6E 66 6F' info='MultiBit Bitcoin Wallet Information' cat='Misc' os='Misc' ext='info'/>
 			<match bytes='6D 73 67 63 61 74 30 31' info='HP NLS message catalog' cat='Misc' os='Misc' ext=''/>
-			<match bytes='6D 73 63 64 6F 63 75 6D 65 6E 74' info='Message Sequence Chart (document)' cat='Misc' os='Misc' ext=''/>
-			<match bytes='6D 73 63' info='Message Sequence Chart (chart)' cat='Misc' os='Misc' ext=''/>
+			<match bytes='6D 73 63 64 6F 63 75 6D 65 6E 74' info='Message Sequence Chart (Document)' cat='Document' os='Misc' ext=''/>
+			<match bytes='6D 73 63' info='Message Sequence Chart (Chart)' cat='Document' os='Misc' ext=''/>
 			<match bytes='6D 73 46 69 6C 74 65 72 4C 69 73 74' info='Internet Explorer Tracking Protection List (v11)' cat='Web' os='Windows' ext='tpl'/>
 			<match bytes='6D 70 75 34 30 31 74 72' info='MPU-401 Trakker' cat='Misc' os='Misc' ext=''/>
 			<match bytes='6D 64 66 00' info='M2 Archive' cat='Archive' os='Misc' ext='m'/>
@@ -2654,8 +2654,8 @@ Web                |
 			<match bytes='70 61 63 6B 61 67 65 20 6D 61 69 6E' info='Go Source' cat='Programming' os='Misc' ext='go'/>
 			<match bytes='70 61 63 6B 61 67 65' info='Perl5 module Source' cat='Programming' os='Misc' ext=''/>
 			<match bytes='70 4E' info='PPMN Archive' cat='Archive' os='Misc' ext=''/>
-			<match bytes='70 4D 38 36' info='Atari ST STAD bitmap image data (vert)' cat='Misc' os='Misc' ext=''/>
-			<match bytes='70 4D 38 35' info='Atari ST STAD bitmap image data (hor)' cat='Misc' os='Misc' ext=''/>
+			<match bytes='70 4D 38 36' info='Atari ST STAD Bitmap (vert)' cat='Image' os='Atari' ext=''/>
+			<match bytes='70 4D 38 35' info='Atari ST STAD Bitmap (hor)' cat='Image' os='Atari' ext=''/>
 		</first>
 		<first byte='71'>
 			<match bytes='71 C7' info='cpio Archive' cat='Archive' os='Misc' ext=''/>
@@ -2697,7 +2697,7 @@ Web                |
 			<match bytes='74 6F 20 09 6D 61 69 6C 20 70 69 70 69 6E 67 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='74 6F 20 09 6D 61 69 6C 20 66 6F 72 77 61 72 64 69 6E 67 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='74 68 65 20 66 6F 6C 6C 6F 77 69 6E 67 20 77 69 74 68 20 62 64 65 63 6F 09 62 65 6E 63 6F 64 65 64 20 4E 65 77 73 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='74 66 4D 52 0A 00 00 00 01 00 00 00' info='MS Windows help cache' cat='Misc' os='Misc' ext=''/>
+			<match bytes='74 66 4D 52 0A 00 00 00 01 00 00 00' info='MS Windows Help Cache' cat='Misc' os='Windows' ext=''/>
 			<match bytes='74 65 78 69 6E 66 6F 09 54 65 78 69 6E 66 6F 20 73 6F 75 72 63 65 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='74 64 00' info='floppy image data (TeleDisk)' cat='Misc' os='Misc' ext=''/>
 		</first>
@@ -2796,7 +2796,7 @@ Web                |
 		</first>
 		<first byte='84'>
 			<match bytes='84 19' info='Linux old jffs2 Filesystem Data (little endian)' cat='Filesystem' os='Misc' ext=''/>
-			<match bytes='84 01' info='MS Windows COFF Alpha object file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='84 01' info='MS Windows COFF Alpha Object File' cat='Misc' os='Windows' ext=''/>
 		</first>
 		<first byte='85'>
 			<match bytes='85 19' info='Linux jffs2 Filesystem Data (little endian)' cat='Filesystem' os='Misc' ext=''/>
@@ -2841,7 +2841,7 @@ Web                |
 			<match bytes='8F AF AC 84' info='PPMD Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 		<first byte='90'>
-			<match bytes='90 02' info='MS Windows COFF PA-RISC object file' cat='Misc' os='Misc' ext=''/>
+			<match bytes='90 02' info='MS Windows COFF PA-RISC object file' cat='Misc' os='Windows' ext=''/>
 		</first>
 		<first byte='91'>
 			<match bytes='91 33 48 46' info='HAP Archive' cat='Archive' os='Misc' ext='hap'/>
@@ -2975,8 +2975,8 @@ Web                |
 			<match bytes='CF 11 E0 A1 B1 1A E1 00' info='Perfect Office Document' cat='Document' os='Misc' ext='doc'/>
 		</first>
 		<first byte='D0'>
-			<match bytes='D0 CF 11 E0 A1 B1 1A E1 41 41 46 42 0D 00 4F 4D 06 0E 2B 34 01 01 01 FF' info='AAF legacy file using MS Structured Storage' cat='Misc' os='Misc' ext=''/>
-			<match bytes='D0 CF 11 E0 A1 B1 1A E1 01 02 01 0D 00 02 00 00 06 0E 2B 34 03 02 01 01' info='AAF file using MS Structured Storage' cat='Misc' os='Misc' ext=''/>
+			<match bytes='D0 CF 11 E0 A1 B1 1A E1 41 41 46 42 0D 00 4F 4D 06 0E 2B 34 01 01 01 FF' info='AAF File (MS Structured Storage, legacy)' cat='Misc' os='Misc' ext=''/>
+			<match bytes='D0 CF 11 E0 A1 B1 1A E1 01 02 01 0D 00 02 00 00 06 0E 2B 34 03 02 01 01' info='AAF File (MS Structured Storage)' cat='Misc' os='Misc' ext=''/>
 			<!-- <match bytes='D0 CF 11 E0 A1 B1 1A E1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF' info='Microsoft Installer' cat='Executable' os='Windows' ext=''/> -->
 			<match bytes='D0 CF 11 E0 A1 B1 1A E1' info='MS Compound File (Office etc.)' cat='Document' os='Misc' ext='doc/dot/xls/ppt/pub'/>
 			<match bytes='D0 4F 50 53' info='Interleaf Document' cat='Document' os='Misc' ext='pl'/>
@@ -2992,7 +2992,7 @@ Web                |
 			<match bytes='D5 AA D5 AA D5 AA D5 AA' info='Apple II Image (with blue background)' cat='Image' os='Misc' ext=''/>
 		</first>
 		<first byte='D7'>
-			<match bytes='D7 CD C6 9A' info='Windows Metafile' cat='Image' os='Misc' ext='wmf'/>
+			<match bytes='D7 CD C6 9A' info='Windows Metafile' cat='Image' os='Windows' ext='wmf'/>
 		</first>
 		<first byte='DA'>
 			<match bytes='DA FA' info='Logitech Compress Archive' cat='Archive' os='Misc' ext=''/>
@@ -3015,7 +3015,7 @@ Web                |
 			<match bytes='E0 07' info='amd 29k coff Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 		<first byte='E3'>
-			<match bytes='E3 82 85 96' info='Windows 98 Password File' cat='Encryption' os='Misc' ext='pwl'/>
+			<match bytes='E3 82 85 96' info='Windows 98 Password File' cat='Encryption' os='Windows' ext='pwl'/>
 			<match bytes='E3 10 00 01 00 00 00 00' info='Amiga Icon' cat='Image' os='Amiga' ext='info'/>
 		</first>
 		<first byte='E4'>
