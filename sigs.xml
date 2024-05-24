@@ -264,101 +264,101 @@ Web                |
 			<match bytes='53 43 43 41' info='Windows Prefetch File' cat='System' os='Windows' ext='pf'/>
 		</first>
 		<first byte='66'>
-			<match bytes='66 74 79 70 71 74 20 20' info='Apple QuickTime (.MOV/QT)' cat='Misc' os='Misc' ext='mov'/>
-			<match bytes='66 74 79 70 6E 64 78 73' info='H.264/MPEG-4 AVC (.MP4) Nero Standard Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 78 70' info='H.264/MPEG-4 AVC (.MP4) Nero Portable Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 78 6D' info='H.264/MPEG-4 AVC (.MP4) Nero Mobile Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 78 68' info='H.264/MPEG-4 AVC (.MP4) Nero HDTV Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 78 63' info='H.264/MPEG-4 AVC (.MP4) Nero Cinema Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 73 73' info='MPEG-4 (.MP4) Nero Standard Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 73 70' info='MPEG-4 (.MP4) Nero Portable Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 73 6D' info='MPEG-4 (.MP4) Nero Mobile Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 73 68' info='MPEG-4 (.MP4) Nero HDTV Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 73 63' info='MPEG-4 (.MP4) Nero Cinema Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6E 64 61 73' info='MP4 v2 [ISO 14496-14] Nero Digital AAC Audio' cat='Misc' os='Misc' ext='aac'/>
-			<match bytes='66 74 79 70 6D 73 6E 76' info='MPEG-4 (.MP4) for SonyPSP' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6D 71 74' info='Sony / Mobile QuickTime (.MQV)' cat='Misc' os='Misc' ext='mqv'/>
-			<match bytes='66 74 79 70 6D 70 70 69' info='Photo Player, MAF [ISO/IEC 23000-3]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6D 70 37 31' info='MP4 w/ MPEG-7 Metadata [per ISO 14496-12]' cat='Misc' os='Misc' ext='xml'/>
-			<match bytes='66 74 79 70 6D 70 34 32' info='MP4 v2 [ISO 14496-14]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6D 70 34 31' info='MP4 v1 [ISO 14496-1:ch13]' cat='Misc' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 71 74 20 20' info='Apple QuickTime' cat='Multimedia' os='Misc' ext='mov/qt'/>
+			<match bytes='66 74 79 70 6E 64 78 73' info='H.264/MPEG-4 AVC, Nero Standard Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 78 70' info='H.264/MPEG-4 AVC, Nero Portable Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 78 6D' info='H.264/MPEG-4 AVC, Nero Mobile Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 78 68' info='H.264/MPEG-4 AVC, Nero HDTV Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 78 63' info='H.264/MPEG-4 AVC, Nero Cinema Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 73 73' info='MPEG-4, Nero Standard Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 73 70' info='MPEG-4, Nero Portable Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 73 6D' info='MPEG-4, Nero Mobile Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 73 68' info='MPEG-4, Nero HDTV Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 73 63' info='MPEG-4, Nero Cinema Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6E 64 61 73' info='MP4 v2 [ISO 14496-14] Nero Digital AAC Audio' cat='Audio' os='Misc' ext='aac'/>
+			<match bytes='66 74 79 70 6D 73 6E 76' info='MPEG-4 for SonyPSP' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6D 71 74' info='Sony / Mobile QuickTime' cat='Multimedia' os='Misc' ext='mqv'/>
+			<match bytes='66 74 79 70 6D 70 70 69' info='Photo Player, MAF [ISO/IEC 23000-3]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6D 70 37 31' info='MP4 with MPEG-7 Metadata [per ISO 14496-12]' cat='Misc' os='Misc' ext='xml'/>
+			<match bytes='66 74 79 70 6D 70 34 32' info='MP4 v2 [ISO 14496-14]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 6D 70 34 31' info='MP4 v1 [ISO 14496-1:ch13]' cat='Multimedia' os='Misc' ext='mp4'/>
 			<match bytes='66 74 79 70 6D 70 32 31' info='MPEG-21 [ISO/IEC 21000-9]' cat='Misc' os='Misc' ext='xml'/>
-			<match bytes='66 74 79 70 6D 6D 70 34' info='MPEG-4/3GPP Mobile Profile (.MP4 / .3GP) (for NTT)' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 6D 6A 70 32' info='Motion JPEG 2000 [ISO 15444-3] General Profile' cat='Misc' os='Misc' ext='mj2'/>
-			<match bytes='66 74 79 70 6D 6A 32 73' info='Motion JPEG 2000 [ISO 15444-3] Simple Profile' cat='Misc' os='Misc' ext='mj2'/>
-			<match bytes='66 74 79 70 6D 34 76 20' info='Apple iTunes Video (.M4V) Video' cat='Misc' os='Misc' ext='m4v'/>
-			<match bytes='66 74 79 70 6D 34 70 20' info='Apple iTunes AAC-LC (.M4P) AES Protected Audio' cat='Misc' os='Misc' ext='m4p'/>
-			<match bytes='66 74 79 70 6D 34 62 20' info='Apple iTunes AAC-LC (.M4B) Audio Book' cat='Misc' os='Misc' ext='m4b'/>
-			<match bytes='66 74 79 70 6D 34 61 20' info='Apple iTunes AAC-LC (.M4A) Audio' cat='Misc' os='Misc' ext='m4a'/>
-			<match bytes='66 74 79 70 6B 64 64 69' info='3GPP2 EZmovie for KDDI 3G Cellphones' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 6A 70 78' info='JPEG 2000 w/ extensions (.JPX) [ISO 15444-2]' cat='Misc' os='Misc' ext='jpx'/>
-			<match bytes='66 74 79 70 6A 70 6D' info='JPEG 2000 Compound Image (.JPM) [ISO 15444-6]' cat='Misc' os='Misc' ext='jpm'/>
+			<match bytes='66 74 79 70 6D 6D 70 34' info='MPEG-4/3GPP Mobile Profile (for NTT)' cat='Multimedia' os='Misc' ext='mp4/3gp'/>
+			<match bytes='66 74 79 70 6D 6A 70 32' info='Motion JPEG 2000 [ISO 15444-3] General Profile' cat='Multimedia' os='Misc' ext='mj2'/>
+			<match bytes='66 74 79 70 6D 6A 32 73' info='Motion JPEG 2000 [ISO 15444-3] Simple Profile' cat='Multimedia' os='Misc' ext='mj2'/>
+			<match bytes='66 74 79 70 6D 34 76 20' info='Apple iTunes Video' cat='Multimedia' os='Misc' ext='m4v'/>
+			<match bytes='66 74 79 70 6D 34 70 20' info='Apple iTunes AAC-LC AES Protected Audio' cat='Audio' os='Misc' ext='m4p'/>
+			<match bytes='66 74 79 70 6D 34 62 20' info='Apple iTunes AAC-LC Audio Book' cat='Audio' os='Misc' ext='m4b'/>
+			<match bytes='66 74 79 70 6D 34 61 20' info='Apple iTunes AAC-LC Audio' cat='Audio' os='Misc' ext='m4a'/>
+			<match bytes='66 74 79 70 6B 64 64 69' info='3GPP2 EZmovie for KDDI 3G Cellphones' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 6A 70 78' info='JPEG 2000 with extensions [ISO 15444-2]' cat='Image' os='Misc' ext='jpx'/>
+			<match bytes='66 74 79 70 6A 70 6D' info='JPEG 2000 Compound Image [ISO 15444-6]' cat='Image' os='Misc' ext='jpm'/>
 			<match bytes='66 74 79 70 6A 70 32 30' info='Unknown, from GPAC samples (prob non-existent)' cat='Misc' os='Misc' ext='jp20'/>
-			<match bytes='66 74 79 70 6A 70 32' info='JPEG 2000 Image (.JP2) [ISO 15444-1 ?]' cat='Misc' os='Misc' ext='jp2'/>
-			<match bytes='66 74 79 70 69 73 6F 6D' info='MP4  Base Media v1 [IS0 14496-12:2003]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 69 73 6F 32' info='MP4 Base Media v2 [ISO 14496-12:2005]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 68 65 69 63' info='High Efficiency Image Container (HEIC)' cat='Video' os='Misc' ext='heic'/>
+			<match bytes='66 74 79 70 6A 70 32' info='JPEG 2000 Image [ISO 15444-1 ?]' cat='Image' os='Misc' ext='jp2'/>
+			<match bytes='66 74 79 70 69 73 6F 6D' info='MP4  Base Media v1 [IS0 14496-12:2003]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 69 73 6F 32' info='MP4 Base Media v2 [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 68 65 69 63' info='High Efficiency Image Container' cat='Multimedia' os='Misc' ext='heic'/>
 			<match bytes='66 74 79 70 63 72 78 20' info='Canon Raw Image (v3)' cat='Image' os='Misc' ext='cr3'/>
 			<match bytes='66 74 79 70 61 76 69 66' info='AV1 Image File Format' cat='Image' os='Misc' ext='avif'/>
-			<match bytes='66 74 79 70 61 76 63 31' info='MP4 Base w/ AVC ext [ISO 14496-12:2005]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 51 54 20 20' info='Apple QuickTime (.MOV/QT)' cat='Misc' os='Misc' ext='mov'/>
-			<match bytes='66 74 79 70 4E 44 58 53' info='H.264/MPEG-4 AVC (.MP4) Nero Standard Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 58 50' info='H.264/MPEG-4 AVC (.MP4) Nero Portable Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 58 4D' info='H.264/MPEG-4 AVC (.MP4) Nero Mobile Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 58 48' info='H.264/MPEG-4 AVC (.MP4) Nero HDTV Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 58 43' info='H.264/MPEG-4 AVC (.MP4) Nero Cinema Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 53 53' info='MPEG-4 (.MP4) Nero Standard Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 53 50' info='MPEG-4 (.MP4) Nero Portable Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 53 4D' info='MPEG-4 (.MP4) Nero Mobile Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 53 48' info='MPEG-4 (.MP4) Nero HDTV Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 53 43' info='MPEG-4 (.MP4) Nero Cinema Profile' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4E 44 41 53' info='MP4 v2 [ISO 14496-14] Nero Digital AAC Audio' cat='Misc' os='Misc' ext='aac'/>
-			<match bytes='66 74 79 70 4D 53 4E 56' info='MPEG-4 (.MP4) for SonyPSP' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4D 51 54' info='Sony / Mobile QuickTime (.MQV)' cat='Misc' os='Misc' ext='mqv'/>
-			<match bytes='66 74 79 70 4D 50 50 49' info='Photo Player, MAF [ISO/IEC 23000-3]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4D 50 37 31' info='MP4 w/ MPEG-7 Metadata [per ISO 14496-12]' cat='Misc' os='Misc' ext='xml'/>
-			<match bytes='66 74 79 70 4D 50 34 32' info='MP4 v2 [ISO 14496-14]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4D 50 34 31' info='MP4 v1 [ISO 14496-1:ch13]' cat='Misc' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 61 76 63 31' info='MP4 Base w/ AVC ext [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 51 54 20 20' info='Apple QuickTime' cat='Multimedia' os='Misc' ext='mov/qt'/>
+			<match bytes='66 74 79 70 4E 44 58 53' info='H.264/MPEG-4 AVC, Nero Standard Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 58 50' info='H.264/MPEG-4 AVC, Nero Portable Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 58 4D' info='H.264/MPEG-4 AVC, Nero Mobile Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 58 48' info='H.264/MPEG-4 AVC, Nero HDTV Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 58 43' info='H.264/MPEG-4 AVC, Nero Cinema Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 53 53' info='MPEG-4, Nero Standard Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 53 50' info='MPEG-4, Nero Portable Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 53 4D' info='MPEG-4, Nero Mobile Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 53 48' info='MPEG-4, Nero HDTV Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 53 43' info='MPEG-4, Nero Cinema Profile' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4E 44 41 53' info='MP4 v2 [ISO 14496-14] Nero Digital AAC Audio' cat='Audio' os='Misc' ext='aac'/>
+			<match bytes='66 74 79 70 4D 53 4E 56' info='MPEG-4 for SonyPSP' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4D 51 54' info='Sony / Mobile QuickTime' cat='Multimedia' os='Misc' ext='mqv'/>
+			<match bytes='66 74 79 70 4D 50 50 49' info='Photo Player, MAF [ISO/IEC 23000-3]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4D 50 37 31' info='MP4 with MPEG-7 Metadata [per ISO 14496-12]' cat='Misc' os='Misc' ext='xml'/>
+			<match bytes='66 74 79 70 4D 50 34 32' info='MP4 v2 [ISO 14496-14]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 4D 50 34 31' info='MP4 v1 [ISO 14496-1:ch13]' cat='Multimedia' os='Misc' ext='mp4'/>
 			<match bytes='66 74 79 70 4D 50 32 31' info='MPEG-21 [ISO/IEC 21000-9]' cat='Misc' os='Misc' ext='xml'/>
-			<match bytes='66 74 79 70 4D 4D 50 34' info='MPEG-4/3GPP Mobile Profile (.MP4 / .3GP) (for NTT)' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 4D 4A 50 32' info='Motion JPEG 2000 [ISO 15444-3] General Profile' cat='Misc' os='Misc' ext='mj2'/>
-			<match bytes='66 74 79 70 4D 4A 32 53' info='Motion JPEG 2000 [ISO 15444-3] Simple Profile' cat='Misc' os='Misc' ext='mj2'/>
-			<match bytes='66 74 79 70 4D 34 56 20' info='Apple iTunes Video (.M4V) Video' cat='Misc' os='Misc' ext='m4v'/>
-			<match bytes='66 74 79 70 4D 34 50 20' info='Apple iTunes AAC-LC (.M4P) AES Protected Audio' cat='Misc' os='Misc' ext='m4p'/>
-			<match bytes='66 74 79 70 4D 34 42 20' info='Apple iTunes AAC-LC (.M4B) Audio Book' cat='Misc' os='Misc' ext='m4b'/>
-			<match bytes='66 74 79 70 4D 34 41 20' info='Apple iTunes AAC-LC (.M4A) Audio' cat='Misc' os='Misc' ext='m4a'/>
-			<match bytes='66 74 79 70 4B 44 44 49' info='3GPP2 EZmovie for KDDI 3G Cellphones' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 4A 50 58' info='JPEG 2000 w/ extensions (.JPX) [ISO 15444-2]' cat='Misc' os='Misc' ext='jpx'/>
-			<match bytes='66 74 79 70 4A 50 4D' info='JPEG 2000 Compound Image (.JPM) [ISO 15444-6]' cat='Misc' os='Misc' ext='jpm'/>
+			<match bytes='66 74 79 70 4D 4D 50 34' info='MPEG-4/3GPP Mobile Profile (for NTT)' cat='Multimedia' os='Misc' ext='mp4/3gp'/>
+			<match bytes='66 74 79 70 4D 4A 50 32' info='Motion JPEG 2000 [ISO 15444-3] General Profile' cat='Multimedia' os='Misc' ext='mj2'/>
+			<match bytes='66 74 79 70 4D 4A 32 53' info='Motion JPEG 2000 [ISO 15444-3] Simple Profile' cat='Multimedia' os='Misc' ext='mj2'/>
+			<match bytes='66 74 79 70 4D 34 56 20' info='Apple iTunes Video' cat='Multimedia' os='Misc' ext='m4v'/>
+			<match bytes='66 74 79 70 4D 34 50 20' info='Apple iTunes AAC-LC AES Protected Audio' cat='Audio' os='Misc' ext='m4p'/>
+			<match bytes='66 74 79 70 4D 34 42 20' info='Apple iTunes AAC-LC Audio Book' cat='Audio' os='Misc' ext='m4b'/>
+			<match bytes='66 74 79 70 4D 34 41 20' info='Apple iTunes AAC-LC Audio' cat='Audio' os='Misc' ext='m4a'/>
+			<match bytes='66 74 79 70 4B 44 44 49' info='3GPP2 EZmovie for KDDI 3G Cellphones' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 4A 50 58' info='JPEG 2000 with extensions [ISO 15444-2]' cat='Image' os='Misc' ext='jpx'/>
+			<match bytes='66 74 79 70 4A 50 4D' info='JPEG 2000 Compound Image [ISO 15444-6]' cat='Image' os='Misc' ext='jpm'/>
 			<match bytes='66 74 79 70 4A 50 32 30' info='Unknown, from GPAC samples (prob non-existent)' cat='Misc' os='Misc' ext='jp20'/>
-			<match bytes='66 74 79 70 4A 50 32' info='JPEG 2000 Image (.JP2) [ISO 15444-1 ?]' cat='Misc' os='Misc' ext='jp2'/>
-			<match bytes='66 74 79 70 49 53 4F 4D' info='MP4  Base Media v1 [IS0 14496-12:2003]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 49 53 4F 32' info='MP4 Base Media v2 [ISO 14496-12:2005]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 41 56 43 31' info='MP4 Base w/ AVC ext [ISO 14496-12:2005]' cat='Misc' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 33 67 73 37' info='3GPP Media (.3GP) Release 7 Streaming Servers' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 73 36' info='3GPP Media (.3GP) Release 6 Streaming Servers' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 36' info='3GPP Media (.3GP) Release 6 Basic Profile' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 35' info='3GPP Media (.3GP) Release 5' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 34' info='3GPP Media (.3GP) Release 4' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 33' info='3GPP Media (.3GP) Release 3 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 32' info='3GPP Media (.3GP) Release 2 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 70 31' info='3GPP Media (.3GP) Release 1 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 67 36' info='3GPP Release 6 General Profile' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 65 37' info='3GPP (.3GP) Release 7 MBMS Extended Presentations' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 67 32 61' info='3GPP2 Media (.3G2)' cat='Misc' os='Misc' ext='3g2'/>
-			<match bytes='66 74 79 70 33 47 53 37' info='3GPP Media (.3GP) Release 7 Streaming Servers' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 53 36' info='3GPP Media (.3GP) Release 6 Streaming Servers' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 36' info='3GPP Media (.3GP) Release 6 Basic Profile' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 35' info='3GPP Media (.3GP) Release 5' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 34' info='3GPP Media (.3GP) Release 4' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 33' info='3GPP Media (.3GP) Release 3 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 32' info='3GPP Media (.3GP) Release 2 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 50 31' info='3GPP Media (.3GP) Release 1 ? (non-existent)' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 47 36' info='3GPP Release 6 General Profile' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 45 37' info='3GPP (.3GP) Release 7 MBMS Extended Presentations' cat='Misc' os='Misc' ext='3gp'/>
-			<match bytes='66 74 79 70 33 47 32 41' info='3GPP2 Media (.3G2)' cat='Misc' os='Misc' ext='3g2'/>
+			<match bytes='66 74 79 70 4A 50 32' info='JPEG 2000 Image [ISO 15444-1 ?]' cat='Image' os='Misc' ext='jp2'/>
+			<match bytes='66 74 79 70 49 53 4F 4D' info='MP4  Base Media v1 [IS0 14496-12:2003]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 49 53 4F 32' info='MP4 Base Media v2 [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 41 56 43 31' info='MP4 Base with AVC extension [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
+			<match bytes='66 74 79 70 33 67 73 37' info='3GPP Media Release 7 Streaming Servers' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 73 36' info='3GPP Media Release 6 Streaming Servers' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 36' info='3GPP Media Release 6 Basic Profile' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 35' info='3GPP Media Release 5' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 34' info='3GPP Media Release 4' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 33' info='3GPP Media Release 3 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 32' info='3GPP Media Release 2 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 70 31' info='3GPP Media Release 1 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 67 36' info='3GPP Release 6 General Profile' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 65 37' info='3GPP Release 7 MBMS Extended Presentations' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 67 32 61' info='3GPP2 Media' cat='Multimedia' os='Misc' ext='3g2'/>
+			<match bytes='66 74 79 70 33 47 53 37' info='3GPP Media Release 7 Streaming Servers' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 53 36' info='3GPP Media Release 6 Streaming Servers' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 36' info='3GPP Media Release 6 Basic Profile' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 35' info='3GPP Media Release 5' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 34' info='3GPP Media Release 4' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 33' info='3GPP Media Release 3 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 32' info='3GPP Media Release 2 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 50 31' info='3GPP Media Release 1 ? (non-existent)' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 47 36' info='3GPP Release 6 General Profile' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 45 37' info='3GPP Release 7 MBMS Extended Presentations' cat='Multimedia' os='Misc' ext='3gp'/>
+			<match bytes='66 74 79 70 33 47 32 41' info='3GPP2 Media' cat='Multimedia' os='Misc' ext='3g2'/>
 			<match bytes='66 74 79 70' info='ISO Media' cat='Misc' os='Misc' ext=''/>
-			<match bytes='66 72 65 65' info='Apple QuickTime Movie (modified)' cat='Video' os='Misc' ext='mov'/>
+			<match bytes='66 72 65 65' info='Apple QuickTime Movie (modified)' cat='Multimedia' os='Misc' ext='mov'/>
 		</first>
 		<first byte='67'>
 			<match bytes='67 74 6B 74 61 6C 6F 67' info='GNOME Catalogue (gtktalog)' cat='Misc' os='Misc' ext=''/>
@@ -2784,7 +2784,7 @@ Web                |
 			<match bytes='80 00 10 01' info='AmigaOS Outline Tag' cat='Data' os='Amiga' ext=''/>
 			<!-- <match bytes='80 00' info='lif file' cat='Misc' os='Misc' ext=''/> -->
 			<match bytes='80 00' info='ADX Lossy Compressed Audio' cat='Audio' os='Misc' ext='adx'/>
-			<match bytes='80' info='8086 Relocatable (Microsoft)' cat='Misc' os='Misc' ext=''/>
+			<!-- <match bytes='80' info='8086 Relocatable (Microsoft)' cat='Misc' os='Misc' ext=''/> -->
 		</first>
 		<first byte='81'>
 			<match bytes='81 CD AB' info='WordPerfect Text' cat='Document' os='Misc' ext='wpf'/>
