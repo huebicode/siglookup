@@ -722,10 +722,10 @@ Web                |
 			<match bytes='64 61 74 61 54 44 42 50' info='ThinkDB (PalmOS)' cat='Document' os='PalmOS' ext=''/>
 		</first>
 		<first byte='6C'>
-			<match bytes='6C 69 62 72' info='Palm OS Dynamic Library Data' cat='Misc' os='Other' ext=''/>
+			<match bytes='6C 69 62 72' info='Palm OS Dynamic Library Data' cat='Misc' os='PalmOS' ext=''/>
 		</first>
 		<first byte='70'>
-			<match bytes='70 74 63 68' info='Palm OS Operating System Patch' cat='System' os='Other' ext=''/>
+			<match bytes='70 74 63 68' info='Palm OS Operating System Patch' cat='System' os='PalmOS' ext=''/>
 		</first>
 		<first byte='76'>
 			<match bytes='76 49 4D 47 56 69 65 77' info='FireViewer/ImageViewer (PalmOS)' cat='Document' os='PalmOS' ext=''/>
@@ -1038,9 +1038,9 @@ Web                |
 			<match bytes='00 04 00 00' info='Maple help database' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 02 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C' info='Common Object File Format' cat='Binary' os='Misc' ext='o/obj'/>
 			<match bytes='00 02 00 07 00' info='MSVC .sbr' cat='Misc' os='Misc' ext=''/>
-			<match bytes='00 01 42 44' info='Palm Desktop Calendar Archive' cat='Archive' os='Misc' ext='tda'/>
-			<match bytes='00 01 42 44' info='Palm DateBook Archive' cat='Archive' os='Misc' ext='dba'/>
-			<match bytes='00 01 42 41' info='Palm AdressBook Archive' cat='Archive' os='Misc' ext='aba'/>
+			<match bytes='00 01 42 44' info='Palm Desktop Calendar Archive' cat='Archive' os='PalmOS' ext='tda'/>
+			<match bytes='00 01 42 44' info='Palm DateBook Archive' cat='Archive' os='PalmOS' ext='dba'/>
+			<match bytes='00 01 42 41' info='Palm AdressBook Archive' cat='Archive' os='PalmOS' ext='aba'/>
 			<match bytes='00 01 19 54' info='Unix Fast Filesystem [v1] (big-endian)' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 01 12 57' info='Core File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 01 01' info='OpenFlight 3D File' cat='Image' os='Misc' ext='flt'/>
@@ -1907,7 +1907,7 @@ Web                |
 			<match bytes='44 43 55 31' info='Borland Delphi' cat='Programming' os='Misc' ext='dcu'/>
 			<match bytes='44 43 4D 01 50 41 33 30' info='Windows Update Binary Delta Compression File' cat='System' os='Windows' ext=''/>
 			<match bytes='44 42 4D 30' info='DIGI Booster Pro Module' cat='Misc' os='Misc' ext=''/>
-			<match bytes='44 42 46 48' info='Palm Zire Photo Database' cat='Database' os='Misc' ext='db'/>
+			<match bytes='44 42 46 48' info='Palm Zire Photo Database' cat='Database' os='PalmOS' ext='db'/>
 			<match bytes='44 41 58 00' info='DAX Compressed CD Image' cat='Diskimage' os='Misc' ext='dax'/>
 			<match bytes='44 41 41 00 00 00 00 00' info='PowerISO Direct-Access-Archive Image' cat='Diskimage' os='Misc' ext='daa'/>
 			<match bytes='44 31 2E 30 0D' info='X11 Speedo Font Data' cat='Font' os='Misc' ext=''/>
@@ -2684,7 +2684,7 @@ Web                |
 			<match bytes='73 70 65 63' info='SPEC' cat='Misc' os='Misc' ext=''/>
 			<match bytes='73 6F 6C 69 64' info='3D ASCII Stereo Lithography' cat='Image' os='Misc' ext='stl'/>
 			<match bytes='73 6E 6F 6F 70' info='Snoop Capture' cat='Misc' os='Misc' ext=''/>
-			<match bytes='73 6D 5F' info='PalmOS SuperMemo' cat='Misc' os='Misc' ext='pdb'/>
+			<match bytes='73 6D 5F' info='PalmOS SuperMemo' cat='Misc' os='PalmOS' ext='pdb'/>
 			<match bytes='73 68 6C 62' info='Macintosh Shared Library' cat='System' os='MacOS' ext=''/>
 			<match bytes='73 63 72 69 70 74 20 74 65 78 74 20 65 78 65 63 75 74 61 62 6C 65' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='73 61 76 65 2F 67 09 54 41 44 53' info='' cat='Misc' os='Misc' ext=''/>
@@ -2923,8 +2923,8 @@ Web                |
 			<match bytes='BC 40' info='Sky Archive' cat='Archive' os='Misc' ext=''/>
 		</first>
 		<first byte='BE'>
-			<match bytes='BE BA FE CA 0F 50 61 6C 6D 53 47 20 44 61 74 61' info='Palm Desktop DateBook File' cat='Data' os='Other' ext='dat'/>
-			<match bytes='BE BA FE CA' info='Palm Desktop Calendar Archive' cat='Archive' os='Other' ext='dba'/>
+			<match bytes='BE BA FE CA 0F 50 61 6C 6D 53 47 20 44 61 74 61' info='Palm Desktop DateBook File' cat='Data' os='PalmOS' ext='dat'/>
+			<match bytes='BE BA FE CA' info='Palm Desktop Calendar Archive' cat='Archive' os='PalmOS' ext='dba'/>
 			<match bytes='BE EF 41 42 43 44 45 46 47 48' info='HP LaserJet 1000 Series downloadable Firmware' cat='System' os='Misc' ext=''/>
 			<match bytes='BE 00 00 00 AB 00 00 00 00 00 00 00 00' info='MS Write File' cat='Document' os='Windows' ext='wri'/>
 		</first>
