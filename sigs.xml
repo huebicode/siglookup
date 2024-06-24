@@ -1860,7 +1860,7 @@ Web                |
 			<match bytes='43 4B 44 5F 43 33 37 30' info='Hercules compressed CKD DASD image file' cat='Misc' os='Misc' ext=''/>
 			<match bytes='43 49 53 4F' info='Compressed ISO (CISO) CD Image' cat='Diskimage' os='Misc' ext='cso'/>
 			<match bytes='43 49 4D 47' info='Alias Maya Image File' cat='Misc' os='Misc' ext=''/>
-			<match bytes='43 44 46 01' info='NetCDF Data Format' cat='Data' os='Misc' ext='nc'/>
+			<match bytes='43 44 46 01|02' info='NetCDF Data Format' cat='Data' os='Misc' ext='nc'/>
 			<match bytes='43 43 53 44 33 5A 46' info='PDS (CCSD) Image' cat='Image' os='Misc' ext='pds'/>
 			<match bytes='43 42 4D 64 00 00' info='Power 64 C64 Emulator Snapshot' cat='Misc' os='C64' ext=''/>
 			<match bytes='43 41 54 20' info='Electronic Arts Interchange Format File' cat='Binary' os='Amiga' ext='iff'/>
@@ -2607,7 +2607,7 @@ Web                |
 			<match bytes='6A 6D' info='XPack DiskImage Archive' cat='Diskimage' os='Misc' ext=''/>
 		</first>
 		<first byte='6B'>
-			<match bytes='6B 87 08 38 76 C1 48 4E B7 AE 04 04 6E 6C C7 52 01 00' info='Windows Volume Shadow Copy Index' cat='System' os='Windows' ext='vsc'/>
+			<match bytes='6B 87 08 38 76 C1 48 4E B7 AE 04 04 6E 6C C7 52' info='Windows Volume Shadow Copy Index' cat='System' os='Windows' ext='vsc'/>
 			<match bytes='6B 62 64 21 6D 61 70' info='kbd map file' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='6C'>
