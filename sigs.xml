@@ -439,6 +439,9 @@ Web                |
 		<first byte='00'>
 			<match bytes='00 00 00 00 62 31 05 00 09 00 00 00 00 20 00 00 00 09 00 00 00 00 00 00' info='Bitcoin Core File (wallet.dat)' cat='Data' os='Misc' ext='dat'/>
 		</first>
+		<first byte='1A'>
+			<match bytes='1A 6C 65 76 65 6C 64 62' info='LevelDB Manifest' cat='Data' os='Misc' ext=''/>
+		</first>
 		<first byte='31'>
 			<match bytes='31 36 43 4E' info='16-channel Taketracker module sound data' cat='Misc' os='Misc' ext='mod'/>
 		</first>
