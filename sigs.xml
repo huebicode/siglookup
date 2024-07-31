@@ -103,11 +103,11 @@ Web                |
 			<match bytes='50 4E 47' info='PNG Image' cat='Image' os='Misc' ext='png'/>
 		</first>
 		<first byte='52'>
-			<match bytes='52 65 73 65 61 72 63 68 2C 20 49 6E 63 09 67 72 6F 75 70 20 33 20 66 61 78 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
+			<match bytes='52 65 73 65 61 72 63 68 2C 20 49 6E 63 09 67 72 6F 75 70 20 33 20 66 61 78 20 64 61 74 61' info='Research Inc. Group 3 Fax' cat='Document' os='Misc' ext=''/>
 			<match bytes='52 44 43 2D 6D 65 67' info='MegaDots ' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='53'>
-			<match bytes='53 54 45 50 41 4E 59 55 4B 20 41 52 53 2D 53 66 78 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
+			<match bytes='53 54 45 50 41 4E 59 55 4B 20 41 52 53 2D 53 66 78 20 61 72 63 68 69 76 65 20 64 61 74 61' info='STEPANYUK ARS-Sfx Archive' cat='Archive' os='MS-DOS' ext='exe'/>
 		</first>
 		<first byte='57'>
 			<match bytes='57 41 44' info='DOOM Data' cat='Game' os='Misc' ext=''/>
@@ -243,15 +243,6 @@ Web                |
 		</first>
 		<first byte='12'>
 			<match bytes='12 AF' info='FLIC Animation' cat='Image' os='Misc' ext='fli'/>
-		</first>
-		<first byte='41'>
-			<match bytes='41 7E 09 4D 41 74 68 65 6D 61 74 69 63 61 20 2E 6D 6C 20 66 69 6C 65' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-		<first byte='47'>
-			<match bytes='47 54 4B 74 61 6C 6F 67 20 63 61 74 61 6C 6F 67 20 64 61 74 61 2C' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-		<first byte='4A'>
-			<match bytes='4A 65 74 20 44 42 09 4D 69 63 72 6F 73 6F 66 74 20 41 63 63 65 73 73 20 44 61 74 61 62 61 73 65' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='4F'>
 			<match bytes='4F 3D 3D 3D 3D' info='AppleWorks word processor data' cat='Misc' os='Misc' ext=''/>
@@ -395,9 +386,6 @@ Web                |
 		<first byte='2D'>
 			<match bytes='2D 70 63 31 2D' info='PopCom Compressed Executable (CP/M)' cat='Executable' os='Misc' ext=''/>
 		</first>
-		<first byte='49'>
-			<match bytes='49 49 20 2D 20 54 48 45 09 53 69 64 6D 6F 6E 20 32 2E 30 20 4D 6F 64 75 6C 65 20 73 6F 75 6E 64 20 66 69 6C 65' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
 		<first byte='58'>
 			<match bytes='58 DF FF FF' info='Ultrix core file' cat='Misc' os='Misc' ext=''/>
 		</first>
@@ -472,9 +460,6 @@ Web                |
 		<first byte='4F'>
 			<match bytes='4F 4B 54 41' info='8-channel Oktalyzer module sound data' cat='Misc' os='Misc' ext='mod'/>
 		</first>
-		<first byte='54'>
-			<match bytes='54 68 69 73 20 69 73 20 61 20 73 68 65 6C 6C 20 61 72 63 68 69 76 65 09 73 68 65 6C 6C 20 61 72 63 68 69 76 65 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
 		<first byte='73'>
 			<match bytes='73 64 62 66' info='Windows Customized Database' cat='Database' os='Windows' ext='sdb'/>
 		</first>
@@ -482,9 +467,6 @@ Web                |
 	<offset at='9'>
 		<first byte='4D'>
 			<match bytes='4D 49 54 2D 4D 41 47 49 43 2D 43 4F 4F 4B 49 45 2D 31' info='X11 Xauthority data' cat='Misc' os='Misc' ext=''/>
-		</first>
-		<first byte='62'>
-			<match bytes='62 65 20 63 6F 6E 76 65 72 74 65 64 20 77 69 74 68 20 42 69 6E 48 65 78 09 42 69 6E 48 65 78 20 62 69 6E 61 72 79 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 	</offset>
 	<offset at='10'>
@@ -554,33 +536,20 @@ Web                |
 		</first>
 	</offset>
 	<offset at='16'>
-		<first byte='45'>
-			<match bytes='45 78 63 65 6C 20 35 2E 30 20 57 6F 72 6B 73 68 65 65 74 09 25 73' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
 		<first byte='47'>
 			<match bytes='47 50 41 54' info='GIMP Pattern' cat='Image' os='Misc' ext=''/>
 			<match bytes='47 49 4D 50' info='GIMP Image/Brush' cat='Image' os='Misc' ext=''/>
 		</first>
 		<first byte='4D'>
-			<match bytes='4D 69 63 72 6F 73 6F 66 74 20 57 6F 72 64 20 36 20 53 70 61 6E 69 73 68 20 4D 69 63 72 6F 73 6F 66 74 20 57 6F 72 64 20 36 20 64 6F 63 75 6D 65 6E 74 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4D 41 50 20' info='CCP4 Electron Density Map' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='54'>
 			<match bytes='54 2D 44 42' info='Realm Database' cat='Database' os='Misc' ext='realm'/>
 		</first>
-		<first byte='57'>
-			<match bytes='57 6F 72 64 20 36 2E 30 20 44 6F 63 75 6D 65 6E 74 09 25 73' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-		<first byte='64'>
-			<match bytes='64 69 20 6C 61 76 6F 72 6F 20 4D 69 63 72 6F 73 6F 66 74 20 45 78 63 65 09 25 73' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
 	</offset>
 	<offset at='17'>
 		<first byte='42'>
-			<match bytes='42 4D 4F 44 32 53 54 4D' info='Screamtracker 2 module sound data' cat='Misc' os='Misc' ext='mod'/>
-		</first>
-		<first byte='62'>
-			<match bytes='62 79 20 66 6C 65 78 09 43 20 70 72 6F 67 72 61 6D 20 74 65 78 74 20 28 66 72 6F 6D 20 66 6C 65 78 29' info='' cat='Misc' os='Misc' ext=''/>
+			<match bytes='42 4D 4F 44 32 53 54 4D' info='Screamtracker 2 Module Sound' cat='Audio' os='Misc' ext='mod'/>
 		</first>
 	</offset>
 	<offset at='19'>
@@ -601,9 +570,6 @@ Web                |
 		<first byte='0A'>
 			<match bytes='0A 60 00 00' info='new-fs dump file (little endian)' cat='Misc' os='Misc' ext=''/>
 		</first>
-		<first byte='32'>
-			<match bytes='32 30 33 20 20 20 20 20 20 20 20 4C 69 6E 75 78 64 6F 6F 6D 20 73 61 76 65' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
 	</offset>
 	<offset at='21'>
 		<first byte='4D'>
@@ -616,13 +582,8 @@ Web                |
 		</first>
 	</offset>
 	<offset at='24'>
-		<first byte='30'>
-			<match bytes='30 30 31 09 4C 56 4D 32 20 28 4C 69 6E 75 78 20 4C 6F 67 69 63 61 6C 20 56 6F 6C 75 6D 65 20 4D 61 6E 61 67 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-		<first byte='3E'>
-		</first>
 		<first byte='CD'>
-			<match bytes='CD 21' info='COM executable for MS-DOS' cat='Misc' os='Misc' ext=''/>
+			<match bytes='CD 21' info='COM Executable' cat='Executable' os='MS-DOS' ext='com'/>
 		</first>
 	</offset>
 	<offset at='30'>
@@ -746,12 +707,6 @@ Web                |
 			<match bytes='CD 21' info='COM executable for DOS' cat='Executable' os='MS-DOS' ext=''/>
 		</first>
 	</offset>
-	<offset at='59'>
-		<first byte='20'>
-			<match bytes='20 42 69 62 54 65 58 2D 66 69 6C 65 7B 20 42 69 62 54 65 78 20 74 65 78 74 20 66 69 6C 65 20 28 77 69 74 68 20 66 75 6C 6C 20 68 65 61 64 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='20 40 42 69 62 54 65 58 2D 73 74 79 6C 65 2D 66 69 6C 65 7B 20 20 20 42 69 62 54 65 58 20 73 74 79 6C 65 20 74 65 78 74 20 66 69 6C 65 20 28 77 69 74 68 20 66 75 6C 6C 20 68 65 61 64 65 72 29' info='BitTeX Style File' cat='Document' os='Misc' ext='bst'/>
-		</first>
-	</offset>
 	<offset at='60'>
 		<first byte='42'>
 			<match bytes='42 4F 4F 4B 4D 4F 42 49' info='MOBI Ebook' cat='Document' os='Misc' ext='mobi/prc'/>
@@ -825,11 +780,6 @@ Web                |
 			<match bytes='11 01 00 00' info='Linux/i386 Core File' cat='Misc' os='Misc' ext=''/>
 		</first>
 	</offset>
-	<offset at='170'>
-		<first byte='68'>
-			<match bytes='68 61 76 65 20 44 4F 53 20 76 65 72 73 69 6F 6E 09 44 52 2D 44 4F 53 20 65 78 65 63 75 74 61 62 6C 65 20 28 43 4F 4D 29' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-	</offset>
 	<offset at='175'>
 		<first byte='75'>
 			<match bytes='75 73 74 61 72 20 20 00' info='GNU tar Archive' cat='Archive' os='Misc' ext=''/>
@@ -880,11 +830,6 @@ Web                |
 			<match bytes='50 4B 53 70 58' info='PKSFX self-extracting Executable' cat='Executable' os='MS-DOS' ext='exe'/>
 		</first>
 	</offset>
-	<offset at='536'>
-		<first byte='30'>
-			<match bytes='30 30 31 09 4C 56 4D 32 20 28 4C 69 6E 75 78 20 4C 6F 67 69 63 61 6C 20 56 6F 6C 75 6D 65 20 4D 61 6E 61 67 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
-		</first>
-	</offset>
 	<offset at='640'>
 		<first byte='45'>
 			<match bytes='45 41 4D 47' info='Super MagicDrive ROM Dump' cat='Data' os='Misc' ext=''/>
@@ -897,11 +842,6 @@ Web                |
 		</first>
 		<first byte='78'>
 			<match bytes='78 24' info='Minix filesystem, version 2, 30 char names' cat='Misc' os='Misc' ext=''/>
-		</first>
-	</offset>
-	<offset at='1048'>
-		<first byte='30'>
-			<match bytes='30 30 31 09 4C 56 4D 32 20 28 4C 69 6E 75 78 20 4C 6F 67 69 63 61 6C 20 56 6F 6C 75 6D 65 20 4D 61 6E 61 67 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 	</offset>
 	<offset at='1062'>
@@ -922,11 +862,6 @@ Web                |
 	<offset at='1105'>
 		<first byte='42'>
 			<match bytes='42 69 66 66 35' info='Microsoft Excel 5.0 Worksheet' cat='Document' os='Misc' ext='xls'/>
-		</first>
-	</offset>
-	<offset at='1560'>
-		<first byte='30'>
-			<match bytes='30 30 31 09 4C 56 4D 32 20 28 4C 69 6E 75 78 20 4C 6F 67 69 63 61 6C 20 56 6F 6C 75 6D 65 20 4D 61 6E 61 67 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 	</offset>
 	<offset at='2110'>
@@ -1344,14 +1279,9 @@ Web                |
 			<match bytes='1F 01' info='PDP-11 kernel overlay' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='20'>
-			<match bytes='20 3D 09 46 49 54 53 20 69 6D 61 67 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='20 21 4E 54 49 54 4C 45 0A 20 52 45 4D 41 52 4B' info='CNS ASCII electron density map' cat='Misc' os='Misc' ext=''/>
-			<match bytes='20 20 31 30 32 34 0A 09 4E 49 53 54 20 53 50 48 45 52 45 20 66 69 6C 65' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='20 20 30 0D 0A 53 45 43 54 49 4F 4E' info='AutoCAD Drawing Exchange Format' cat='Image' os='Misc' ext='dxf'/>
 			<match bytes='20 20 30 0A 53 45 43 54 49 4F 4E' info='AutoCAD Drawing Exchange Format' cat='Image' os='Misc' ext='dxf'/>
-			<match bytes='20 20 20 20 20 20 20 20 20 20 26 23 30 3B 26 23 30 3B 20 20 20 20 4C 42 52 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='20 20 20 20 09 52 2D 41 78 69 73 20 41 72 65 61 20 44 65 74 65 63 74 6F 72 20 49 6D 61 67 65 2C 20 57 69 6E 33 32 3A' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='20 20 09 52 2D 41 78 69 73 20 41 72 65 61 20 44 65 74 65 63 74 6F 72 20 49 6D 61 67 65 3A' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='20 05 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C' info='Common Object File Format' cat='Binary' os='Misc' ext='o/obj'/>
 			<match bytes='20 02 01 62 A0 1E AB 07 02 00 00 00' info='Tableau Datasource' cat='Data' os='Misc' ext='tde'/>
 		</first>
@@ -1426,17 +1356,6 @@ Web                |
 			<match bytes='25 21 50 53 2D 41 64 6F 62 65' info='PostScript Document' cat='Document' os='Misc' ext='ps'/>
 			<match bytes='25 21' info='PostScript Document' cat='Document' os='Misc' ext='ps'/>
 		</first>
-		<first byte='26'>
-			<match bytes='26 71 75 6F 74 3B 65 78 65 63 20 2F 75 73 72 2F 6C 6F 63 61 6C 2F 62 69 6E 2F 70 65 72 6C 09 70 65 72 6C 20 73 63 72 69 70 74 20 74 65 78 74 20 65 78 65 63 75 74 61 62 6C 65' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 71 75 6F 74 3B 65 78 65 63 20 2F 75 73 72 2F 62 69 6E 2F 70 65 72 6C 09 70 65 72 6C 20 73 63 72 69 70 74 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 71 75 6F 74 3B 65 78 65 63 20 2F 62 69 6E 2F 70 65 72 6C 09 09 70 65 72 6C 20 73 63 72 69 70 74 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 6C 74 3B 53 48 41 52 45 46 49 4C 45 3D 09 4D 61 70 6C 65 20 73 6F 6D 65 74 68 69 6E 67' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 23 33 39 3B 64 69 66 66 26 23 33 39 3B 20 6F 75 74 70 75 74 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 23 33 39 3B 28 65 78 69 74 20 24 3F 30 29 26 23 33 39 3B 20 26 61 6D 70 3B 26 61 6D 70 3B 20 65 76 61 6C 20 26 23 33 39 3B 65 78 65 63 09 70 65 72 6C 20 73 63 72 69 70 74 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 23 30 3B 26 23 30 3B 20 5A 5A 69 70 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26 23 30 3B 20 42 53 41 72 63 2F 42 53 32 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='26' info='Sendmail frozen configuration ' cat='Misc' os='Misc' ext=''/>
-		</first>
 		<first byte='27'>
 			<match bytes='27 5C 22' info='troff or preprocessor input' cat='Misc' os='Misc' ext=''/>
 			<match bytes='27 46 72 6F 6D 20 53 71 75 65 61 6B' info='Squeak Program' cat='Misc' os='Misc' ext=''/>
@@ -1446,7 +1365,6 @@ Web                |
 		</first>
 		<first byte='28'>
 			<match bytes='28 B5 2F FD' info='Zstandard Compress' cat='Archive' os='Misc' ext='zst'/>
-			<match bytes='28 63 29 20 31 39 39 09 41 64 6F 62 65 20 4D 75 6C 74 69 70 6C 65 20 4D 61 73 74 65 72 20 66 6F 6E 74' info='' cat='Misc' os='Misc' ext=''/>
 			<match bytes='28 54 68 69 73 20 66 69 6C 65 20 6D 75 73 74 20 62 65 20 63 6F 6E 76 65 72 74 65 64 20 77 69 74 68 20 42 69 6E 48 65 78 20' info='BinHex Encoding' cat='Encoding' os='MacOS' ext='hqx/hcx/hex'/>
 			<match bytes='28 53 59 53 54 45 4D 3A 3A 56 45 52 53 49 4F 4E 20 27' info='CLISP byte-compiled Lisp program text' cat='Misc' os='Misc' ext=''/>
 			<match bytes='28 44 57 46 20 56' info='Design Web Format 3D File' cat='Image' os='Misc' ext='dwf'/>
@@ -1501,9 +1419,6 @@ Web                |
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 44 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D' info='PEM Encoded X.509 PKCS#1 DSA Private Key' cat='Encryption' os='Misc' ext='key/pem'/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 20 52 45 51 55 45 53 54 2D 2D' info='PEM Encoded X.509 Certificate Signing Request' cat='Encryption' os='Misc' ext='csr/pem'/>
 			<match bytes='2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 2D 2D 2D 2D 2D' info='PEM Encoded X.509 Certificate' cat='Encryption' os='Misc' ext='crt/pem'/>
-			<match bytes='2D 2A 2D 6C 61 74 65 78 2D 2A 2D 09 4C 61 54 65 58 20 64 6F 63 75 6D 65 6E 74 20 74 65 78 74' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='2D 20 43 50 43 45 4D 55 20 44 69 73 6B 2D 46 69 6C 20 41 6D 73 74 72 61 64 2F 53 70 65 63 74 72 75 6D 20 2E 44 53 4B 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
-			<match bytes='2D 20 43 50 43 20 66 6F 72 6D 61 74 20 44 69 73 20 41 6D 73 74 72 61 64 2F 53 70 65 63 74 72 75 6D 20 44 55 35 34 20 2E 44 53 4B 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='2E'>
 			<match bytes='2E 73 79 73 74 65 6D' info='SHARC architecture file' cat='Misc' os='Misc' ext=''/>
