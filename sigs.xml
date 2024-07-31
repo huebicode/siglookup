@@ -13,16 +13,16 @@
     GNU Affero General Public License for more details.
 
 
-Most of the signatures in this file came from Brian, which were based on the file utility's magic file.
+Many of the signatures in this file came from Brian, which were based on the file utility's magic file.
 (https://github.com/brianary/magicnumber-lite)
 
 The signatures were enriched with magic bytes from Gerry Kessler 
 (https://www.garykessler.net/library/file_sigs.html) 
 
-and Wikipedia 
+Wikipedia 
 (https://en.wikipedia.org/wiki/List_of_file_signatures) 
 
-and a couple of others, which i found relevant.
+and a couple of others, which I found relevant.
 
 Alexander Hübert (huebicode) - 2024
 
@@ -110,7 +110,6 @@ Web                |
 			<match bytes='53 54 45 50 41 4E 59 55 4B 20 41 52 53 2D 53 66 78 20 61 72 63 68 69 76 65 20 64 61 74 61' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='57'>
-			<!-- <match bytes='57 50 43' info='Corel File' cat='Misc' os='Misc' ext=''/> -->
 			<match bytes='57 41 44' info='DOOM Data' cat='Game' os='Misc' ext=''/>
 		</first>
 		<first byte='5B'>
@@ -621,7 +620,6 @@ Web                |
 			<match bytes='30 30 31 09 4C 56 4D 32 20 28 4C 69 6E 75 78 20 4C 6F 67 69 63 61 6C 20 56 6F 6C 75 6D 65 20 4D 61 6E 61 67 65 72 29' info='' cat='Misc' os='Misc' ext=''/>
 		</first>
 		<first byte='3E'>
-			<!-- <match bytes='3E 00 03 00 FE FF 09 00 06' info='Quatro Pro Notebook File' cat='Document' os='Windows' ext='wb3'/> -->
 		</first>
 		<first byte='CD'>
 			<match bytes='CD 21' info='COM executable for MS-DOS' cat='Misc' os='Misc' ext=''/>
@@ -1070,7 +1068,6 @@ Web                |
 			<match bytes='00 00 02 47' info='Plan 9 Executable, Intel 960' cat='Executable' os='Misc' ext=''/>
 			<match bytes='00 00 02 00 06 04 06 00 08 00 00 00 00 00' info='Lotus 1-2-3 Spreadsheet (v1)' cat='Document' os='Misc' ext='wk1'/>
 			<match bytes='00 00 03 F3' info='Amiga Hunk Executable' cat='Executable' os='Amiga' ext='hunk'/>
-			<!-- <match bytes='00 00 02 00' info='Lotus 1-2-3' cat='Document' os='Misc' ext=''/> -->
 			<match bytes='00 00 02 00' info='Windows Cursor File' cat='Image' os='Windows' ext='cur'/>
 			<match bytes='00 00 01 B0-BF' info='Moving Picture Experts Group' cat='Video' os='Misc' ext='mpg/mpeg'/>
 			<match bytes='00 00 01 9E 00 00 00 00 00 00 00 00 00 00 00 00' info='BEA TUXEDO DES mask data' cat='Misc' os='Misc' ext=''/>
@@ -1100,7 +1097,6 @@ Web                |
 			<match bytes='00 00 00 00 20 00 00 00 FF' info='MSVC .res' cat='Misc' os='Misc' ext=''/>
 			<match bytes='00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01-06 00' info='Old Timezone Data' cat='Data' os='Misc' ext=''/>
 			<match bytes='00 00 00 00 14 00 00 00' info='Windows Diskimage File' cat='Diskimage' os='Windows' ext='tbi'/>
-			<!-- <match bytes='00 00 00 00' info='DCX multi-page PCX Image' cat='Image' os='Misc' ext='dcx'/> -->
 		</first>
 		<first byte='01'>
 			<match bytes='01 FF 02 04 03 02' info='Micrografx Vector Graphic' cat='Image' os='Misc' ext='drw'/>
@@ -1216,7 +1212,6 @@ Web                |
 			<match bytes='04 25 21' info='PostScript Document' cat='Document' os='Misc' ext='ps'/>
 			<match bytes='04 22 4D 18' info='LZ4 Frame Format' cat='Archive' os='Misc' ext='lz4'/>
 			<match bytes='04 00 00 00 _ _ _ _ _ _ _ _ 20 03 00 00' info='Windows Recycle Bin (INFO2)' cat='System' os='Windows' ext=''/>
-			<!-- <match bytes='04 00 00 00' info='X11 SNF font data, LSB first' cat='Misc' os='Misc' ext=''/> -->
 		</first>
 		<first byte='05'>
 			<match bytes='05 56 4E 46' info='Visual Networks traffic capture file' cat='Misc' os='Misc' ext=''/>
@@ -1377,7 +1372,6 @@ Web                |
 			<match bytes='21 12' info='AIN Compressed Archive' cat='Archive' os='Misc' ext='ain'/>
 			<match bytes='21 0D 0A 43 52 52 2F 54' info='NOAA Raster Navigation Chart' cat='Data' os='Misc' ext='bsb'/>
 			<match bytes='21 06 80 28' info='Sega Dreamcast VMU game image' cat='Diskimage' os='Dreamcast' ext=''/>
-			<!-- <match bytes='21' info='Assembler source' cat='Misc' os='Misc' ext=''/> -->
 		</first>
 		<first byte='22'>
 			<match bytes='22 22 22' info='a python script' cat='Misc' os='Misc' ext=''/>
@@ -1543,7 +1537,6 @@ Web                |
 			<match bytes='30 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 42 5A 68' info='EXP1 Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='30 26 B2 75 8E 66 CF 11 A6 D9 00 AA 00 62 CE 6C' info='Microsoft Advanced Systems Format' cat='Multimedia' os='Misc' ext='asf/wmv/wma'/>
 			<match bytes='30 20 48 45 41 44' info='Genealogical Data Communication (GEDCOM) File' cat='Data' os='Misc' ext='ged'/>
-			<!-- <match bytes='30 20' info='Character Computer Graphics Metafile' cat='Misc' os='Misc' ext=''/> -->
 			<match bytes='30 0D 0A 53 45 43 54 49 4F 4E' info='AutoCAD Drawing Exchange Format' cat='Image' os='Misc' ext='dxf'/>
 			<match bytes='30 00 00 00 4C 66 4C 65' info='Windows Event Viewer File' cat='Data' os='Windows' ext='evt'/>
 			<match bytes='30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00' info='FoxPro Database' cat='Database' os='Misc' ext='dbf'/>
@@ -2740,7 +2733,6 @@ Web                |
 			<match bytes='78 7D' info='zlib (Best Speed, with Dict)' cat='Archive' os='Misc' ext='zlib'/>
 			<match bytes='78 BB' info='zlib (Default Compression, with Dict)' cat='Archive' os='Misc' ext='zlib'/>
 			<match bytes='78 F9' info='zlib (Best Compression, with Dict)' cat='Archive' os='Misc' ext='zlib'/>
-			<!-- <match bytes='78 01' info='VAX COFF Executable' cat='Executable' os='Misc' ext=''/> -->
 		</first>
 		<first byte='79'>
 			<match bytes='79 7A' info='MGR Bitmap (modern format, 8-bit aligned)' cat='Image' os='Misc' ext='mgr'/>
@@ -2786,9 +2778,7 @@ Web                |
 			<match bytes='80 05' info='XENIX 8086 Relocatable or 80286 Small Model' cat='Misc' os='Misc' ext=''/>
 			<match bytes='80 2A 5F D7' info='Kodak Cineon Image' cat='Image' os='Misc' ext='cin'/>
 			<match bytes='80 00 10 01' info='AmigaOS Outline Tag' cat='Data' os='Amiga' ext=''/>
-			<!-- <match bytes='80 00' info='lif file' cat='Misc' os='Misc' ext=''/> -->
 			<match bytes='80 00' info='ADX Lossy Compressed Audio' cat='Audio' os='Misc' ext='adx'/>
-			<!-- <match bytes='80' info='8086 Relocatable (Microsoft)' cat='Misc' os='Misc' ext=''/> -->
 		</first>
 		<first byte='81'>
 			<match bytes='81 CD AB' info='WordPerfect Text' cat='Document' os='Misc' ext='wpf'/>
@@ -2984,7 +2974,6 @@ Web                |
 		<first byte='D0'>
 			<match bytes='D0 CF 11 E0 A1 B1 1A E1 41 41 46 42 0D 00 4F 4D 06 0E 2B 34 01 01 01 FF' info='AAF File (MS Structured Storage, legacy)' cat='Misc' os='Misc' ext=''/>
 			<match bytes='D0 CF 11 E0 A1 B1 1A E1 01 02 01 0D 00 02 00 00 06 0E 2B 34 03 02 01 01' info='AAF File (MS Structured Storage)' cat='Misc' os='Misc' ext=''/>
-			<!-- <match bytes='D0 CF 11 E0 A1 B1 1A E1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF' info='Microsoft Installer' cat='Executable' os='Windows' ext=''/> -->
 			<match bytes='D0 CF 11 E0 A1 B1 1A E1' info='MS Compound File (Office etc.)' cat='Document' os='Misc' ext='doc/dot/xls/ppt/pub'/>
 			<match bytes='D0 4F 50 53' info='Interleaf Document' cat='Document' os='Misc' ext='pl'/>
 		</first>
@@ -3110,7 +3099,6 @@ Web                |
 			<match bytes='FF D8 FF' info='JPEG image data' cat='Misc' os='Misc' ext='jpg/jpeg'/>
 			<match bytes='FF 6D' info='Very old PDP-11 Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='FF 65' info='Old PDP-11 Archive' cat='Archive' os='Misc' ext=''/>
-			<!-- <match bytes='FF 57 50 43 10 00 00 00 12 0A 01 01 00 00 00 00' info='(WP) loadable text' cat='Misc' os='Misc' ext=''/> -->
 			<match bytes='FF 57 50 43' info='Word Perfect Text and Graphics' cat='Software' os='Misc' ext='wp/wpd/wpg/wpp'/>
 			<match bytes='FF 4B 45 59 42 20 20 20' info='Keyboard Driver' cat='System' os='Misc' ext='sys'/>
 			<match bytes='FF 46 4F 4E 54' info='Windows International Code Page' cat='System' os='Windows' ext='cpi'/>
@@ -3119,6 +3107,7 @@ Web                |
 			<match bytes='FF 1F' info='compacted data' cat='Misc' os='Misc' ext=''/>
 			<match bytes='FF 0A 00' info='QuickReport File' cat='Software' os='Misc' ext='qrp'/>
 			<match bytes='FF 0A' info='JPEG XL' cat='Image' os='Misc' ext='jxl'/>
+			<match bytes='FF 06 00 00 73 4E 61 50 70 59' info='Snappy Compressed File' cat='Archive' os='Misc' ext='sz'/>
 			<match bytes='FF 03 00 FF 01 00 30 10 E8' info='MSVC .res' cat='Misc' os='Misc' ext=''/>
 			<match bytes='FF 03 00 FF 01 00 10 10 E8' info='MSVC .res' cat='Misc' os='Misc' ext=''/>
 			<match bytes='FF 00 02 00 04 04 05 54 02 00' info='Works for Windows Spreadsheet' cat='Document' os='Windows' ext='wks'/>
