@@ -1943,6 +1943,8 @@ Web                |
 			<match bytes='4C 5A' info='MS-DOS executable (built-in)' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4C 57 46 4E' info='Macintosh Postscript Font (data)' cat='Misc' os='Misc' ext=''/>
 			<match bytes='4C 56 46 09 0D 0A FF 00' info='Logical File Evidence Format' cat='Diskimage' os='Misc' ext='l01'/>
+			<match bytes='4C 55 4B 53 BA BE 00 01' info='LUKS (Linux Unified Key Setup) Encryption (v1)' cat='Encryption' os='Linux' ext='luks/img'/>
+			<match bytes='4C 55 4B 53 BA BE 00 02' info='LUKS (Linux Unified Key Setup) Encryption (v2)' cat='Encryption' os='Linux' ext='luks/img'/>
 			<match bytes='4C 50 46 20 00 01' info='Deluxe Paint Animation' cat='Image' os='Misc' ext='anm'/>
 			<match bytes='4C 4E 02 00' info='Windows Help File' cat='System' os='Windows' ext='gid/hlp'/>
 			<match bytes='4C 4D 38 39 35 33' info='Yamaha TX Wave' cat='Misc' os='Misc' ext=''/>
@@ -2271,6 +2273,7 @@ Web                |
 			<match bytes='57 4E 47 5A 57 5A 53 53' info='Wingz Spreadsheet' cat='Misc' os='Misc' ext=''/>
 			<match bytes='57 4E 47 5A 57 5A 53 43' info='Wingz Compiled Script' cat='Misc' os='Misc' ext=''/>
 			<match bytes='57 4E 47 5A 57 5A 48 50' info='Wingz Help File' cat='Misc' os='Misc' ext=''/>
+			<match bytes='57 45 42 56 54 54' info='WebVTT (Web Video Text Tracks) Subtitles' cat='Text' os='Misc' ext='vtt'/>
 			<match bytes='57 41 52 43 2F 31 2E' info='WARC Archive' cat='Archive' os='Misc' ext='warc'/>
 		</first>
 		<first byte='58'>
