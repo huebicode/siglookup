@@ -272,9 +272,9 @@ Web                |
 			<match bytes='66 74 79 70 6A 70 32' info='JPEG 2000 Image [ISO 15444-1 ?]' cat='Image' os='Misc' ext='jp2'/>
 			<match bytes='66 74 79 70 69 73 6F 6D' info='MP4  Base Media v1 [IS0 14496-12:2003]' cat='Multimedia' os='Misc' ext='mp4'/>
 			<match bytes='66 74 79 70 69 73 6F 32' info='MP4 Base Media v2 [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
-			<match bytes='66 74 79 70 68 65 69 63' info='High Efficiency Image Container' cat='Multimedia' os='Misc' ext='heic'/>
+			<match bytes='66 74 79 70 68 65 69 63' info='High Efficiency Image Container (HEIC)' cat='Multimedia' os='Misc' ext='heic'/>
 			<match bytes='66 74 79 70 63 72 78 20' info='Canon Raw Image (v3)' cat='Image' os='Misc' ext='cr3'/>
-			<match bytes='66 74 79 70 61 76 69 66' info='AV1 Image File Format' cat='Image' os='Misc' ext='avif'/>
+			<match bytes='66 74 79 70 61 76 69 66' info='AV1 Image File Format (AVIF)' cat='Image' os='Misc' ext='avif'/>
 			<match bytes='66 74 79 70 61 76 63 31' info='MP4 Base w/ AVC ext [ISO 14496-12:2005]' cat='Multimedia' os='Misc' ext='mp4'/>
 			<match bytes='66 74 79 70 51 54 20 20' info='Apple QuickTime' cat='Multimedia' os='Misc' ext='mov/qt'/>
 			<match bytes='66 74 79 70 4E 44 58 53' info='H.264/MPEG-4 AVC, Nero Standard Profile' cat='Multimedia' os='Misc' ext='mp4'/>
@@ -431,6 +431,9 @@ Web                |
 		</first>
 		<first byte='43'>
 			<match bytes='43 44 38 31' info='8-channel Octalyser module sound data' cat='Misc' os='Misc' ext='mod'/>
+		</first>
+		<first byte='44'>
+			<match bytes='44 55 43 4B' info='DuckDB Database File' cat='Database' os='Misc' ext='db/duckdb'/>
 		</first>
 		<first byte='46'>
 			<match bytes='46 4C 54 38' info='8-channel Startracker module sound data' cat='Misc' os='Misc' ext='mod'/>
@@ -2221,7 +2224,6 @@ Web                |
 		<first byte='54'>
 			<match bytes='54 69 45 6D 75' info='TiEmu Skin' cat='Misc' os='Misc' ext=''/>
 			<match bytes='54 68 69 73 20 69 73 20 54 65 58 2C' info='TeX Document' cat='Document' os='Misc' ext='tex'/>
-			<match bytes='54 68 69 73 20 66 69 6C 65 20 63 6F 6E 74 61 69 6E 73 20 61 6E 20 53 51 4C 69 74 65 09 53 51 4C 69 74 65 20 44 61 74 61 62 61 73 65' info='SQLite Database' cat='Database' os='Misc' ext='db'/>
 			<match bytes='54 5A 69 66' info='Timezone Data' cat='Data' os='Misc' ext=''/>
 			<match bytes='54 57 49 4E 39 37 30 31 32 30 30 30' info='VQF Data' cat='Data' os='Misc' ext=''/>
 			<match bytes='54 52 00 64 00' info='nettl Capture' cat='Network' os='Misc' ext=''/>
