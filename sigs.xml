@@ -2224,7 +2224,9 @@ Web                |
 		<first byte='54'>
 			<match bytes='54 69 45 6D 75' info='TiEmu Skin' cat='Misc' os='Misc' ext=''/>
 			<match bytes='54 68 69 73 20 69 73 20 54 65 58 2C' info='TeX Document' cat='Document' os='Misc' ext='tex'/>
-			<match bytes='54 5A 69 66' info='Timezone Data' cat='Data' os='Misc' ext=''/>
+			<match bytes='54 5A 69 66 00' info='Time Zone Information Format (TZif, v1)' cat='Data' os='Misc' ext=''/>
+			<match bytes='54 5A 69 66 32' info='Time Zone Information Format (TZif, v2)' cat='Data' os='Misc' ext=''/>
+			<match bytes='54 5A 69 66 33' info='Time Zone Information Format (TZif, v3)' cat='Data' os='Misc' ext=''/>
 			<match bytes='54 57 49 4E 39 37 30 31 32 30 30 30' info='VQF Data' cat='Data' os='Misc' ext=''/>
 			<match bytes='54 52 00 64 00' info='nettl Capture' cat='Network' os='Misc' ext=''/>
 			<match bytes='54 4F 43' info='TOC Sound File' cat='Audio' os='Misc' ext=''/>
