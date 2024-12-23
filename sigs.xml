@@ -2106,7 +2106,7 @@ Web                |
 			<match bytes='50 43 44 5F 4F 50 41' info='Kodak Photo CD Pack File' cat='Misc' os='Misc' ext=''/>
 			<match bytes='50 41 58' info='PAX Password Protected Bitmap' cat='Archive' os='Misc' ext='pax'/>
 			<match bytes='50 41 52 00' info='PARity Archive' cat='Archive' os='Misc' ext=''/>
-			<match bytes='50 41 52 31' info='Apache Parquet Columnar File' cat='Data' os='Misc' ext=''/>
+			<match bytes='50 41 52 31' info='Apache Parquet Columnar File' cat='Data' os='Misc' ext='parquet'/>
 			<match bytes='50 41 52' info='Par Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='50 41 51' info='PAQ Archive' cat='Archive' os='Misc' ext=''/>
 			<match bytes='50 41 47 45 44 55 36|4D 34|50' info='Windows Memory Dump' cat='System' os='Windows' ext='dmp'/>
