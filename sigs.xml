@@ -1634,7 +1634,8 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		<first byte="45">
 			<match bytes="45 86 00 00 06 00" ascii="" info="Intuit QuickBooks Backup" cat="Archive" os="Misc" ext="qbb"/>
 			<match bytes="45 78 74 72 65 6D 65" ascii="Extreme" info="Extreme Tracker AMS Module v1.3" cat="Misc" os="Misc" ext=""/>
-			<match bytes="45 78 74 65 6E 64 65 64 20 49 6E 73 74 72 75 6D 65 6E 74 3A" ascii="Extended Instrument:" info="Fast Tracker II Instrument" cat="Misc" os="Misc" ext=""/>
+			<match bytes="45 78 74 65 6E 64 65 64 20 4D 6F 64 75 6C 65 3A" ascii="Extended Module:" info="Tracker Module" cat="Audio" os="Misc" ext="xm"/>
+			<match bytes="45 78 74 65 6E 64 65 64 20 49 6E 73 74 72 75 6D 65 6E 74 3A" ascii="Extended Instrument:" info="Tracker Instrument" cat="Audio" os="Misc" ext="xi"/>
 			<match bytes="45 6C 66 46 69 6C 65 00" ascii="ElfFile" info="Windows Event Log" cat="System" os="Windows" ext="evtx"/>
 			<match bytes="45 5A 44 5F 4D 41 50" ascii="EZD_MAP" info="NEWEZD Electron Density Map" cat="Misc" os="Misc" ext=""/>
 			<match bytes="45 56 46 32 0D 0A 81" ascii="EVF2" info="EnCase Evidence File Format (v2)" cat="Diskimage" os="Misc" ext="ex01"/>
