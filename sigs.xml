@@ -348,12 +348,12 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="31 38 20 21 4E 54 49 54 4C 45" ascii="18 !NTITLE" info="XPLOR ASCII Electron Density Map" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="EF">
-			<match bytes="EF 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00" ascii="" info="FreeBSD/i386 a.out core file" cat="Misc" os="Misc" ext=""/>
+			<match bytes="EF 10 00x20" ascii="" info="FreeBSD/i386 a.out core file" cat="Misc" os="Misc" ext=""/>
 		</first>
 	</offset>
 	<offset at="8">
 		<first byte="00">
-			<match bytes="00 00 00 00 62 31 05 00 09 00 00 00 00 20 00 00 00 09 00 00 00 00 00 00" ascii="" info="Bitcoin Core File (wallet.dat)" cat="Data" os="Misc" ext="dat"/>
+			<match bytes="00x4 62 31 05 00 09 00x4 20 00 00 00 09 00x6" ascii="" info="Bitcoin Core File (wallet.dat)" cat="Data" os="Misc" ext="dat"/>
 		</first>
 		<first byte="1A">
 			<match bytes="1A 6C 65 76 65 6C 64 62" ascii=".leveldb" info="LevelDB Manifest" cat="Data" os="Misc" ext=""/>
@@ -670,7 +670,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 	</offset>
 	<offset at="66">
 		<first byte="4D">
-			<match bytes="4D 4D 58 00 00 00 00 00 00 00 00 00 00 00 00 00" ascii="MMX" info="MAR Area Detector Image" cat="Misc" os="Misc" ext=""/>
+			<match bytes="4D 4D 58 00x13" ascii="MMX" info="MAR Area Detector Image" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="50">
 			<match bytes="50 4B 6C 69 74 65" ascii="PKlite" info="PKLITE Executable" cat="Executable" os="MS-DOS" ext="exe"/>
@@ -890,10 +890,10 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="00 3B 05 00 01 00 00 00" ascii="" info="Paessler PRTG Monitoring System Database" cat="Database" os="Misc" ext="db"/>
 			<match bytes="00 20 AF 30" ascii="" info="Wii Images Container" cat="Diskimage" os="Wii" ext="tpl"/>
 			<match bytes="00 1E 84 90 00" ascii="" info="Netscape Communicator (v4) Mail Folder" cat="Email" os="Misc" ext="snm"/>
-			<match bytes="00 14 00 00 01 02 _ _ 03" ascii="" info="BIOS Details" cat="System" os="Misc" ext=""/>
+			<match bytes="00 14 00 00 01 02 ?? ?? 03" ascii="" info="BIOS Details" cat="System" os="Misc" ext=""/>
 			<match bytes="00 12 D6 87" ascii="" info="X image" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 0F 42 49" ascii="..BI" info="Netscape Communicator address book" cat="Misc" os="Misc" ext=""/>
-			<match bytes="00 0F 42 44 00 00 00 00 00 00 01 00 00 00 00 02 00 00 00 02 00 00 04 00" ascii="..BD" info="Netscape Address book" cat="Misc" os="Misc" ext=""/>
+			<match bytes="00 0F 42 44 00x6 01 00x4 02 00 00 00 02 00 00 04 00" ascii="..BD" info="Netscape Address book" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 0A 53 4D 4A 50 45 47" ascii="..SMJPEG" info="SMJPEG" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 08 04 56" ascii="" info="SunOS Core File" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 06 15 61 00 00 00 02 00 00 04 D2 00 00 10 00" ascii="" info="Netscape Navigator Database (v4)" cat="Database" os="Misc" ext="db"/>
@@ -904,7 +904,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="00 05 16 00" ascii="" info="AppleSingle encoded Macintosh File" cat="Misc" os="MacOS" ext=""/>
 			<match bytes="00 04 1E 8A 80" ascii="" info="3b2 core File" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 04 00 00" ascii="" info="Maple help database" cat="Misc" os="Misc" ext=""/>
-			<match bytes="00 02 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="00 02 ??x14 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
 			<match bytes="00 02 00 07 00" ascii="" info="MSVC .sbr" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 01 42 44" ascii="..BD" info="Palm Desktop Calendar Archive" cat="Archive" os="PalmOS" ext="tda"/>
 			<match bytes="00 01 42 44" ascii="..BD" info="Palm DateBook Archive" cat="Archive" os="PalmOS" ext="dba"/>
@@ -922,8 +922,8 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="00 00 FF 65" ascii="" info="old archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="00 00 FE FF" ascii="" info="Unicode Text (UTF-32 BE)" cat="Text" os="Misc" ext="txt/text"/>
 			<match bytes="00 00 1A 00 05 10 04" ascii="" info="Lotus 1-2-3 Spreadsheet (v9)" cat="Document" os="Misc" ext="123"/>
-			<match bytes="00 00 1A 00 02 10 04 00 00 00 00 00" ascii="" info="Lotus 1-2-3 Spreadsheet (v4, v5)" cat="Document" os="Misc" ext="wk4/wk5"/>
-			<match bytes="00 00 1A 00 00 10 04 00 00 00 00 00" ascii="" info="Lotus 1-2-3 Spreadsheet (v3)" cat="Document" os="Misc" ext="wk3"/>
+			<match bytes="00 00 1A 00 02 10 04 00x5" ascii="" info="Lotus 1-2-3 Spreadsheet (v4, v5)" cat="Document" os="Misc" ext="wk4/wk5"/>
+			<match bytes="00 00 1A 00 00 10 04 00x5" ascii="" info="Lotus 1-2-3 Spreadsheet (v3)" cat="Document" os="Misc" ext="wk3"/>
 			<match bytes="00 00 94 C2" ascii="" info="Artisan Image" cat="Image" os="Misc" ext=""/>
 			<match bytes="00 00 81 6C" ascii="" info="apl workspace" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 49|4D 49|4D 58 50 52" ascii="XPR" info="Quark Express Document" cat="Document" os="Misc" ext="qxd"/>
@@ -933,11 +933,11 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="00 00 05 17" ascii="" info="Plan 9 Executable, MIPS R4000 BE" cat="Executable" os="Misc" ext=""/>
 			<match bytes="00 00 04 07" ascii="" info="Plan 9 Executable, MIPS R3000" cat="Executable" os="Misc" ext=""/>
 			<match bytes="00 00 02 47" ascii="...G" info="Plan 9 Executable, Intel 960" cat="Executable" os="Misc" ext=""/>
-			<match bytes="00 00 02 00 06 04 06 00 08 00 00 00 00 00" ascii="" info="Lotus 1-2-3 Spreadsheet (v1)" cat="Document" os="Misc" ext="wk1"/>
+			<match bytes="00 00 02 00 06 04 06 00 08 00x5" ascii="" info="Lotus 1-2-3 Spreadsheet (v1)" cat="Document" os="Misc" ext="wk1"/>
 			<match bytes="00 00 03 F3" ascii="" info="Amiga Hunk Executable" cat="Executable" os="Amiga" ext="hunk"/>
 			<match bytes="00 00 02 00" ascii="" info="Windows Cursor File" cat="Image" os="Windows" ext="cur"/>
 			<match bytes="00 00 01 B0-BF" ascii="" info="Moving Picture Experts Group" cat="Video" os="Misc" ext="mpg/mpeg"/>
-			<match bytes="00 00 01 9E 00 00 00 00 00 00 00 00 00 00 00 00" ascii="" info="BEA TUXEDO DES mask data" cat="Misc" os="Misc" ext=""/>
+			<match bytes="00 00 01 9E 00x12" ascii="" info="BEA TUXEDO DES mask data" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 01 87" ascii="" info="Convex SOFF checkpoint" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 01 85" ascii="" info="Convex SOFF core" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 01 81" ascii="" info="Convex SOFF" cat="Misc" os="Misc" ext=""/>
@@ -961,9 +961,9 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="00 00 00 04" ascii="" info="X11 SNF font data, MSB first" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 00 03" ascii="" info="Jaleo XFS file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="00 00 00 01" ascii="" info="JVT NAL sequence" cat="Misc" os="Misc" ext=""/>
-			<match bytes="00 00 00 00 20 00 00 00 FF" ascii="" info="MSVC .res" cat="Misc" os="Misc" ext=""/>
-			<match bytes="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01-06 00" ascii="" info="Old Timezone Data" cat="Data" os="Misc" ext=""/>
-			<match bytes="00 00 00 00 14 00 00 00" ascii="" info="Windows Diskimage File" cat="Diskimage" os="Windows" ext="tbi"/>
+			<match bytes="00x4 20 00 00 00 FF" ascii="" info="MSVC .res" cat="Misc" os="Misc" ext=""/>
+			<match bytes="00x27 01-06 00" ascii="" info="Old Timezone Data" cat="Data" os="Misc" ext=""/>
+			<match bytes="00x4 14 00 00 00" ascii="" info="Windows Diskimage File" cat="Diskimage" os="Windows" ext="tbi"/>
 		</first>
 		<first byte="01">
 			<match bytes="01 FF 02 04 03 02" ascii="" info="Micrografx Vector Graphic" cat="Image" os="Misc" ext="drw"/>
@@ -1030,14 +1030,14 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="01 03 10 10" ascii="" info="Minix-386 impure executable" cat="Misc" os="Misc" ext=""/>
 			<match bytes="01 03 10 04" ascii="" info="Linux-8086 impure executable" cat="Misc" os="Misc" ext=""/>
 			<match bytes="01 01 01 01" ascii="" info="MMDF mailbox" cat="Misc" os="Misc" ext=""/>
-			<match bytes="01 01 47 19 A4 00 00 00 00 00 00 00" ascii="" info="The Bat! Email Message Index File" cat="Email" os="Misc" ext="tbi"/>
+			<match bytes="01 01 47 19 A4 00x7" ascii="" info="The Bat! Email Message Index File" cat="Email" os="Misc" ext="tbi"/>
 			<match bytes="01 01" ascii="" info="PDP-11 UNIX/RT ldp" cat="Misc" os="Misc" ext=""/>
 			<match bytes="01 00 6F 36 35" ascii="o65" info="o65" cat="Misc" os="Misc" ext=""/>
 			<match bytes="01 00 39 30" ascii="" info="Firebird and Interbase Database" cat="Database" os="Misc" ext="fdb/gdb"/>
 			<match bytes="01 00 09 00" ascii="" info="Windows Metadata File" cat="Misc" os="Windows" ext="wmf"/>
 			<match bytes="01 00 02 00" ascii="" info="Webex Advanced Recording Format" cat="Multimedia" os="Misc" ext="arf"/>
 			<match bytes="01 00 00 00 01" ascii="" info="Picture File" cat="Image" os="Misc" ext="pic"/>
-			<match bytes="01 00 00 00 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 45 4D 46" ascii="....EMF" info="Extended Windows Metafile Format" cat="Data" os="Windows" ext="emf"/>
+			<match bytes="01 00 00 00 ??x37 45 4D 46" ascii="....EMF" info="Extended Windows Metafile Format" cat="Data" os="Windows" ext="emf"/>
 			<match bytes="01 00" ascii="" info="raw G3 data, byte-padded" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="02">
@@ -1059,7 +1059,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="02 00 88 03 42 4F 42 4F 00 01 86" ascii="....BOBO..." info="Claris Works Document" cat="Document" os="Misc" ext=""/>
 			<match bytes="02 00 09 00" ascii="" info="MS Metafont" cat="Misc" os="Windows" ext="wmf"/>
 			<match bytes="02 00 02 01" ascii="" info="MSVC .bsc" cat="Misc" os="Misc" ext=""/>
-			<match bytes="02 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="FoxBase Database" cat="Database" os="Misc" ext="dbf"/>
+			<match bytes="02 ??x29 00 00" ascii="" info="FoxBase Database" cat="Database" os="Misc" ext="dbf"/>
 		</first>
 		<first byte="03">
 			<match bytes="03 D9 A2 9A 67 FB 4B B5" ascii="" info="KeePass Database" cat="Database" os="Misc" ext="kdbx"/>
@@ -1072,26 +1072,26 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="03 00 08 00" ascii="" info="AndroidManifest.xml" cat="Binary" os="Android" ext="xml"/>
 			<match bytes="03 00 00 00 41 50 50 52" ascii="APPR" info="Approach Index File" cat="Audio" os="Misc" ext="adx"/>
 			<match bytes="03 00 00 00" ascii="" info="VMS Alpha Executable" cat="Executable" os="Misc" ext="exe"/>
-			<match bytes="03 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase III Database" cat="Database" os="Misc" ext="dbf/dbase3"/>
+			<match bytes="03 ??x29 00 00" ascii="" info="dBase III Database" cat="Database" os="Misc" ext="dbf/dbase3"/>
 		</first>
 		<first byte="04">
 			<match bytes="04 54 50 41 43 03" ascii="TPAC" info="TPac Archive" cat="Archive" os="Misc" ext="tpz"/>
 			<match bytes="04 25 21" ascii="" info="PostScript Document" cat="Document" os="Misc" ext="ps"/>
 			<match bytes="04 22 4D 18" ascii="" info="LZ4 Frame Format" cat="Archive" os="Misc" ext="lz4"/>
-			<match bytes="04 00 00 00 _ _ _ _ _ _ _ _ 20 03 00 00" ascii="" info="Windows Recycle Bin (INFO2)" cat="System" os="Windows" ext=""/>
+			<match bytes="04 00 00 00 ??x8 20 03 00 00" ascii="" info="Windows Recycle Bin (INFO2)" cat="System" os="Windows" ext=""/>
 		</first>
 		<first byte="05">
 			<match bytes="05 56 4E 46" ascii="VNF" info="Visual Networks traffic capture file" cat="Misc" os="Misc" ext=""/>
-			<match bytes="05 07 00 00 42 4F 42 4F 05 07 00 00 00 00 00 00 00 00 00 00 00 01" ascii="BOBO" info="AppleWorks 5 Document" cat="Document" os="Apple" ext="cwk"/>
+			<match bytes="05 07 00 00 42 4F 42 4F 05 07 00x11 01" ascii="BOBO" info="AppleWorks 5 Document" cat="Document" os="Apple" ext="cwk"/>
 			<match bytes="05 06" ascii="" info="IRIS Showcase file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="05 01 01 00" ascii="" info="Terse Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="05 01" ascii="" info="PDP-11 old overlay" cat="Misc" os="Misc" ext=""/>
-			<match bytes="05 00 00 00 _ _ _ _ _ _ _ _ 20 03 00 00" ascii="" info="Windows Recycle Bin (INFO2)" cat="System" os="Windows" ext=""/>
+			<match bytes="05 00 00 00 ??x8 20 03 00 00" ascii="" info="Windows Recycle Bin (INFO2)" cat="System" os="Windows" ext=""/>
 			<match bytes="05 00" ascii="" info="Hitachi SH big-endian COFF" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="06">
 			<match bytes="06 0E 2B 34 02 05 01 01 0D 01 02" ascii="" info="Material Exchange Format" cat="Multimedia" os="Misc" ext="mxf"/>
-			<match bytes="06 07 E1 00 42 4F 42 4F 06 07 E1 00 00 00 00 00 00 00 00 00 00 01" ascii="BOBO" info="AppleWorks 6 Document" cat="Document" os="Apple" ext="cwk"/>
+			<match bytes="06 07 E1 00 42 4F 42 4F 06 07 E1 00x10 01" ascii="BOBO" info="AppleWorks 6 Document" cat="Document" os="Apple" ext="cwk"/>
 			<match bytes="06 06 ED F5 D8 1D 46 E5 BD 31 EF E7 FE 74 B7 1D" ascii="" info="Adobe InDesign Document" cat="Document" os="Misc" ext="indd"/>
 			<match bytes="06 02 00 00" ascii="" info="b.out" cat="Misc" os="Misc" ext=""/>
 			<match bytes="06 02" ascii="" info="Microsoft a.out" cat="Misc" os="Misc" ext=""/>
@@ -1115,7 +1115,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="08 01 64 00" ascii="" info="Linux/i386 Pure Executable (NMAGIC)" cat="Executable" os="Misc" ext=""/>
 			<match bytes="08 01 00 00" ascii="" info="VAX Pure Executable" cat="Executable" os="Misc" ext=""/>
 			<match bytes="08 01" ascii="" info="PDP-11 Pure Executable" cat="Executable" os="Misc" ext=""/>
-			<match bytes="08 00 45 _ _ _ _ _ _ _ _ 01|06|11" ascii="" info="IPv4 Packet" cat="Network" os="Misc" ext=""/>
+			<match bytes="08 00 45 ??x8 01|06|11" ascii="" info="IPv4 Packet" cat="Network" os="Misc" ext=""/>
 		</first>
 		<first byte="09">
 			<match bytes="09 04 06 00 00 00 10 00" ascii="" info="Microsoft Excel Worksheet" cat="Document" os="Misc" ext="xls"/>
@@ -1127,7 +1127,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="0A 16 6F 72 67 2E 62 69 74 63 6F 69 6E 2E 70 72" ascii="org.bitcoin.pr" info="MultiBit Bitcoin Wallet" cat="Data" os="Misc" ext="wallet"/>
 			<match bytes="0A 0F 08 0E" ascii="" info="TML 0123 byte-order format" cat="Misc" os="Misc" ext=""/>
 			<match bytes="0A 0D 0D 0A" ascii="" info="PCAP Next Generation Dump File Format" cat="Network" os="Misc" ext="pcapng"/>
-			<match bytes="0A _ 01" ascii="" info="ZSOFT Paintbrush File" cat="Software" os="Misc" ext="pcx"/>
+			<match bytes="0A ?? 01" ascii="" info="ZSOFT Paintbrush File" cat="Software" os="Misc" ext="pcx"/>
 		</first>
 		<first byte="0B">
 			<match bytes="0B 01 00 00" ascii="" info="VAX demand paged pure Executable" cat="Executable" os="Misc" ext=""/>
@@ -1213,13 +1213,13 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="20 21 4E 54 49 54 4C 45 0A 20 52 45 4D 41 52 4B" ascii="!NTITLE. REMARK" info="CNS ASCII electron density map" cat="Misc" os="Misc" ext=""/>
 			<match bytes="20 20 30 0D 0A 53 45 43 54 49 4F 4E" ascii="0..SECTION" info="AutoCAD Drawing Exchange Format" cat="Image" os="Misc" ext="dxf"/>
 			<match bytes="20 20 30 0A 53 45 43 54 49 4F 4E" ascii="0.SECTION" info="AutoCAD Drawing Exchange Format" cat="Image" os="Misc" ext="dxf"/>
-			<match bytes="20 05 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="20 05 ??x14 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
 			<match bytes="20 02 01 62 A0 1E AB 07 02 00 00 00" ascii="" info="Tableau Datasource" cat="Data" os="Misc" ext="tde"/>
 		</first>
 		<first byte="21">
 			<match bytes="21 5F 54 41 47" ascii="!_TAG" info="Exuberant Ctags Tag File" cat="Misc" os="Misc" ext=""/>
-			<match bytes="21 42 44 4E _ _ _ _ 53 4F" ascii="!BDNSO" info="MS Outlook Offline Storage Folder" cat="Email" os="Misc" ext="ost"/>
-			<match bytes="21 42 44 4E _ _ _ _ 53 4D" ascii="!BDNSM" info="MS Outlook Personal Folder" cat="Email" os="Misc" ext="pst"/>
+			<match bytes="21 42 44 4E ??x4 53 4F" ascii="!BDNSO" info="MS Outlook Offline Storage Folder" cat="Email" os="Misc" ext="ost"/>
+			<match bytes="21 42 44 4E ??x4 53 4D" ascii="!BDNSM" info="MS Outlook Personal Folder" cat="Email" os="Misc" ext="pst"/>
 			<match bytes="21 3C 73 70 65 6C 6C 3E" ascii="!&lt;spell&gt;" info="MKS Spell hash list (old format)" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 3C 73 70 65 6C 6C 32 3E" ascii="!&lt;spell2&gt;" info="MKS Spell hash list" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 3C 62 6F 75 74 3E" ascii="!&lt;bout&gt;" info="b.out archive" cat="Misc" os="Misc" ext=""/>
@@ -1281,7 +1281,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="25 25 48 50 3A" ascii="%%HP:" info="HP48 Text" cat="Misc" os="Misc" ext=""/>
 			<match bytes="25 25 21 21" ascii="%%!!" info="X-Post-It-Note" cat="Misc" os="Misc" ext=""/>
 			<match bytes="25 21 56 4D 46" ascii="%!VMF" info="SunClock's Vector Map Format data" cat="Misc" os="Misc" ext=""/>
-			<match bytes="25 21 50 53 2D 41 64 6F 62 65 2D _ 2E _ 20 45 50 53 46 2D _ 2E" ascii="%!PS-Adobe-. EPSF-." info="Encapsulated PostScript Document" cat="Document" os="Misc" ext="eps"/>
+			<match bytes="25 21 50 53 2D 41 64 6F 62 65 2D ?? 2E ?? 20 45 50 53 46 2D ?? 2E" ascii="%!PS-Adobe-. EPSF-." info="Encapsulated PostScript Document" cat="Document" os="Misc" ext="eps"/>
 			<match bytes="25 21 50 53 2D 41 64 6F 62 65 2D 33 2E 30|31 20 45 50 53 46" ascii="%!PS-Adobe-3.. EPSF" info="Adobe Illustrator Artwork" cat="Image" os="Misc" ext="ai"/>
 			<match bytes="25 21 50 53 2D 41 64 6F 62 65 2D 33 2E 30 20 45 50 53 46 2D 33 20 30" ascii="%!PS-Adobe-3.0 EPSF-3 0" info="Encapsulated PostScript Document" cat="Document" os="Misc" ext="eps"/>
 			<match bytes="25 21 50 53 2D 41 64 6F 62 65" ascii="%!PS-Adobe" info="PostScript Document" cat="Document" os="Misc" ext="ps"/>
@@ -1342,14 +1342,14 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="2D 72 6F 6D 31 66 73 2D 00" ascii="-rom1fs-" info="romfs filesystem, version 1" cat="Misc" os="Misc" ext=""/>
 			<match bytes="2D 68 2D" ascii="-h-" info="Software Tools Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="2D 48 32 4F" ascii="-H2O" info="DRY Archive" cat="Archive" os="Misc" ext=""/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 53 53 48 32 20 4B 45 59 2D 2D 2D 2D 2D" ascii="-----BEGIN SSH2 KEY-----" info="OpenSSH Public Key" cat="Encryption" os="Misc" ext="pub"/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 52 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D" ascii="-----BEGIN RSA PRIVATE KEY-----" info="PEM Encoded X.509 Certificate" cat="Encryption" os="Misc" ext="key/pem"/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D" ascii="-----BEGIN PRIVATE KEY-----" info="PEM Encoded X.509 PKCS#8 Private Key" cat="Encryption" os="Misc" ext="key/pem"/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 47 50" ascii="-----BEGIN PGP" info="PGP Armored Data" cat="Encryption" os="Misc" ext=""/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 4F 50 45 4E 53 53 48 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D" ascii="-----BEGIN OPENSSH PRIVATE KEY--" info="OpenSSH Private Key" cat="Encryption" os="Misc" ext=""/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 44 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D" ascii="-----BEGIN DSA PRIVATE KEY-----" info="PEM Encoded X.509 PKCS#1 DSA Private Key" cat="Encryption" os="Misc" ext="key/pem"/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 20 52 45 51 55 45 53 54 2D 2D" ascii="-----BEGIN CERTIFICATE REQUEST--" info="PEM Encoded X.509 Certificate Signing Request" cat="Encryption" os="Misc" ext="csr/pem"/>
-			<match bytes="2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 2D 2D 2D 2D 2D" ascii="-----BEGIN CERTIFICATE-----" info="PEM Encoded X.509 Certificate" cat="Encryption" os="Misc" ext="crt/pem"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 53 53 48 32 20 4B 45 59 2Dx5" ascii="-----BEGIN SSH2 KEY-----" info="OpenSSH Public Key" cat="Encryption" os="Misc" ext="pub"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 52 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2Dx5" ascii="-----BEGIN RSA PRIVATE KEY-----" info="PEM Encoded X.509 Certificate" cat="Encryption" os="Misc" ext="key/pem"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 50 52 49 56 41 54 45 20 4B 45 59 2Dx5" ascii="-----BEGIN PRIVATE KEY-----" info="PEM Encoded X.509 PKCS#8 Private Key" cat="Encryption" os="Misc" ext="key/pem"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 50 47 50" ascii="-----BEGIN PGP" info="PGP Armored Data" cat="Encryption" os="Misc" ext=""/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 4F 50 45 4E 53 53 48 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D" ascii="-----BEGIN OPENSSH PRIVATE KEY--" info="OpenSSH Private Key" cat="Encryption" os="Misc" ext=""/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 44 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2Dx5" ascii="-----BEGIN DSA PRIVATE KEY-----" info="PEM Encoded X.509 PKCS#1 DSA Private Key" cat="Encryption" os="Misc" ext="key/pem"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 20 52 45 51 55 45 53 54 2D 2D" ascii="-----BEGIN CERTIFICATE REQUEST--" info="PEM Encoded X.509 Certificate Signing Request" cat="Encryption" os="Misc" ext="csr/pem"/>
+			<match bytes="2Dx5 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 2Dx5" ascii="-----BEGIN CERTIFICATE-----" info="PEM Encoded X.509 Certificate" cat="Encryption" os="Misc" ext="crt/pem"/>
 		</first>
 		<first byte="2E">
 			<match bytes="2E 73 79 73 74 65 6D" ascii="system" info="SHARC architecture file" cat="Misc" os="Misc" ext=""/>
@@ -1375,13 +1375,13 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="30 37 30 37 30 37" ascii="070707" info="ASCII cpio Archive (pre-SVR4 or odc)" cat="Archive" os="Misc" ext="cpio"/>
 			<match bytes="30 37 30 37 30 32" ascii="070702" info="ASCII cpio Archive (SVR4 with CRC)" cat="Archive" os="Misc" ext="cpio"/>
 			<match bytes="30 37 30 37 30 31" ascii="070701" info="ASCII cpio Archive (SVR4 without CRC)" cat="Archive" os="Misc" ext="cpio"/>
-			<match bytes="30 31 4F 52 44 4E 41 4E 43 45 20 53 55 52 56 45 59 20 20 20 20 20 20 20" ascii="01ORDNANCE SURVEY" info="National Transfer Format Map" cat="Misc" os="Misc" ext="ntf"/>
+			<match bytes="30 31 4F 52 44 4E 41 4E 43 45 20 53 55 52 56 45 59 20x7" ascii="01ORDNANCE SURVEY" info="National Transfer Format Map" cat="Misc" os="Misc" ext="ntf"/>
 			<match bytes="30 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 42 5A 68" ascii="0123456789012345BZh" info="EXP1 Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="30 26 B2 75 8E 66 CF 11 A6 D9 00 AA 00 62 CE 6C" ascii="" info="Microsoft Advanced Systems Format" cat="Multimedia" os="Misc" ext="asf/wmv/wma"/>
 			<match bytes="30 20 48 45 41 44" ascii="0 HEAD" info="Genealogical Data Communication (GEDCOM) File" cat="Data" os="Misc" ext="ged"/>
 			<match bytes="30 0D 0A 53 45 43 54 49 4F 4E" ascii="SECTION" info="AutoCAD Drawing Exchange Format" cat="Image" os="Misc" ext="dxf"/>
 			<match bytes="30 00 00 00 4C 66 4C 65" ascii="LfLe" info="Windows Event Viewer File" cat="Data" os="Windows" ext="evt"/>
-			<match bytes="30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="0.." info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
+			<match bytes="30 ??x29 00 00" ascii="0.." info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
 		</first>
 		<first byte="31">
 			<match bytes="31 BE" ascii="" info="Microsoft Write" cat="Document" os="Windows" ext="wri"/>
@@ -1389,14 +1389,14 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="31 39 38 34" ascii="1984" info="Linux Journalled Flash Filesystem, little endian" cat="Misc" os="Misc" ext=""/>
 			<match bytes="31 30 4C 46" ascii="10LF" info="FL Studio Mobile Project" cat="Audio" os="Misc" ext="flm"/>
 			<match bytes="31 0A 30 30" ascii="1.00" info="SubRip Subtitle File" cat="Data" os="Misc" ext="srt"/>
-			<match bytes="31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="1.." info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
+			<match bytes="31 ??x29 00 00" ascii="1.." info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
 		</first>
 		<first byte="32">
 			<match bytes="32 BE" ascii="" info="Microsoft Write" cat="Document" os="Windows" ext="wri"/>
 			<match bytes="32 42 49 54" ascii="2BIT" info="Audio Visual Research file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="32 32 37 38" ascii="2278" info="Aster*x Version 2" cat="Misc" os="Misc" ext=""/>
-			<match bytes="32 03 10 00 00 00 00 00 00 00 80 00 00 00 FF 00" ascii="" info="Pfaff Home Embroidery" cat="Data" os="Misc" ext="pcs"/>
-			<match bytes="32 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
+			<match bytes="32 03 10 00x7 80 00 00 00 FF 00" ascii="" info="Pfaff Home Embroidery" cat="Data" os="Misc" ext="pcs"/>
+			<match bytes="32 ??x29 00 00" ascii="" info="FoxPro Database" cat="Database" os="Misc" ext="dbf"/>
 		</first>
 		<first byte="33">
 			<match bytes="33 17|18" ascii="" info="AIN Archive" cat="Archive" os="Misc" ext="ain"/>
@@ -1417,7 +1417,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="37 7A BC AF 27 1C" ascii="7z" info="7-Zip Archive" cat="Archive" os="Misc" ext="7z"/>
 			<match bytes="37 37 37" ascii="777" info="777 Archive " cat="Archive" os="Misc" ext=""/>
 			<match bytes="37 04" ascii="" info="QuArk Archive Data" cat="Archive" os="Misc" ext=""/>
-			<match bytes="37 00 00 10 42 00 00 10 00 00 00 00 39 64 39 47" ascii="" info="EPOC MBM Image" cat="Image" os="Misc" ext="mbm"/>
+			<match bytes="37 00 00 10 42 00 00 10 00x4 39 64 39 47" ascii="" info="EPOC MBM Image" cat="Image" os="Misc" ext="mbm"/>
 			<match bytes="37 00 00 10" ascii="" info="Psion Series 5" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="38">
@@ -1547,7 +1547,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="42 44 69 63" ascii="BDic" info="Google Chrome Dictionary" cat="Web" os="Misc" ext="bdic"/>
 			<match bytes="42 41 43 4B 4D 49 4B 45 44 49 53 4B" ascii="BACKMIKEDISK" info="AmiBack Amiga Backup Data" cat="Data" os="Amiga" ext="bac"/>
 			<match bytes="42 41 42 59 4C" ascii="BABYL" info="Emacs RMAIL" cat="Misc" os="Misc" ext=""/>
-			<match bytes="42 41 28 00 00 00 2E 00 00 00 00 00 00 00" ascii="BA" info="Icon for MS Windows" cat="Image" os="Windows" ext=""/>
+			<match bytes="42 41 28 00 00 00 2E 00x7" ascii="BA" info="Icon for MS Windows" cat="Image" os="Windows" ext=""/>
 			<match bytes="42 01" ascii="" info="MIPSEL MIPS-III ECOFF executable" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="43">
@@ -1587,7 +1587,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="43 43 53 44 33 5A 46" ascii="CCSD3ZF" info="PDS (CCSD) Image" cat="Image" os="Misc" ext="pds"/>
 			<match bytes="43 42 4D 64 00 00" ascii="CBMd" info="Power 64 C64 Emulator Snapshot" cat="Misc" os="C64" ext=""/>
 			<match bytes="43 41 54 20" ascii="CAT" info="Electronic Arts Interchange Format File" cat="Binary" os="Amiga" ext="iff"/>
-			<match bytes="43 36 34 53 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65 00 00 00 00 00 00 00 00 00 00 00" ascii="C64S tape image file" info="T64 Tape Image" cat="Diskimage" os="C64" ext="t64"/>
+			<match bytes="43 36 34 53 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65 00x11" ascii="C64S tape image file" info="T64 Tape Image" cat="Diskimage" os="C64" ext="t64"/>
 			<match bytes="43 36 34 53 20 74 61 70 65 20 66 69 6C 65" ascii="C64S tape file" info="T64 Tape Image" cat="Diskimage" os="Misc" ext="t64"/>
 			<match bytes="43 36 34 49 6D 61 67 65" ascii="C64Image" info="PC64 Freezer Image" cat="Diskimage" os="C64" ext=""/>
 			<match bytes="43 36 34 46 69 6C 65" ascii="C64File" info="PC64 Emulator File" cat="Diskimage" os="C64" ext=""/>
@@ -1596,7 +1596,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="43 23 2B 44 A4 43 4D A5 48 64 72" ascii="C#+D.CM.Hdr" info="RagTime Document" cat="Document" os="Misc" ext="rtd"/>
 			<match bytes="43 15 41 64" ascii="C.Ad" info="X64 Image" cat="Diskimage" os="C64" ext="x64"/>
 			<match bytes="43 01" ascii="" info="basic-16 executable (TV)" cat="Executable" os="Misc" ext=""/>
-			<match bytes="43 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
+			<match bytes="43 ??x29 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
 		</first>
 		<first byte="44">
 			<match bytes="44 72 61 77" ascii="Draw" info="RiscOS Drawfile" cat="Misc" os="Misc" ext=""/>
@@ -1628,7 +1628,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="44 42 4D 30" ascii="DBM0" info="DIGI Booster Pro Module" cat="Misc" os="Misc" ext=""/>
 			<match bytes="44 42 46 48" ascii="DBFH" info="Palm Zire Photo Database" cat="Database" os="PalmOS" ext="db"/>
 			<match bytes="44 41 58 00" ascii="DAX" info="DAX Compressed CD Image" cat="Diskimage" os="Misc" ext="dax"/>
-			<match bytes="44 41 41 00 00 00 00 00" ascii="DAA" info="PowerISO Direct-Access-Archive Image" cat="Diskimage" os="Misc" ext="daa"/>
+			<match bytes="44 41 41 00x5" ascii="DAA" info="PowerISO Direct-Access-Archive Image" cat="Diskimage" os="Misc" ext="daa"/>
 			<match bytes="44 31 2E 30 0D" ascii="D1.0" info="X11 Speedo Font Data" cat="Font" os="Misc" ext=""/>
 		</first>
 		<first byte="45">
@@ -1659,17 +1659,17 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="46 57 53" ascii="FWS" info="Macromedia Flash Data" cat="Multimedia" os="Misc" ext="swf"/>
 			<match bytes="46 54 4D 4E" ascii="FTMN" info="FaceTheMusic module" cat="Misc" os="Misc" ext=""/>
 			<match bytes="46 4F 58 53 51 5A" ascii="FOXSQZ" info="FoxSQZ Archive" cat="Archive" os="Misc" ext=""/>
-			<match bytes="46 4F 52 4D _ _ _ _ 59 55 56 4E" ascii="FORMYUVN" info="IFF YUV Image" cat="Image" os="Misc" ext="yuvn"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 53 4D 55 53" ascii="FORMSMUS" info="IFF Simple Musical Score" cat="Audio" os="Misc" ext="smus"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 49 4C 42 4D" ascii="FORMILBM" info="IFF Interleaved Bitmap" cat="Image" os="Misc" ext="ilbm"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 46 41 58 58" ascii="FORMFAXX" info="IFF Facsimile Image" cat="Image" os="Misc" ext="faxx"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 46 41 4E 54" ascii="FORMFANT" info="Amiga Fantavision Movie" cat="Video" os="Amiga" ext="iff"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 43 4D 55 53" ascii="FORMCMUS" info="IFF Musical Score" cat="Audio" os="Misc" ext="cmus"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 41 4E 49 4D" ascii="FORMANIM" info="IFF CEL Animation" cat="Image" os="Misc" ext="anim"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 41 4E 42 4D" ascii="FORMANBM" info="IFF Animated Bitmap" cat="Image" os="Misc" ext="anbm"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 41 49 46 46" ascii="FORMAIFF" info="Audio Interchange File Format" cat="Audio" os="Misc" ext="aiff"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 41 43 42 4D" ascii="FORMACBM" info="Amiga Contiguous Bitmap" cat="Image" os="Amiga" ext="acbm"/>
-			<match bytes="46 4F 52 4D _ _ _ _ 38 53 56 58" ascii="FORM8SVX" info="IFF 8-bit Sampled Voice" cat="Audio" os="Misc" ext="8svx"/>
+			<match bytes="46 4F 52 4D ??x4 59 55 56 4E" ascii="FORMYUVN" info="IFF YUV Image" cat="Image" os="Misc" ext="yuvn"/>
+			<match bytes="46 4F 52 4D ??x4 53 4D 55 53" ascii="FORMSMUS" info="IFF Simple Musical Score" cat="Audio" os="Misc" ext="smus"/>
+			<match bytes="46 4F 52 4D ??x4 49 4C 42 4D" ascii="FORMILBM" info="IFF Interleaved Bitmap" cat="Image" os="Misc" ext="ilbm"/>
+			<match bytes="46 4F 52 4D ??x4 46 41 58 58" ascii="FORMFAXX" info="IFF Facsimile Image" cat="Image" os="Misc" ext="faxx"/>
+			<match bytes="46 4F 52 4D ??x4 46 41 4E 54" ascii="FORMFANT" info="Amiga Fantavision Movie" cat="Video" os="Amiga" ext="iff"/>
+			<match bytes="46 4F 52 4D ??x4 43 4D 55 53" ascii="FORMCMUS" info="IFF Musical Score" cat="Audio" os="Misc" ext="cmus"/>
+			<match bytes="46 4F 52 4D ??x4 41 4E 49 4D" ascii="FORMANIM" info="IFF CEL Animation" cat="Image" os="Misc" ext="anim"/>
+			<match bytes="46 4F 52 4D ??x4 41 4E 42 4D" ascii="FORMANBM" info="IFF Animated Bitmap" cat="Image" os="Misc" ext="anbm"/>
+			<match bytes="46 4F 52 4D ??x4 41 49 46 46" ascii="FORMAIFF" info="Audio Interchange File Format" cat="Audio" os="Misc" ext="aiff"/>
+			<match bytes="46 4F 52 4D ??x4 41 43 42 4D" ascii="FORMACBM" info="Amiga Contiguous Bitmap" cat="Image" os="Amiga" ext="acbm"/>
+			<match bytes="46 4F 52 4D ??x4 38 53 56 58" ascii="FORM8SVX" info="IFF 8-bit Sampled Voice" cat="Audio" os="Misc" ext="8svx"/>
 			<match bytes="46 4F 52 4D" ascii="FORM" info="IFF Data" cat="Multimedia" os="Misc" ext="iff"/>
 			<match bytes="46 4F 4E 54 04" ascii="FONT" info="RISC OS 4bpp font data" cat="Misc" os="Misc" ext=""/>
 			<match bytes="46 4F 4E 54 01" ascii="FONT" info="RISC OS 1bpp font data" cat="Misc" os="Misc" ext=""/>
@@ -1805,7 +1805,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="4C 43 44 69" ascii="LCDi" info="Dream Animator file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="4C 42 4C 53 49 5A 45 3D" ascii="LBLSIZE=" info="VICAR image data" cat="Misc" os="Misc" ext=""/>
 			<match bytes="4C 41 3A" ascii="LA:" info="Tajima Embroidery Image" cat="Image" os="Misc" ext="dst"/>
-			<match bytes="4C 01 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="MS Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="4C 01 ??x14 00|1C" ascii="" info="MS Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
 			<match bytes="4C 00 00 00 01 14 02" ascii="" info="MS Windows Shortcut" cat="System" os="Windows" ext="lnk"/>
 		</first>
 		<first byte="4D">
@@ -1827,9 +1827,9 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="4D 53 48 7C 5E 7E 5C 26 7C" ascii="MSH" info="Health Level Seven Data" cat="Data" os="Misc" ext="hl7"/>
 			<match bytes="4D 53 48 7C 42 53 48 7C" ascii="MSH|BSH" info="Health Level Seven Data" cat="Data" os="Misc" ext="hl7"/>
 			<match bytes="4D 53 46 54 02 00 01 00" ascii="MSFT" info="OLE, SPSS or Visual C++ Library" cat="Programming" os="Misc" ext="tlb"/>
-			<match bytes="4D 53 43 46 00 00 00 00" ascii="MSCF" info="Microsoft Cabinet Archive" cat="Archive" os="Misc" ext="cab"/>
+			<match bytes="4D 53 43 46 00x4" ascii="MSCF" info="Microsoft Cabinet Archive" cat="Archive" os="Misc" ext="cab"/>
 			<match bytes="4D 53 43 46" ascii="MSCF" info="OneNote/Powerpoint/Access Package" cat="Misc" os="Misc" ext="onepkg/ppz/snp"/>
-			<match bytes="4D 53 43 45 00 00 00 00" ascii="MSCE" info="Microsoft WinCE install header" cat="Misc" os="Misc" ext=""/>
+			<match bytes="4D 53 43 45 00x4" ascii="MSCE" info="Microsoft WinCE install header" cat="Misc" os="Misc" ext=""/>
 			<match bytes="4D 52 56 4E" ascii="MRVN" info="VMware BIOS State" cat="System" os="Misc" ext="nvram"/>
 			<match bytes="4D 50 33 1A" ascii="MP3" info="MP3-Archiver Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="4D 50 2B" ascii="MP+" info="Musepack audio" cat="Misc" os="Misc" ext=""/>
@@ -1879,10 +1879,10 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="4E 41 56 54 52 41 46 46 49 43" ascii="NAVTRAFFIC" info="TomTom Traffic Data" cat="Data" os="Other" ext="dat"/>
 		</first>
 		<first byte="4F">
-			<match bytes="4F 67 67 53 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 70 65 65 78" ascii="OggSpeex" info="Ogg Speex" cat="Audio" os="Misc" ext="ogg/spx"/>
-			<match bytes="4F 67 67 53 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 76 6F 72 62 69 73" ascii="OggSvorbis" info="Ogg Audio" cat="Audio" os="Misc" ext="ogg/oga"/>
-			<match bytes="4F 67 67 53 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 74 68 65 6F 72 61" ascii="OggStheora" info="Ogg Video" cat="Video" os="Misc" ext="ogg/ogv"/>
-			<match bytes="4F 67 67 53 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 70 75 73 48 65 61" ascii="OggSpusHea" info="Ogg Opus" cat="Audio" os="Misc" ext="ogg/opus"/>
+			<match bytes="4F 67 67 53 ??x25 70 65 65 78" ascii="OggSpeex" info="Ogg Speex" cat="Audio" os="Misc" ext="ogg/spx"/>
+			<match bytes="4F 67 67 53 ??x25 76 6F 72 62 69 73" ascii="OggSvorbis" info="Ogg Audio" cat="Audio" os="Misc" ext="ogg/oga"/>
+			<match bytes="4F 67 67 53 ??x25 74 68 65 6F 72 61" ascii="OggStheora" info="Ogg Video" cat="Video" os="Misc" ext="ogg/ogv"/>
+			<match bytes="4F 67 67 53 ??x25 70 75 73 48 65 61" ascii="OggSpusHea" info="Ogg Opus" cat="Audio" os="Misc" ext="ogg/opus"/>
 			<match bytes="4F 67 67 53" ascii="OggS" info="Ogg Data" cat="Multimedia" os="Misc" ext="ogg/oga/ogv"/>
 			<match bytes="4F 63 74 61 76 65 2D 31 2D 4C" ascii="Octave-1-L" info="Octave binary data (little endian)" cat="Misc" os="Misc" ext=""/>
 			<match bytes="4F 63 74 61 76 65 2D 31 2D 42" ascii="Octave-1-B" info="Octave binary data (big endian)" cat="Misc" os="Misc" ext=""/>
@@ -1993,18 +1993,18 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="52 4E 43" ascii="RNC" info="PRO-PACK Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="52 4D 44 31" ascii="RMD1" info="Raw Modem Data" cat="Data" os="Misc" ext=""/>
 			<match bytes="52 4B 4D 43 32" ascii="RKMC2" info="Vormetric Encryption DPM (v2.1)" cat="Encryption" os="Misc" ext=""/>
-			<match bytes="52 49 46 58 _ _ _ _ 4D 56 39 33" ascii="RIFXMV93" info="Macromedia Director File" cat="Software" os="Misc" ext="dir/dxr/drx"/>
-			<match bytes="52 49 46 58 _ _ _ _ 46 47 44 4D" ascii="RIFXFGDM" info="Adobe Shockwave" cat="Multimedia" os="Misc" ext="dcr"/>
+			<match bytes="52 49 46 58 ??x4 4D 56 39 33" ascii="RIFXMV93" info="Macromedia Director File" cat="Software" os="Misc" ext="dir/dxr/drx"/>
+			<match bytes="52 49 46 58 ??x4 46 47 44 4D" ascii="RIFXFGDM" info="Adobe Shockwave" cat="Multimedia" os="Misc" ext="dcr"/>
 			<match bytes="52 49 46 58" ascii="RIFX" info="RIFF (big-endian) data" cat="Misc" os="Misc" ext=""/>
-			<match bytes="52 49 46 46 _ _ _ _ 73 68 77" ascii="RIFFshw" info="Corel SHOW! File" cat="Software" os="Misc" ext="shw"/>
-			<match bytes="52 49 46 46 _ _ _ _ 57 45 42 50" ascii="RIFFWEBP" info="Google WebP Image" cat="Image" os="Misc" ext="webp"/>
-			<match bytes="52 49 46 46 _ _ _ _ 57 41 56 45 66 6D 74 20" ascii="RIFFWAVEfmt" info="Waveform Audio" cat="Audio" os="Windows" ext="wav"/>
-			<match bytes="52 49 46 46 _ _ _ _ 54 52 49 44 44 45 46 4E" ascii="RIFFTRIDDEFN" info="TrID Definitions (triddefs.trd)" cat="Database" os="Misc" ext="trd"/>
-			<match bytes="52 49 46 46 _ _ _ _ 52 4D 49 44 64 61 74 61" ascii="RIFFRMIDdata" info="Windows Musical Instrument Digital Interface" cat="Audio" os="Windows" ext="rmi"/>
-			<match bytes="52 49 46 46 _ _ _ _ 51 4C 43 4D 66 6D 74 20" ascii="RIFFQLCMfmt" info="Qualcomm Pure Voice" cat="Audio" os="Misc" ext="qcp"/>
-			<match bytes="52 49 46 46 _ _ _ _ 43 44 44 41 66 6D 74 20" ascii="RIFFCDDAfmt" info="Compact Disk Digital Audio (CD-DA)" cat="Video" os="Windows" ext="cda"/>
-			<match bytes="52 49 46 46 _ _ _ _ 41 56 49 20 4C 49 53 54" ascii="RIFFAVI LIST" info="Audio Video Interleave" cat="Video" os="Windows" ext="avi"/>
-			<match bytes="52 49 46 46 _ _ _ _ 41 43 4F 4E 61 6E 69 68" ascii="RIFFACONanih" info="Windows Animated Cursor" cat="Image" os="Windows" ext="ani"/>
+			<match bytes="52 49 46 46 ??x4 73 68 77" ascii="RIFFshw" info="Corel SHOW! File" cat="Software" os="Misc" ext="shw"/>
+			<match bytes="52 49 46 46 ??x4 57 45 42 50" ascii="RIFFWEBP" info="Google WebP Image" cat="Image" os="Misc" ext="webp"/>
+			<match bytes="52 49 46 46 ??x4 57 41 56 45 66 6D 74 20" ascii="RIFFWAVEfmt" info="Waveform Audio" cat="Audio" os="Windows" ext="wav"/>
+			<match bytes="52 49 46 46 ??x4 54 52 49 44 44 45 46 4E" ascii="RIFFTRIDDEFN" info="TrID Definitions (triddefs.trd)" cat="Database" os="Misc" ext="trd"/>
+			<match bytes="52 49 46 46 ??x4 52 4D 49 44 64 61 74 61" ascii="RIFFRMIDdata" info="Windows Musical Instrument Digital Interface" cat="Audio" os="Windows" ext="rmi"/>
+			<match bytes="52 49 46 46 ??x4 51 4C 43 4D 66 6D 74 20" ascii="RIFFQLCMfmt" info="Qualcomm Pure Voice" cat="Audio" os="Misc" ext="qcp"/>
+			<match bytes="52 49 46 46 ??x4 43 44 44 41 66 6D 74 20" ascii="RIFFCDDAfmt" info="Compact Disk Digital Audio (CD-DA)" cat="Video" os="Windows" ext="cda"/>
+			<match bytes="52 49 46 46 ??x4 41 56 49 20 4C 49 53 54" ascii="RIFFAVI LIST" info="Audio Video Interleave" cat="Video" os="Windows" ext="avi"/>
+			<match bytes="52 49 46 46 ??x4 41 43 4F 4E 61 6E 69 68" ascii="RIFFACONanih" info="Windows Animated Cursor" cat="Image" os="Windows" ext="ani"/>
 			<match bytes="52 49 46 46" ascii="RIFF" info="RIFF (little-endian) Data" cat="Multimedia" os="Misc" ext="riff"/>
 			<match bytes="52 45 7E 5E" ascii="RE~^" info="RAR Archive" cat="Archive" os="Misc" ext="rar"/>
 			<match bytes="52 45 56 4E 55 4D 3A 2C" ascii="REVNUM:," info="Antenna Data" cat="Data" os="Misc" ext="adf"/>
@@ -2040,7 +2040,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="53 50 56 42" ascii="SPVB" info="MultiBit Bitcoin Blockchain" cat="Data" os="Misc" ext="spvchain"/>
 			<match bytes="53 50 46 49 00" ascii="SPFI." info="StorageCraft Backup File" cat="Data" os="Misc" ext="spf"/>
 			<match bytes="53 50 30 31" ascii="SP01" info="Amazon Kindle Update Package" cat="Data" os="Misc" ext="bin"/>
-			<match bytes="53 49 4D 50 4C 45 20 20 3D 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 54" ascii="SIMPLE" info="Flexible Image Transport System" cat="Image" os="Misc" ext="fits"/>
+			<match bytes="53 49 4D 50 4C 45 20 20 3D 20x20 54" ascii="SIMPLE" info="Flexible Image Transport System" cat="Image" os="Misc" ext="fits"/>
 			<match bytes="53 49 45 54 52 4F 4E 49 43 53 20 58 52 44 20 53 43 41 4E" ascii="SIETRONICS XRD SCAN" info="Sietronics CPI XRD Document" cat="Document" os="Misc" ext="cpi"/>
 			<match bytes="53 4F 4E 47" ascii="SONG" info="DigiTrekker DTM Module" cat="Misc" os="Misc" ext=""/>
 			<match bytes="53 4D 4F 44" ascii="SMOD" info="Future Composer 1.3 Module Sound File" cat="Audio" os="Misc" ext=""/>
@@ -2180,7 +2180,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="5F 01" ascii="" info="370 XA sysV Executable" cat="Executable" os="Misc" ext=""/>
 		</first>
 		<first byte="60">
-			<match bytes="60 EA _ _ _ _ _ _ _ _ 02" ascii="" info="Compressed Archive" cat="Archive" os="Misc" ext="arj"/>
+			<match bytes="60 EA ??x8 02" ascii="" info="Compressed Archive" cat="Archive" os="Misc" ext="arj"/>
 			<match bytes="60 01" ascii="" info="MIPSEB-LE ECOFF executable" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="61">
@@ -2191,7 +2191,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="62 76 78 32" ascii="bvx2" info="LZFSE Data Compression" cat="Archive" os="Misc" ext="lzfse"/>
 			<match bytes="62 74 73 6E 6F 6F 70 00" ascii="btsnoop" info="BTSnoop" cat="Misc" os="Misc" ext=""/>
 			<match bytes="62 70 6C 69 73 74" ascii="bplist" info="Apple Binary Property List" cat="Data" os="Apple" ext="bplist"/>
-			<match bytes="62 6F 6F 6B 00 00 00 00 6D 61 72 6B 00 00 00 00" ascii="book....mark" info="MacOS File Alias (Symbolic Link)" cat="System" os="MacOS" ext="alias"/>
+			<match bytes="62 6F 6F 6B 00x4 6D 61 72 6B 00x4" ascii="book....mark" info="MacOS File Alias (Symbolic Link)" cat="System" os="MacOS" ext="alias"/>
 			<match bytes="62 65 67 69 6E 2D" ascii="begin-" info="UUencoded (Base64) Text" cat="Encoding" os="Misc" ext="b64"/>
 			<match bytes="62 65 67 69 6E 20" ascii="begin" info="UUencoded/XXencoded Text" cat="Encoding" os="Misc" ext=""/>
 			<match bytes="62 46 4C 54" ascii="bFLT" info="BFLT Executable" cat="Executable" os="Misc" ext=""/>
@@ -2207,10 +2207,10 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="63 64 65 76" ascii="cdev" info="Macintosh Control Panel" cat="Data" os="MacOS" ext=""/>
 			<match bytes="63 61 66 66" ascii="caff" info="Apple Core Audio File" cat="Audio" os="Apple" ext="caf"/>
 			<match bytes="63 01" ascii="" info="MIPSEB-LE MIPS-II ECOFF Executable" cat="Misc" os="Misc" ext=""/>
-			<match bytes="63 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="c.." info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
+			<match bytes="63 ??x29 00 00" ascii="c.." info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
 		</first>
 		<first byte="64">
-			<match bytes="64 86 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="64 86 ??x14 00|1C" ascii="" info="Common Object File Format" cat="Binary" os="Misc" ext="o/obj"/>
 			<match bytes="64 73 77 66 69 6C 65" ascii="dswfile" info="MS Visual Studio Workspace" cat="Programming" os="Windows" ext="dsw"/>
 			<match bytes="64 6E 73 2E" ascii="dns" info="Audacity Audio File" cat="Audio" os="Misc" ext="au"/>
 			<match bytes="64 69 76 65 72 74 28 2D 31 29 0A" ascii="divert(-1)" info="Sendmail m4 Text" cat="Text" os="Misc" ext=""/>
@@ -2250,7 +2250,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		</first>
 		<first byte="69">
 			<match bytes="69 64 3D 49 6D 61 67 65 4D 61 67 69 63 6B" ascii="id=ImageMagick" info="MIFF image data" cat="Misc" os="Misc" ext=""/>
-			<match bytes="69 63 6E 73 _ _ _ _ 69|49|73|6C|68|74" ascii="icns" info="MacOS Icon" cat="Image" os="MacOS" ext="icns"/>
+			<match bytes="69 63 6E 73 ??x4 69|49|73|6C|68|74" ascii="icns" info="MacOS Icon" cat="Image" os="MacOS" ext="icns"/>
 			<match bytes="69 52 69 76 44 42" ascii="iRivDB" info="iRiver Database" cat="Database" os="Misc" ext=""/>
 			<match bytes="69 48 44 4C" ascii="iHDL" info="ld.so hints file (little endian)" cat="Misc" os="Misc" ext=""/>
 		</first>
@@ -2399,12 +2399,12 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="7F 7F 7F 7F 7F 7F 7F 7F" ascii="" info="Apple II image with white background" cat="Misc" os="Misc" ext=""/>
 			<match bytes="7F 76 65 72" ascii="ver" info="EtherPeek/AiroPeek capture file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="7F 4F 4C 46" ascii="OLF" info="OLF" cat="Misc" os="Misc" ext=""/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ 00" ascii="ELF" info="Executable and Linkable Format" cat="Executable" os="Linux" ext="elf"/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ 01" ascii="ELF" info="Executable and Linkable Format (Relocatable)" cat="Binary" os="Linux" ext="o"/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ 02" ascii="ELF" info="Executable and Linkable Format (Executable)" cat="Executable" os="Linux" ext="elf"/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ 03" ascii="ELF" info="Executable and Linkable Format (PIE/Shared)" cat="Executable" os="Linux" ext="elf/so/ko"/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ 04" ascii="ELF" info="Executable and Linkable Format (Core)" cat="Binary" os="Linux" ext="core"/>
-			<match bytes="7F 45 4C 46 01|02 _ _ _ _ _ _ _ _ _ _ _ FF" ascii="ELF" info="Executable and Linkable Format (Reserved)" cat="Binary" os="Linux" ext="reserved"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 00" ascii="ELF" info="Executable and Linkable Format" cat="Executable" os="Linux" ext="elf"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 01" ascii="ELF" info="Executable and Linkable Format (Relocatable)" cat="Binary" os="Linux" ext="o"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 02" ascii="ELF" info="Executable and Linkable Format (Executable)" cat="Executable" os="Linux" ext="elf"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 03" ascii="ELF" info="Executable and Linkable Format (PIE/Shared)" cat="Executable" os="Linux" ext="elf/so/ko"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 04" ascii="ELF" info="Executable and Linkable Format (Core)" cat="Binary" os="Linux" ext="core"/>
+			<match bytes="7F 45 4C 46 01|02 ??x11 FF" ascii="ELF" info="Executable and Linkable Format (Reserved)" cat="Binary" os="Linux" ext="reserved"/>
 			<match bytes="7F 45 4C 46" ascii="ELF" info="Executable and Linkable Format" cat="Executable" os="Misc" ext="elf"/>
 		</first>
 		<first byte="80">
@@ -2420,7 +2420,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		</first>
 		<first byte="83">
 			<match bytes="83 01" ascii="" info="ECOFF Alpha" cat="Misc" os="Misc" ext=""/>
-			<match bytes="83 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase III Database" cat="Database" os="Misc" ext="dbf/dbase3"/>
+			<match bytes="83 ??x29 00 00" ascii="" info="dBase III Database" cat="Database" os="Misc" ext="dbf/dbase3"/>
 		</first>
 		<first byte="84">
 			<match bytes="84 19" ascii="" info="Linux old jffs2 Filesystem Data (little endian)" cat="Filesystem" os="Misc" ext=""/>
@@ -2430,10 +2430,10 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="85 19" ascii="" info="Linux jffs2 Filesystem Data (little endian)" cat="Filesystem" os="Misc" ext=""/>
 			<match bytes="85 02" ascii="" info="GPG Encrypted Data" cat="Encryption" os="Misc" ext="gpg"/>
 			<match bytes="85 01 07 00" ascii="" info="ECOFF NetBSD/alpha binary" cat="Misc" os="Misc" ext=""/>
-			<match bytes="85 _ _ 03" ascii="" info="PGP File" cat="Encryption" os="Misc" ext="pgp"/>
+			<match bytes="85 ?? ?? 03" ascii="" info="PGP File" cat="Encryption" os="Misc" ext="pgp"/>
 		</first>
 		<first byte="86">
-			<match bytes="86 DD _ _ _ _ _ _ 01|06|11" ascii="" info="IPv6 Packet" cat="Web" os="Misc" ext=""/>
+			<match bytes="86 DD ??x6 01|06|11" ascii="" info="IPv6 Packet" cat="Web" os="Misc" ext=""/>
 		</first>
 		<first byte="87">
 			<match bytes="87 65" ascii="" info="Disk Quotas File" cat="Misc" os="Misc" ext=""/>
@@ -2462,7 +2462,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		<first byte="8B">
 			<match bytes="8B 4A 4E 47" ascii="JNG" info="JNG Video" cat="Video" os="Misc" ext=""/>
 			<match bytes="8B 45 52 02 00 00 00" ascii="ER" info="Roxio Toast Disk Image" cat="Diskimage" os="Misc" ext="toast"/>
-			<match bytes="8B _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
+			<match bytes="8B ??x29 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
 		</first>
 		<first byte="8C">
 			<match bytes="8C 0D 04 09" ascii="" info="GPG Encrypted File" cat="Encryption" os="Misc" ext="gpg"/>
@@ -2510,7 +2510,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="A3 86 01 00" ascii="" info="Linux-8086 Object File" cat="Misc" os="Misc" ext=""/>
 		</first>
 		<first byte="A9">
-			<match bytes="A9 0D 00 00 00 00 00 00" ascii="" info="Access Data FTK Evidence File" cat="Diskimage" os="Misc" ext="dat"/>
+			<match bytes="A9 0D 00x6" ascii="" info="Access Data FTK Evidence File" cat="Diskimage" os="Misc" ext="dat"/>
 		</first>
 		<first byte="AA">
 			<match bytes="AA D5 AA D5 AA D5 AA D5" ascii="" info="Apple II Image (with orange background)" cat="Image" os="Misc" ext=""/>
@@ -2553,11 +2553,11 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="BE BA FE CA 0F 50 61 6C 6D 53 47 20 44 61 74 61" ascii="PalmSG Data" info="Palm Desktop DateBook File" cat="Data" os="PalmOS" ext="dat"/>
 			<match bytes="BE BA FE CA" ascii="" info="Palm Desktop Calendar Archive" cat="Archive" os="PalmOS" ext="dba"/>
 			<match bytes="BE EF 41 42 43 44 45 46 47 48" ascii="ABCDEFGH" info="HP LaserJet 1000 Series downloadable Firmware" cat="System" os="Misc" ext=""/>
-			<match bytes="BE 00 00 00 AB 00 00 00 00 00 00 00 00" ascii="" info="MS Write File" cat="Document" os="Windows" ext="wri"/>
+			<match bytes="BE 00 00 00 AB 00x8" ascii="" info="MS Write File" cat="Document" os="Windows" ext="wri"/>
 		</first>
 		<first byte="C0">
 			<match bytes="C0 48 52 42" ascii="HRB" info="Harbour HRB File" cat="Misc" os="Misc" ext=""/>
-			<match bytes="C0 01 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="C0 01 ??x14 00|1C" ascii="" info="Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
 		</first>
 		<first byte="C2">
 			<match bytes="C2 A8 4D 50 C2 A8" ascii="MP" info="KBoom Archive" cat="Archive" os="Misc" ext=""/>
@@ -2578,14 +2578,13 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="C9 C4" ascii="" info="ID Tags Data" cat="Data" os="Misc" ext=""/>
 		</first>
 		<first byte="CA">
-			<match bytes="CA FE BA BF _ _ _ _ 00|01 00" ascii="" info="Mach-O Universal Executable" cat="Executable" os="MacOS" ext="macho"/>
-			<match bytes="CA FE BA BE _ _ _ _ 00|01 00" ascii="" info="Mach-O Universal Executable" cat="Executable" os="MacOS" ext="macho"/>
+			<match bytes="CA FE BA BE|BF ??x4 00|01 00" ascii="" info="Mach-O Universal Executable" cat="Executable" os="MacOS" ext="macho"/>
 			<match bytes="CA FE BA BE" ascii="" info="Java Bytecode" cat="Programming" os="Misc" ext="class"/>
 		</first>
 		<first byte="CB">
 			<match bytes="CB 1D 42 6F 6F 6D E6 FF 03 01" ascii="Boom" info="Boom or linuxdoom demo" cat="Misc" os="Misc" ext=""/>
 			<match bytes="CB 05" ascii="" info="huf output" cat="Misc" os="Misc" ext=""/>
-			<match bytes="CB _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
+			<match bytes="CB ??x29 00 00" ascii="" info="dBase IV Database" cat="Database" os="Misc" ext="dbf/dbase4"/>
 		</first>
 		<first byte="CC">
 			<match bytes="CC 52 33 FC E9 2C 18 48 AF E3 36 30 1A 39 40 06" ascii="" info="Nokia Phone Backup" cat="Data" os="Nokia" ext="nbu"/>
@@ -2646,13 +2645,13 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		</first>
 		<first byte="E3">
 			<match bytes="E3 82 85 96" ascii="" info="Windows 98 Password File" cat="Encryption" os="Windows" ext="pwl"/>
-			<match bytes="E3 10 00 01 00 00 00 00" ascii="" info="Amiga Icon" cat="Image" os="Amiga" ext="info"/>
+			<match bytes="E3 10 00 01 00x4" ascii="" info="Amiga Icon" cat="Image" os="Amiga" ext="info"/>
 		</first>
 		<first byte="E4">
 			<match bytes="E4 52 5C 7B 8C D8 A7 4D AE B1 53 78 D0 29 96 D3" ascii="" info="MS OneNote Note" cat="Data" os="Windows" ext="one"/>
 		</first>
 		<first byte="E5">
-			<match bytes="E5 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase Hiper-Six Database" cat="Database" os="Misc" ext="dbf/dbase"/>
+			<match bytes="E5 ??x29 00 00" ascii="" info="dBase Hiper-Six Database" cat="Database" os="Misc" ext="dbf/dbase"/>
 		</first>
 		<first byte="EB">
 			<match bytes="EB 52|58 90 2D 46 56 45 2D 46 53 2D" ascii="-FVE-FS-" info="Bitlocker Volume" cat="Filesystem" os="Misc" ext=""/>
@@ -2670,13 +2669,13 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="F0 3D|7D 00 00" ascii="" info="MS Visual C library" cat="Programming" os="Windows" ext=""/>
 			<match bytes="F0 FF FF" ascii="" info="FAT12 File Allocation Table File System" cat="Filesystem" os="Misc" ext=""/>
 			<match bytes="F0 0D 00 00" ascii="" info="MS Visual C library" cat="Programming" os="Windows" ext=""/>
-			<match bytes="F0 01 _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00|1C" ascii="" info="Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
+			<match bytes="F0 01 ??x14 00|1C" ascii="" info="Common Object File Format (COFF)" cat="Binary" os="Misc" ext="o/obj"/>
 		</first>
 		<first byte="F1">
 			<match bytes="F1 00 40 BB" ascii="" info="CMU Window Manager Raster Image" cat="Image" os="Misc" ext=""/>
 		</first>
 		<first byte="F5">
-			<match bytes="F5 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase FoxPro Database" cat="Database" os="Misc" ext="dbf/dbase"/>
+			<match bytes="F5 ??x29 00 00" ascii="" info="dBase FoxPro Database" cat="Database" os="Misc" ext="dbf/dbase"/>
 		</first>
 		<first byte="F6">
 			<match bytes="F6 F6 F6 F6" ascii="" info="PC formatted floppy with no filesystem" cat="Misc" os="Misc" ext=""/>
@@ -2700,7 +2699,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		</first>
 		<first byte="FB">
 			<match bytes="FB EE 28" ascii="" info="Text (BOCU1)" cat="Text" os="Misc" ext="txt/text"/>
-			<match bytes="FB _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 00 00" ascii="" info="dBase FoxBASE Database" cat="Database" os="Misc" ext="dbf/dbase"/>
+			<match bytes="FB ??x29 00 00" ascii="" info="dBase FoxBASE Database" cat="Database" os="Misc" ext="dbf/dbase"/>
 		</first>
 		<first byte="FD">
 			<match bytes="FD 37 7A 58 5A 00" ascii="7zXZ" info="XZ Archive" cat="Archive" os="Misc" ext="xz"/>
@@ -2728,7 +2727,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="FF F9" ascii="" info="MPEG-2 Advaned Audio Coding" cat="Audio" os="Misc" ext="aac"/>
 			<match bytes="FF F2|F3|FB" ascii="" info="MPEG Audio" cat="Audio" os="Misc" ext="mpg/mpeg/mp3"/>
 			<match bytes="FF F1" ascii="" info="MPEG-4 Advaned Audio Coding" cat="Audio" os="Misc" ext="aac"/>
-			<match bytes="FF D8 FF E0 _ _ 4A 46" ascii="JF" info="JPEG/JFIF Image" cat="Image" os="Misc" ext="jpg/jpeg/jfif"/>
+			<match bytes="FF D8 FF E0 ?? ?? 4A 46" ascii="JF" info="JPEG/JFIF Image" cat="Image" os="Misc" ext="jpg/jpeg/jfif"/>
 			<match bytes="FF D8 FF" ascii="" info="JPEG image data" cat="Misc" os="Misc" ext="jpg/jpeg"/>
 			<match bytes="FF 6D" ascii="" info="Very old PDP-11 Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="FF 65" ascii="" info="Old PDP-11 Archive" cat="Archive" os="Misc" ext=""/>
