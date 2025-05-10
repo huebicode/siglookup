@@ -324,7 +324,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 	</offset>
 	<offset at="6">
 		<first byte="00">
-			<match bytes="00 00 FF FF FF FF" ascii="" info="Windows Help File" cat="Document" os="Windows" ext="hlp"/>
+			<match bytes="00 00 FFx4" ascii="" info="Windows Help File" cat="Document" os="Windows" ext="hlp"/>
 		</first>
 		<first byte="01">
 			<match bytes="01 07" ascii="" info="unicos (cray) Executable" cat="Executable" os="Misc" ext=""/>
@@ -738,7 +738,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="48 64 72 53" ascii="HdrS" info="Linux Kernel" cat="System" os="Linux" ext=""/>
 		</first>
 		<first byte="FF">
-			<match bytes="FF FF FF FF 00|01" ascii="" info="Claris clip art?" cat="Misc" os="Misc" ext=""/>
+			<match bytes="FFx4 00|01" ascii="" info="Claris clip art?" cat="Misc" os="Misc" ext=""/>
 		</first>
 	</offset>
 	<offset at="344">
@@ -871,7 +871,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 	</offset>
 	<offset at="0">
 		<first byte="00">
-			<match bytes="00 FF FF FF FF FF FF FF FF FF FF 00 00 02 00 01" ascii="" info="Alcohol 120% CD Image" cat="Diskimage" os="Misc" ext="mdf"/>
+			<match bytes="00 FFx10 00 00 02 00 01" ascii="" info="Alcohol 120% CD Image" cat="Diskimage" os="Misc" ext="mdf"/>
 			<match bytes="00 C0" ascii="" info="hp300 (68020+68881) BSD" cat="Executable" os="BSD" ext=""/>
 			<match bytes="00 BF" ascii="" info="Adobe Flash Shared Object" cat="Data" os="Misc" ext="sol"/>
 			<match bytes="00 9E 6E 72 76 FF" ascii="..nrv." info="NRV Archive" cat="Archive" os="BSD" ext="nrv"/>
@@ -1224,8 +1224,8 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="21 3C 73 70 65 6C 6C 32 3E" ascii="!&lt;spell2&gt;" info="MKS Spell hash list" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 3C 62 6F 75 74 3E" ascii="!&lt;bout&gt;" info="b.out archive" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 3C 61 72 63 68 3E 0A 64 65 62 69 61 6E" ascii="!&lt;arch&gt;.debian" info="Debian Binary Package" cat="Archive" os="Misc" ext="deb"/>
-			<match bytes="21 3C 61 72 63 68 3E 0A 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 45" ascii="!&lt;arch&gt;.__________E" info="MIPS Archive" cat="Archive" os="Misc" ext=""/>
-			<match bytes="21 3C 61 72 63 68 3E 0A 5F 5F 5F 5F 5F 5F 5F 5F 36 34 45" ascii="!&lt;arch&gt;.________64E" info="Alpha Archive" cat="Archive" os="Misc" ext=""/>
+			<match bytes="21 3C 61 72 63 68 3E 0A 5Fx10 45" ascii="!&lt;arch&gt;.__________E" info="MIPS Archive" cat="Archive" os="Misc" ext=""/>
+			<match bytes="21 3C 61 72 63 68 3E 0A 5Fx8 36 34 45" ascii="!&lt;arch&gt;.________64E" info="Alpha Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="21 3C 61 72 63 68 3E 0A" ascii="!&lt;arch&gt;" info="Unix Archiver File" cat="Archive" os="Misc" ext="ar"/>
 			<match bytes="21 3C 50 44 46 3E 21 0A" ascii="!&lt;PDF&gt;!" info="profiling data file" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 2D 31 53 4C 4F 42 1F" ascii="!-1SLOB" info="Slob (Sorted List of Blobs) compressed Data" cat="Archive" os="Misc" ext="slob"/>
@@ -2715,8 +2715,8 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="FE 37 00 23" ascii="" info="Microsoft Office Document" cat="Misc" os="Misc" ext="doc"/>
 		</first>
 		<first byte="FF">
-			<match bytes="FF FF FF FF 14 00 00 00" ascii="" info="OS/2 INI" cat="Misc" os="Misc" ext=""/>
-			<match bytes="FF FF FF FF" ascii="" info="DOS System Driver" cat="System" os="MS-DOS" ext="sys"/>
+			<match bytes="FFx4 14 00 00 00" ascii="" info="OS/2 INI" cat="Misc" os="Misc" ext=""/>
+			<match bytes="FFx4" ascii="" info="DOS System Driver" cat="System" os="MS-DOS" ext="sys"/>
 			<match bytes="FF FF 7F" ascii="" info="ddis/ddif" cat="Misc" os="Misc" ext=""/>
 			<match bytes="FF FF 7E" ascii="" info="ddis/dtif Table Data" cat="Data" os="Misc" ext=""/>
 			<match bytes="FF FF 7C" ascii="" info="ddis/dots Archive" cat="Archive" os="Misc" ext=""/>
