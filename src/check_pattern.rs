@@ -1,18 +1,56 @@
 pub fn is_pattern_in_hex(hex_bytes: &[String], hex_pattern: &str) -> bool {
     let pattern_elements: Vec<&str> = hex_pattern.split_whitespace().take(64).collect();
-    let mut i = 0;
+    let mut i = 0; // Index for hex_bytes
+    let mut p = 0; // Index for pattern_elements
 
-    while i < pattern_elements.len() && i < hex_bytes.len() {
-        let pattern = pattern_elements[i];
+    fn is_wildcard_match(pattern: &str, hex_byte: &str) -> bool {
+        if pattern.len() == 2 && hex_byte.len() == 2 {
+            match pattern.as_bytes() {
+                // First half is wildcard (e.g. ?A)
+                [b'?', second] => hex_byte.as_bytes()[1] == *second,
+                // Second half is wildcard (e.g. A?)
+                [first, b'?'] => hex_byte.as_bytes()[0] == *first,
+                _ => false,
+            }
+        } else {
+            false
+        }
+    }
 
-        // Check for skip pattern [n]
-        if pattern.starts_with('[') && pattern.ends_with(']') {
-            if let Ok(skip_count) = pattern[1..pattern.len() - 1].parse::<usize>() {
-                i += skip_count;
-                if i >= pattern_elements.len() {
-                    return true;
+    while p < pattern_elements.len() && i < hex_bytes.len() {
+        let pattern = pattern_elements[p];
+
+        // Check for multiplier pattern (e.g. ??x5, AAx5 or ?Ax5)
+        if let Some(x_pos) = pattern.find('x') {
+            if x_pos > 0 && x_pos < pattern.len() - 1 {
+                let base_pattern = &pattern[0..x_pos];
+                if let Ok(repeat_count) = pattern[x_pos + 1..].parse::<usize>() {
+                    if i + repeat_count > hex_bytes.len() {
+                        return false;
+                    }
+
+                    if base_pattern == "??" {
+                        i += repeat_count;
+                        p += 1;
+                        continue;
+                    } else {
+                        for j in 0..repeat_count {
+                            let current_pattern = base_pattern;
+                            let current_byte = &hex_bytes[i + j];
+
+                            if current_pattern.contains('?') {
+                                if !is_wildcard_match(current_pattern, current_byte) {
+                                    return false;
+                                }
+                            } else if current_byte != current_pattern {
+                                return false;
+                            }
+                        }
+                        i += repeat_count;
+                        p += 1;
+                        continue;
+                    }
                 }
-                continue;
             }
         }
 
@@ -20,7 +58,8 @@ pub fn is_pattern_in_hex(hex_bytes: &[String], hex_pattern: &str) -> bool {
         if pattern.contains('?') {
             if pattern == "??" {
                 i += 1;
-                if i >= pattern_elements.len() {
+                p += 1;
+                if p >= pattern_elements.len() {
                     return true;
                 }
                 continue;
@@ -28,34 +67,18 @@ pub fn is_pattern_in_hex(hex_bytes: &[String], hex_pattern: &str) -> bool {
 
             if pattern.len() == 2 {
                 let hex_byte = &hex_bytes[i];
-                if hex_byte.len() == 2 {
-                    let matches = match pattern.as_bytes() {
-                        // First half is wildcard (e.g., ?A)
-                        [b'?', second] => {
-                            let hex_second = hex_byte.as_bytes()[1];
-                            hex_second == *second
-                        }
-                        // Second half is wildcard (e.g., A?)
-                        [first, b'?'] => {
-                            let hex_first = hex_byte.as_bytes()[0];
-                            hex_first == *first
-                        }
-                        _ => false,
-                    };
-
-                    if !matches {
-                        return false;
-                    }
-                    i += 1;
-                    continue;
+                if !is_wildcard_match(pattern, hex_byte) {
+                    return false;
                 }
+                i += 1;
+                p += 1;
+                continue;
             }
         }
 
         // Check for match in multiple values
         if pattern.contains('|') {
-            let cleaned = pattern.replace(['(', ')'], "");
-            let splitted_parts: Vec<&str> = cleaned.split('|').collect();
+            let splitted_parts: Vec<&str> = pattern.split('|').collect();
             let mut matched = false;
 
             for part in splitted_parts.iter() {
@@ -86,7 +109,8 @@ pub fn is_pattern_in_hex(hex_bytes: &[String], hex_pattern: &str) -> bool {
         }
 
         i += 1;
+        p += 1;
     }
 
-    i >= pattern_elements.len()
+    p >= pattern_elements.len()
 }
