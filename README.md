@@ -5,9 +5,9 @@ Siglookup is a command-line tool for detecting file types, based on their signat
 ![siglookup](https://github.com/huebicode/siglookup/assets/3885373/ed0ccf37-5c06-4dbc-bcf5-769b98c6f420)
 
 ## Usage
-The signature file `sigs.xml` must be located in the same directory as the application.
-
 `siglookup <file>` or `siglookup <dir>`
+
+<em>The signature file</em> `sigs.xml`<em> must be located in the same directory as the application.</em>
 <br><br>
 
 ## Signature syntax
