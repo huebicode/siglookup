@@ -27,4 +27,6 @@ If you have file signatures, which the application is missing, find errors or ha
 ## Acknowledgments
 The idea for this project arose when I discovered [Brian’s](https://github.com/brianary/magicnumber-lite) project while searching for some exotic magic bytes. I liked the structure and recording of the signatures in his XML signature file, making them visible, searchable and expandable for everyone, which ultimately led to this project after a request to Brian. 
 
-The signatures were enriched by those of [Gerry Kessler](https://www.garykessler.net/library/file_sigs.html) and [Wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures).
+The signatures were partly enriched by those of [Gerry Kessler](https://www.garykessler.net/library/file_sigs.html) (who unfortunately stopped his project) and [Wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures).
+
+Another great source for file signatures and samples is [Archiveteam](http://justsolve.archiveteam.org/wiki/Main_Page) (altough their site is regularly broken).
