@@ -4,7 +4,7 @@ This file is part of the project "siglookup": https://github.com/huebicode/siglo
 Alexander Hübert
 ********************************************************************************
 Categories: Archive|Audio|Binary|Data|Database|Diskimage|Document|Email|Encoding|Encryption|Executable|Filesystem|Font|Game|Image|Misc|Multimedia|Network|Programming|Software|System|Text|Video|Web
-Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-DOS|N64|NES|Nokia|Other|PalmOS|Sega|Unix|Windows|Xbox
+Platforms:  Amiga|Android|Apple|Atari|BSD|C64|iOS|Linux|MacOS|Misc|MS-DOS|Nintendo|Nokia|Other|PalmOS|Sega|Unix|Windows
 -->
 <magic>
 	<offset at="-512">
@@ -1237,7 +1237,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="21 21" info="Bennet Yee's face format" cat="Misc" os="Misc" ext=""/>
 			<match bytes="21 12" info="AIN Compressed Archive" cat="Archive" os="Misc" ext="ain"/>
 			<match bytes="21 0D 0A 43 52 52 2F 54" info="NOAA Raster Navigation Chart" cat="Data" os="Misc" ext="bsb"/>
-			<match bytes="21 06 80 28" info="Sega Dreamcast VMU game image" cat="Diskimage" os="Dreamcast" ext=""/>
+			<match bytes="21 06 80 28" info="Sega Dreamcast VMU game image" cat="Diskimage" os="Sega" ext=""/>
 		</first>
 		<first byte="22">
 			<match bytes="22 22 22" info="a python script" cat="Misc" os="Misc" ext=""/>
@@ -1418,7 +1418,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		</first>
 		<first byte="37">
 			<match bytes="37 E4 53 96 C9 DB D6 07" info="zisofs Compression" cat="Data" os="Misc" ext=""/>
-			<match bytes="37 80 40 12" info="V64 Nintendo 64 ROM Dump" cat="Game" os="N64" ext=""/>
+			<match bytes="37 80 40 12" info="V64 Nintendo 64 ROM Dump" cat="Game" os="Nintendo" ext=""/>
 			<match bytes="37 7A BC AF 27 1C" info="7-Zip Archive" cat="Archive" os="Misc" ext="7z"/>
 			<match bytes="37 37 37" info="777 Archive " cat="Archive" os="Misc" ext=""/>
 			<match bytes="37 04" info="QuArk Archive Data" cat="Archive" os="Misc" ext=""/>
@@ -1878,8 +1878,8 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="4E 50 46 46" info="NItpicker Flow File " cat="Misc" os="Misc" ext=""/>
 			<match bytes="4E 4A 50 4C 31 49 30 30" info="PDS (JPL) Image" cat="Image" os="Misc" ext="pds"/>
 			<match bytes="4E 49 54 46" info="National Imagery Transmission Format" cat="Image" os="Misc" ext="ntf"/>
-			<match bytes="4E 45 53 4D 1A" info="NES Sound File" cat="Game" os="NES" ext="nsf"/>
-			<match bytes="4E 45 53" info="NES ROM File" cat="Game" os="NES" ext="nes"/>
+			<match bytes="4E 45 53 4D 1A" info="NES Sound File" cat="Game" os="Nintendo" ext="nsf"/>
+			<match bytes="4E 45 53" info="NES ROM File" cat="Game" os="Nintendo" ext="nes"/>
 			<match bytes="4E 42 2A 00" info="MS Windows Journal File" cat="System" os="Windows" ext="jnt/jtp"/>
 			<match bytes="4E 41 56 54 52 41 46 46 49 43" info="TomTom Traffic Data" cat="Data" os="Other" ext="dat"/>
 		</first>
@@ -1921,7 +1921,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 			<match bytes="50 53 55 52" info="ARC Archive (C64)" cat="Archive" os="C64" ext=""/>
 			<match bytes="50 53 4D 1A" info="Protracker Studio PSM Module" cat="Audio" os="Misc" ext=""/>
 			<match bytes="50 53 49 44" info="PlaySID v2.2+ (AMIGA) SIDtune" cat="Audio" os="Amiga" ext=""/>
-			<match bytes="50 53 46 12" info="Dreamcast Sound Format File" cat="Audio" os="Dreamcast" ext="dsf"/>
+			<match bytes="50 53 46 12" info="Dreamcast Sound Format File" cat="Audio" os="Sega" ext="dsf"/>
 			<match bytes="50 53 41" info="PSA Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="50 50 4D 5A" info="PPMZ Archive" cat="Archive" os="Misc" ext=""/>
 			<match bytes="50 50 32 30" info="Power Packer 2.0 Compressed" cat="Archive" os="Misc" ext=""/>
@@ -2130,15 +2130,15 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|Dreamcast|iOS|Linux|MacOS|Misc|MS-
 		<first byte="58">
 			<match bytes="58 72 65 66 3A" info="News Text" cat="Text" os="Misc" ext=""/>
 			<match bytes="58 68 44 72" info="X1 Archive" cat="Archive" os="Misc" ext=""/>
-			<match bytes="58 54 46 30" info="XTF, Microsoft Xbox Data" cat="Data" os="Xbox" ext=""/>
+			<match bytes="58 54 46 30" info="XTF, Microsoft Xbox Data" cat="Data" os="Windows" ext=""/>
 			<match bytes="58 54" info="MS Publisher Border" cat="Software" os="Windows" ext="bdr"/>
 			<match bytes="58 50 4B 46" info="Amiga xpkf.library Compressed Data" cat="Misc" os="Amiga" ext=""/>
 			<match bytes="58 50 44 53" info="SMPTE Digital Picture Exchange Image" cat="Image" os="Misc" ext="dpx"/>
 			<match bytes="58 50 43 4F 4D 0A 54 79 70 65 4C 69 62" info="XPCOM Type Libraries" cat="Programming" os="Misc" ext="xpt"/>
-			<match bytes="58 49 50 30" info="XIP, Microsoft Xbox Data" cat="Misc" os="Xbox" ext=""/>
+			<match bytes="58 49 50 30" info="XIP, Microsoft Xbox Data" cat="Misc" os="Windows" ext=""/>
 			<match bytes="58 46 53 42" info="SGI XFS Filesystem Data" cat="Misc" os="Misc" ext=""/>
 			<match bytes="58 43 50 00" info="NetXRay Capture" cat="Network" os="Misc" ext="cap"/>
-			<match bytes="58 42 45 48" info="XBE, Microsoft Xbox Executable" cat="Executable" os="Xbox" ext=""/>
+			<match bytes="58 42 45 48" info="XBE, Microsoft Xbox Executable" cat="Executable" os="Windows" ext=""/>
 			<match bytes="58 41 52 41 A3 A3" info="Xara Graphics File" cat="Image" os="Misc" ext=""/>
 			<match bytes="58 41 44 21" info="eXotic ADlib" cat="Misc" os="Misc" ext=""/>
 			<match bytes="58 31" info="X1 Archive" cat="Archive" os="Misc" ext=""/>
