@@ -1937,7 +1937,7 @@ Platforms:  Amiga|Android|Apple|Atari|BSD|C64|iOS|Linux|MacOS|Misc|MS-DOS|Ninten
 			<match bytes="50 4B 07 08" info="PKZIP Multivolume Archive" cat="Archive" os="Misc" ext="zip"/>
 			<match bytes="50 4B 05 06" info="PKZIP Empty Archive" cat="Archive" os="Misc" ext="zip"/>
 			<match bytes="50 4B 03 06" info="ReSOF Archive" cat="Archive" os="Misc" ext=""/>
-			<match bytes="50 4B 03 04 0A 00 02 00" info="Open Publication Structure eBook" cat="Document" os="Misc" ext="epub"/>
+			<match bytes="50 4B 03 04 ??x46 65 70 75 62 2B 7A 69 70" info="Electronic Publication Document" cat="Document" os="Misc" ext="epub"/>
 			<match bytes="50 4B 03 04" info="PKZIP Archive" cat="Archive" os="Misc" ext="zip"/>
 			<match bytes="50 49 43 54 00 08" info="ADEX Graphics File" cat="Image" os="Misc" ext="img"/>
 			<match bytes="50 48 49 4C 49 50 50" info="Par Archive" cat="Archive" os="Misc" ext=""/>
